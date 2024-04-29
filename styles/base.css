@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Handlee&family=Nanum+Myeongjo&family=Playpen+Sans:wght@300&family=Silkscreen&family=Tektur&display=swap');
 
-
 * {
     box-sizing: border-box;
 }
@@ -8,17 +7,20 @@
 header{
     background-color: floralwhite;
     display:grid;
-    place-items: center;
+    grid-column:2/4 ;
 }
 
 header img{
-    /* border-radius:center; --not sure what this does*/
-    padding: 10px;
-    width:150px;
+    border-radius:100px;  /* this changes the shape of the image */
+    padding: 15px; /*  gives spacing but shortens image */
+    width:100px; /*changes width of image*/
 }
+
+
 
 .cayleigh img{
     float:left;
+   
 }
 
 main {
@@ -31,15 +33,23 @@ main {
 nav{
     background-color: #8B008B;
     color: floralwhite;
+    grid-column:span;
+    text-align: center;
     
 }
 
 nav a{
     color: floralwhite;
+    text-align: center;
 }
 
 nav a:hover{
     color:#f028f0;
+}
+
+nav li{
+    list-style-type: none; /*this makes the dots besides the link disapear */
+    padding:8px 5px 20px 5px;
 }
 
 body {
@@ -47,6 +57,7 @@ body {
     color:black;
     background-color:floralwhite;
 }
+
 
 .card {
     border-style: solid; /*shows that we want a border with this style */
@@ -62,10 +73,10 @@ body {
 
 footer{
     background-color: #8B008B;
-
+    padding: 45px;
     color: floralwhite;
+    text-align: center;
     
 }
-
 
 
