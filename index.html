@@ -9,8 +9,18 @@
     <meta name="author" content="Cayleigh Leishman">
 
     <title>Cayleigh - WDD 230 - Web Frontend Development</title>
+   <!-- used for practice-base.css
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        </style>
+         USe for base.css INSERT THE ROBOX TEXT FONT FOR BASE.css HERE -->
 
+    <!-- Practice forpractice- base. -->
+    <!-- <link rel="stylesheet" href="styles/practice-base.css"> -->
+
+    <!-- connects to base.css -->
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -27,8 +37,7 @@
             <li><a href="#">Site-Plan </a> </li>
             <li><a href="#">Chamber</a> </li>
             <li><a href="#">BYU-Idaho</a> </li>
-            <li><a href='https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?lang=eng&id=p12#p12'>John
-                    18:12</a></li> <!--put in your favourite scripture-->
+            <li><a href='https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?lang=eng&id=p12#p12'>John18:12</a></li> <!--put in your favourite scripture-->
 
         </ul>
 
@@ -41,9 +50,10 @@
 
         <section class="card">
             <h3> Learning Activities</h3>
+
             <ul>
                 <li>Lesson 01 - <a href="lesson01/holygrail.html">Holy Grail</a></li>
-                <li>Lesson 02 - <a href="#"></a> </li>
+                <li>Lesson 02 - <a href="lesson02/design-principles.html"></a>Design Principles</li>
                 <li>Lesson 03 - <a href="#"></a> </li>
                 <li>Lesson 04 - <a href="#"></a> </li>
                 <li>Lesson 05 - <a href="#"></a> </li>
@@ -57,15 +67,17 @@
 
         <section class="card">
             <h3>Information</h3>
+            <p>Weather Information: Placeholder</p>
+            <p></p>
+
         </section>
     </main>
 
     <footer>
-        <p> © <span id="copyrightYear"></span>
-            "Cayleigh Leishman │ Software Enginnering │ Idaho" </p>
-
-        <p id="lastModified"></p>
-        <script src="scripts/getDates.js"></script>
+        <p>&copy; <span id='currentYear'></span>│Cayleigh Leishman │ Idaho, USA" </p>
+         <!-- &copy is suposed to be the code that will give you the ©  symbol -->
+        <p id='lastModified'></p>
+        
     </footer>
 </body>
 

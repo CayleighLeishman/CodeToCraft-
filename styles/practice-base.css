@@ -1,0 +1,95 @@
+/* used to follow alogn in class */
+
+/* This is where you declare things you'll use troughout the assingment */ 
+:root{
+    --background: floralwhite;
+    --primary-color: #8B008B ;
+    --accent-color: #f72585;
+
+ 
+} 
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800 */
+
+<.open-sans-<uniquifier> {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body{
+    font-family:"Open Sans", "sans-serif";
+    background-color: var(--background-color);
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+ul{
+    list-style: none;
+
+}
+
+header {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--primary color);
+}
+
+header img{
+    height: 150px;
+    margin: 20px;
+}
+
+header h1{
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+#content nav ul{
+    background-color: var(--accent-color);
+
+}
+
+nav ul li{
+    text-align: center;
+    margin:20px;
+}
+
+
+nav a:hover{
+   color:floralwhite;
+
+}
+
+footer{
+    text-align:center;
+    background-color: var(--header-color);
+
+}
+
+
+
+
+
+
+

@@ -1,31 +1,15 @@
-const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
-const daynames = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-const todaysdate = new Date();
-const dayName = dayNames[todaydate.getDay()];
-const monthName = months[todaysdate.getMonth()];
-const currentdate = dayName + "," + todaysdate.getDate() + " " + monthName + "," todaysdate.getFullYear();
-document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+// sets the current Year
 
-//  https://video.byui.edu/media/t/0_r6j1mjz1
+let year = new Date().getFullYear()
+let currentYearSpan = document.querySelector('#currentYear')
+currentYearSpan.innerHTML = `${year}`
+
+
+
+// sets the last modified date
+
+let lastModifiedParagraph = document.querySelector('#lastModified')
+lastModifiedParagraph.innerHTML =`Last Modified: ${document.lastModified}`
+
+
+
