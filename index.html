@@ -7,6 +7,7 @@
     <meta name="description"     content = "WDD 230 - Web Frontend Development - Cayleigh Leishman - Course assingment portal">
     <meta name="author"          content = "Cayleigh Leishman">
 
+    <!-- Lesson 2 Activity- Social Media Meta Tags -->
     <meta propterty = "og:title" content = "Aberdeen, Idaho, USA" />
     <meta propterty = "og:tytpe" content = "Website" />
     <meta propterty = "og:url"   content = "http://www.aberdeenidaho.us/"/>
@@ -14,18 +15,15 @@
 
     <title>Cayleigh - WDD 230 - Web Frontend Development</title>
    
-    <!-- used for practice-base.css
-   <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-        </style>
-         USe for base.css INSERT THE ROBOX TEXT FONT FOR BASE.css HERE -->
+    <!--Lesson 2 Activity *mostly done in CSS* -->
+    <!-- connects to .css files in Styles folder -->  
+    <link rel="stylesheet" href="styles/normalize.css" >  <!-- Runs first -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- <link rel="stylesheet" href="styles/base.css"> -->  <!--I also added a reset.css for lesson 2. See reset.css for more info -->
 
-    <!-- Practice forpractice- base. -->
-    <!-- <link rel="stylesheet" href="styles/practice-base.css"> -->
+    <!-- connects to.js files in Scripts folder. 'defer' tells html do this last -->
+    <script src="scripts/getdates.js" defer> </script>
 
-    <!-- connects to base.css -->
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -73,14 +71,14 @@
         <section class="card">
             <h3>Information</h3>
             <p>Weather Information: Placeholder</p>
-            <p></p>
+            <p> </p>
 
         </section>
     </main>
 
     <footer>
-        <p>&copy; <span id='currentYear'></span>│Cayleigh Leishman │ Idaho, USA" </p>
-         <!-- &copy is suposed to be the code that will give you the ©  symbol -->
+        <p>&copy; <span id='currentYear'></span>│Cayleigh Leishman │ Idaho, USA" </p> <!-- &copy is suposed to be the code that will give you the ©  symbol -->
+         
         <p id='lastModified'></p>
         
     </footer>
