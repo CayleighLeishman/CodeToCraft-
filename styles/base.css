@@ -27,7 +27,7 @@ main {
     background-color: floralwhite;
     max-width: 800px; /*sets maximum size not sure what of though*/
     margin: 75px auto; /* controls how big the space between main, header and footter */
-    text-align: center;
+    text-align: left;
     
     display:grid;
     grid-template-columns: 2fr;
@@ -41,7 +41,6 @@ nav{
     color: floralwhite;
     grid-column:span;
     text-align: center;
-    
 }
 
 nav a{
@@ -64,7 +63,6 @@ body {
     background-color:floralwhite;
 }
 
-
 .card {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
@@ -84,5 +82,3 @@ footer{
     text-align: center;
     
 }
-
-

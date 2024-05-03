@@ -5,7 +5,7 @@ body{
 header,main,footer{
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    border: 1px solid #92c3cc;
     padding: 1rem;
     background-color: aquamarine;
 
@@ -15,7 +15,7 @@ main{
     display:grid;
     grid-template-columns:1fr;
     grid-gap:1rem;
-}
+} 
 
 section{
     padding: 1rem;
