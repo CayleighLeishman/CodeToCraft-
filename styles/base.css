@@ -18,7 +18,6 @@ header img{
 }
 
 
-
 .cayleigh img{
     float:left;
    
@@ -28,9 +27,15 @@ main {
     background-color: floralwhite;
     max-width: 800px; /*sets maximum size not sure what of though*/
     margin: 75px auto; /* controls how big the space between main, header and footter */
-
+    text-align: center;
+    
+    display:grid;
+    grid-template-columns: 2fr;
 } 
 
+main ul{
+    list-style-type: none;
+}
 nav{
     background-color: #8B008B;
     color: floralwhite;
