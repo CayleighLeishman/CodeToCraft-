@@ -20,8 +20,6 @@ header img{
     width:100px; /*changes width of image*/
 }
 
-
-
 .cayleigh img{
     float:left;
    
@@ -37,7 +35,7 @@ main {
 nav{
     background-color: #8B008B;
     color: floralwhite;
-    grid-column:span;
+    grid-column:span; /*check if i need this here. I cant notice a difference when i comment the code out.*/
     text-align: center;
     
 }
@@ -84,3 +82,72 @@ footer{
 }
 
  
+/* professors code */
+:root{
+    --shadow: #8B008B;
+    --header-background:  #8B008B;
+    --body-background:  floralwhite ;
+}
+
+body{
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--body-background)
+}
+
+header section{
+    background-color: var(--header-background);
+    color: #8B008B;
+    box-shadow: 3px 3px var(--shadow);
+    text-align: center;
+    padding: 1rem;
+}
+
+main section{
+    border: 1px #8B008B;
+    margin: .5rem;
+    box-shadow: 3px 3px var(--shadow);
+}
+
+main section p{
+    padding: 1rem;    
+}
+
+main section h3{
+    background-color: var(--header-background);
+    color: floralwhite;
+    padding: 1rem;
+    margin-block-start: 0px;
+    text-align: center;
+}
+
+@media screen and (min-width: 640px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section3{
+        grid-column: 1/3;
+    }
+
+    .section3 img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section3{
+        grid-column: 3/4;
+    }
+
+    .section3 img{
+        width: auto;
+    }
+
+}
