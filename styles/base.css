@@ -35,6 +35,11 @@ main {
 
 main ul{
     list-style-type: none;
+    
+}
+
+main a {
+    color:#8B008B;
 }
 nav{
     background-color: #8B008B;
@@ -72,7 +77,7 @@ body {
 }
 
 .card a:hover{
-    color: #f028f0;
+    color: floralwhite;  /* maybe make BLACK instead of white. White makes text look like it disapeared */
 }
 
 footer{
