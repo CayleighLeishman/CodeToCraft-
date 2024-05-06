@@ -4,9 +4,6 @@
         padding: 8px 5px .3px 5px;
         grid-column:span;
     }
-    nav a:hover{
-        color:#f028f0;
-    }
     nav ul{
         display: flex;
         flex-direction: row;

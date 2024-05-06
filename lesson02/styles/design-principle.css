@@ -3,7 +3,8 @@
 
 /* Colors
 for rare occational text: #ffaff0 //light purple
- */
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -65,8 +66,9 @@ body {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
     border-radius: .4rem; /*seems to control the curve of the border*/
-    width: 100%;
     padding: 15px;
+    margin: 1rem ;
+
 }
 
 .card a:hover{
@@ -122,6 +124,16 @@ main section h3{
 }
 
 @media screen and (min-width: 640px){
+    nav{
+        padding: 8px 5px .3px 5px;
+        grid-column:span;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
