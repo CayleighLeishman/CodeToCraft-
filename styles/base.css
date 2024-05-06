@@ -68,12 +68,17 @@ body {
     background-color:floralwhite;
 }
 
+section{
+   margin: 4rem;  /* this gave the cards spacing between each other */
+}
+
 .card {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
     border-radius: .4rem; /*seems to control the curve of the border*/
-    width: 100%;
-    padding: 15px;
+    /* width: 100%;  this made the cards stack besides each other*/
+    padding: 35px;
+    /* margin: 1em ; */
 }
 
 .card a:hover{
