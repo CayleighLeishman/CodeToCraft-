@@ -2,6 +2,7 @@
 
 
 * {
+    font-family: 'tektur','san-serif';
     box-sizing: border-box;
 }
 
@@ -64,7 +65,6 @@ nav li{
 }
 
 body {
-    font-family: 'tektur','san-serif';
     color:black;
     background-color:floralwhite;
 }

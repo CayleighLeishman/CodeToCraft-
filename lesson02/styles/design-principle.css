@@ -7,6 +7,7 @@ for rare occational text: #ffaff0 //light purple
 
 * {
     box-sizing: border-box;
+    font-family: 'tektur','san-serif';
 }
 
 header{
@@ -34,6 +35,7 @@ main {
 } 
 
 nav{
+
     background-color: #8B008B;
     color: floralwhite;
     grid-column:span; /*check if i need this here. I cant notice a difference when i comment the code out.*/
