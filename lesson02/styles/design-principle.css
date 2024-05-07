@@ -83,6 +83,8 @@ footer{
     
 }
 
+/* w3 schools */
+
  
 /* professors code */
 :root{
@@ -109,7 +111,21 @@ main section{
     border: 1px #8B008B;
     margin: .5rem;
     box-shadow: 3px 3px var(--shadow);
+    text-align: center;
+
 }
+
+main img{
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   padding: 5px;
+   width: 100%;
+}
+
+main img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+  
 
 main section p{
     padding: 1rem;    
