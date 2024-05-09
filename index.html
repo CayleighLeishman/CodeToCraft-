@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- when diciding to use ID="" or CLASS=""
+
+1)how many things need to be affected by this rule?
+2) is Javascript going to be used for this? 
+  -->
 <head>
 
     <meta charset="UTF-8">
@@ -25,8 +30,9 @@
 
     <!-- connects to.js files in Scripts folder. 'defer' tells html do this last -->
     <script src="scripts/getdates.js" defer> </script>
+    <script src="scripts/hamburger.js"defer> </script>
 
-    <!-- use this for yor favicon -->
+    <!-- use this for your favicon -->
     <link rel="icon" href="images/favicon.ico">
     
 </head>
@@ -35,10 +41,11 @@
     <header>
         <div class="cayleigh">
             <img src="images/cayleigh.png" alt="Cayleigh's headshot">
-            <h1>Cayleigh Leishman</h1>
+            <h1>Cayleigh Leishman </h1>
+            
         </div>
     </header>
-
+    <button id="menu-button"></button>
     <nav>
         <ul>
             <li><a href="#">Home</a> </li>
@@ -57,7 +64,7 @@
         <hr>
 
         <div id="cards">
-            <section class="card">
+            <section class="card"> 
                 <h3> Learning Activities</h3>
 
                 <ul>
@@ -66,8 +73,8 @@
                         <a href="lesson02/design.html"> lesson 2.4: Web Design Principles, </a>
                         <a href="lesson02/media-query.html"> lesson 2.5: CSS Media Queries</a>
                     </li>
-                    <!-- <li>Lesson 03 - <a href="#"></a> </li>
-                    <li>Lesson 04 - <a href="#"></a> </li>
+                    <li>Lesson 03 - <a href="lesson03/images/combinator.png" alt="image of combinator project"></a>Combinator </li>
+                    <!-- <li>Lesson 04 - <a href="#"></a> </li>
                     <li>Lesson 05 - <a href="#"></a> </li>
                     <li>Lesson 06 - <a href="#"></a> </li>
                     <li>Lesson 07 - <a href="#"></a> </li>

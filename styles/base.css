@@ -49,6 +49,51 @@ nav{
     text-align: center;
 }
 
+
+#menu-button{
+    background-color:#8B008B;
+    font-size: 2rem;
+    padding:.5rem;
+}
+
+#menu-button::before{ 
+    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out what it's supposed to do. */
+    content: '='
+}
+#menu-button.open::before{
+    content: 'x';
+}
+/*nav when it's closed  */
+nav ul{ 
+    list-style:none; /*what does this do?*/
+    text-align: center;
+    background-color: #8B008B;
+    padding-inline-start: 0px; /*what does this do?*/
+    display:none; 
+}
+
+nav ul.open{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+
+nav ul li{
+    padding:1rem;
+    width:100%;
+}
+
+nav ul li:hover{
+    color:black;
+    background-color:white;
+}
+nav ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+}
+
 nav a{
     color: floralwhite;
     text-align: center;
@@ -82,7 +127,7 @@ section{
 }
 
 .card a:hover{
-    color: floralwhite;  /* maybe make BLACK instead of white. White makes text look like it disapeared */
+    color: floralwhite; 
 }
 
 footer{
