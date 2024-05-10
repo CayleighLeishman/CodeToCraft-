@@ -5,7 +5,12 @@
     font-family: 'tektur','san-serif';
     box-sizing: border-box;
 }
-
+::selection {
+    color: floralwhite;
+    background: #99005C;
+    /* #8B008B; */
+}
+    
 header{
     background-color: floralwhite;
     display:grid;
