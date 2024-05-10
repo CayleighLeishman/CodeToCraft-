@@ -57,8 +57,8 @@ nav{
 }
 
 #menu-button::before{ 
-    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out what it's supposed to do. */
-    content: '='
+    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+    content: "☰";
 }
 #menu-button.open::before{
     content: 'x';
@@ -80,33 +80,31 @@ nav ul.open{
 }
 
 nav ul li{
-    padding:1rem;
     width:100%;
 }
 
-nav ul li:hover{
-    color:black;
-    background-color:white;
-}
 nav ul li a{
     display:block;
     text-decoration:none;
     color:white;
+    padding: 1rem;
 }
 
 nav a{
     color: floralwhite;
     text-align: center;
+    
 }
 
-nav a:hover{
-    color:#8B008B;
+nav ul li a:hover{
+    color: #8B008B;
+    background-color: white;
+    font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
     /* #f028f0 */
 }
 
 nav li{
     list-style-type: none; /*this makes the dots besides the link disapear */
-    padding:8px 5px 20px 5px;
 }
 
 body {
@@ -128,6 +126,12 @@ section{
 
 .card a:hover{
     color: floralwhite; 
+
+}
+
+
+iframe{
+    margin: auto 0;
 }
 
 footer{
