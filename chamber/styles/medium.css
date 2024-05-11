@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Handlee&family=Nanum+Myeongjo&family=Playpen+Sans:wght@300&family=Silkscreen&family=Tektur&display=swap');
+
+
+* {
+    font-family: 'tektur','san-serif';
+    box-sizing: border-box;
+}
+
+::selection {
+    color: floralwhite;
+    background: #99005C;
+    /* #8B008B; */
+}
+    
+header{
+    background-color: floralwhite;
+    display:grid;
+    grid-column:2/4 ;
+}
+
+header img{
+    border-radius:100px;  /* this changes the shape of the image */
+    padding: 15px; /*  gives spacing but shortens image */
+    width:100px; /*changes width of image*/
+}
+
+
+.cayleigh img{
+    float:left;
+   
+}
+
+main {
+    background-color: floralwhite;
+    max-width: 800px; /*sets maximum size not sure what of though*/
+    margin: 75px auto; /* controls how big the space between main, header and footter */
+    text-align: left;
+    
+    display:grid;
+    grid-template-columns: 2fr;
+} 
+
+main ul{
+    list-style-type: none; 
+}
+
+main a {
+    color:#8B008B;
+}
+
+nav{
+    background-color: #8B008B;
+    color: floralwhite;
+    grid-column:span;
+    text-align: center;
+}
+
+
+#menu-button{
+    background-color:#8B008B;
+    font-size: 2rem;
+    padding:.5rem;
+}
+
+#menu-button::before{ 
+    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+    content: "☰";
+}
+
+#menu-button.open::before{
+    content: 'x';
+}
+
+/*nav when it's closed  */
+nav ul{ 
+    list-style:none; /*what does this do?*/
+    text-align: center;
+    background-color: #8B008B;
+    padding-inline-start: 0px; /*what does this do?*/
+    display:none; 
+}
+
+nav ul.open{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+
+}
+
+nav ul li{
+    width:100%;
+}
+
+nav ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding: 1rem;
+}
+
+nav a{
+    color: floralwhite;
+    text-align: center;
+    
+}
+
+nav ul li a:hover{
+    color: #8B008B;
+    background-color: white;
+    font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
+    /* #f028f0 */
+}
+
+nav li{
+    list-style-type: none; /*this makes the dots besides the link disapear */
+}
+
+body {
+    color:black;
+    background-color:floralwhite;
+}
+
+.card {
+    border-style: solid; /*shows that we want a border with this style */
+    border-width: 3.8px; /* width of the border*/
+    border-radius: .4rem; /*seems to control the curve of the border*/
+    /* width: 100%;  this made the cards stack besides each other*/
+    padding: 35px;
+    margin: 1rem;  /* this gave the cards spacing between each other */   
+}
+
+
+.card a:hover{
+    color: floralwhite; 
+
+}
+
+
+
+footer{
+    background-color: #8B008B;
+    padding: 45px;
+    color: floralwhite;
+    text-align: center;
+    
+}
