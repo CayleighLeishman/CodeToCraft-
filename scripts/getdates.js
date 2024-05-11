@@ -1,6 +1,6 @@
 // sets the current Year
 
-let year = new Date().getFullYear()
+let year = new date().getFullYear()
 let currentYearSpan = document.querySelector('#currentYear')
 currentYearSpan.innerHTML = `${year}`
 

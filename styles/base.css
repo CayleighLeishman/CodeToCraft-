@@ -5,6 +5,7 @@
     font-family: 'tektur','san-serif';
     box-sizing: border-box;
 }
+
 ::selection {
     color: floralwhite;
     background: #99005C;
@@ -40,13 +41,13 @@ main {
 } 
 
 main ul{
-    list-style-type: none;
-    
+    list-style-type: none; 
 }
 
 main a {
     color:#8B008B;
 }
+
 nav{
     background-color: #8B008B;
     color: floralwhite;
@@ -65,9 +66,11 @@ nav{
     /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
     content: "☰";
 }
+
 #menu-button.open::before{
     content: 'x';
 }
+
 /*nav when it's closed  */
 nav ul{ 
     list-style:none; /*what does this do?*/
@@ -117,27 +120,34 @@ body {
     background-color:floralwhite;
 }
 
-section{
-   margin: 1rem;  /* this gave the cards spacing between each other */
-}
-
 .card {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
     border-radius: .4rem; /*seems to control the curve of the border*/
     /* width: 100%;  this made the cards stack besides each other*/
     padding: 35px;
+    margin: 1rem;  /* this gave the cards spacing between each other */   
 }
+
 
 .card a:hover{
     color: floralwhite; 
 
 }
 
-
-iframe{
-    margin: auto 0;
+ /* .google-maps{
+    padding-bottom: 50%;
+    position:relative;  
 }
+
+ .google-maps iframe{
+    height: 100%;
+    width: 100%;
+    left: 0px;  
+    top: 5px;
+    position: absolute; this makes maps disappear when set to absolut 
+
+}   */
 
 footer{
     background-color: #8B008B;
