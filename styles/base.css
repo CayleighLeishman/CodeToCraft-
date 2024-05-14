@@ -44,9 +44,6 @@ main ul{
     list-style-type: none; 
 }
 
-main a {
-    color:#8B008B;
-}
 
 nav{
     background-color: #8B008B;
@@ -128,12 +125,20 @@ body {
     padding: 35px;
     margin: 1rem;  /* this gave the cards spacing between each other */   
 }
-
+/* main a {
+    color:#8B008B;
+} */
 
 .card a:hover{
     color: floralwhite; 
+    background: #99005C;
 
 }
+.card a:link{
+    color:hotpink;
+
+}
+
 
 .google-maps{
     position:relative;  
