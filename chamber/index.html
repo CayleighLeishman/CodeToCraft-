@@ -1,57 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- when diciding to use ID="" or CLASS=""
-
-1)how many things need to be affected by this rule?
-2) is Javascript going to be used for this? 
-
-for hamburger menu use " ☰ "  -->
 <head>
-
     <meta charset="UTF-8">
-    <meta name="viewport"    content = "width=device-width, initial-scale=1.0">
-    <meta name="description" content = "WDD 230 - Web Frontend Development - Cayleigh Leishman - Course Assingment Portal">
-    <meta name="author"      content = "Cayleigh Leishman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Site Plan</title>
+    <meta name="description" content = "Chamber of Comerce Site Plan.  This name represents the purpose of this website.">
+    <meta name="author" content="Cayleigh Leishman">
 
-    <!-- Lesson 2 Activity- Social Media Meta Tags -->
-    <meta property = "og:title" content = "Cayleigh Leishman" >
+
+
+    <!-- meta property tags -->
+
+    <meta property = "og:title" content = "Pocatello, Idaho, USA" >
     <meta property = "og:tytpe" content = "Website" >
-    <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/">
-    <meta property = "og:image" content = "https://cayleighleishman.github.io/wdd230/images/cayleigh.png" >
+    <meta property = "og:url"   content = "#">  <!-- insert link to pocatello website -->
+    <meta property = "og:image" content = "#" >
 
-    <title>Cayleigh - WDD 230 - Web Frontend Development</title>
-   
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="/styles/larger.css"> -->
+    <link rel="stylesheet" href="styles/chamber-base.css">
 
-    <!-- connects to .css files in Styles folder -->  
-    <!-- <link rel="stylesheet" href="normalize.css" >  Runs first -->
-    <link rel="stylesheet" href="styles/medium.css">  <!--I also added a reset.css for lesson 2. See reset.css for more info -->
-    <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon-16x16.png">
 
+    <script src="/scripts/getdates.js" defer> </script>
+    <script src="/scripts/hamburger.js" defer> </script>
 
-    <!-- connects to.js files in Scripts folder. 'defer' tells html do this last -->
-    <script src="scripts/getdates.js" defer> </script>
-    <script src="scripts/hamburger.js" defer> </script>
-
-    <!-- use this for your favicon -->
-    <link rel="icon" href="/images/favicon.ico">
-    
 </head>
 
+
+</section>
 <body>
     <header>
-        <div class="cayleigh">
-            <img src="/images/pocatello-temple" alt="pocatello, ID LDS temple">
-            <h1>Pocatello, Idaho</h1>
-            
+        <div class="cayleigh">  <!--named cayleigh so Div name applies from base.css/larger.css in root styles sheet  -->
+            <img src="https://pocatello.gov/ImageRepository/Document?documentID=7660" alt="Pocatello">
+            <h1>Pocatello, Idaho </h1>
+    
         </div>
     </header>
+
     <button title="navigation" id="menu-button"></button>
     <nav>
         <ul>
-            <li><a href="#">Home</a> </li>
-            <li><a href="#">Site-Plan </a> </li>
-            <li><a href="#">Chamber</a> </li>
+            <li><a href="/index.html">Home</a> </li>
+            <li><a href="/lesson03/chamber-site-plan.html">Site-Plan </a> </li>
+            <li><a href="/chamber/index.html">Chamber</a> </li>
             <li><a href="https://www.byui.edu/">BYU-Idaho</a></li>
             <li><a href='https://www.churchofjesuschrist.org/study/scriptures/nt/john/8?lang=eng&id=p12#p12'>John 18:12</a></li> <!--put in your favourite scripture-->
 
@@ -59,22 +52,35 @@ for hamburger menu use " ☰ "  -->
 
     </nav>
 
-    <main>
-    <div class="google-maps">
-
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
-        width= 600
-        height="500" 
-        style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-     </div>
-
+    <section class="card">
+        <h2>Home</h2>
+    </section>
+    <section class="card">
+        <h2>Discover</h2>
+    </section>
+    <section class="card">
+        <h2>Directory</h2>
+    </section>
+    <section class="card">
+        <h2>Join</h2>
+    </section>
+    
+    <!-- pocatello maps -->
+    <iframe class="google-maps" 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
+    width= 600  
+    height="500"  
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    
     <footer>
         <p>&copy; <span id='currentYear'></span>│Cayleigh Leishman │ Idaho, USA" │  </p> <!-- &copy is suposed to be the code that will give you the ©  symbol -->    
         <p id='lastModified'></p>
-        
     </footer>
+
 </body>
 
 </html>
