@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-
+/* use this for help with css grid stuff: https://www.youtube.com/watch?v=uuOXPWCh-6o */
 * {
     font-family: 'Averia-Serif-Libre','san-serif';
     box-sizing: border-box;
-    --background-color: #32343e;
+    --background-color: #32343e; 
     --primary-color:white;;
     --grey-blue:#404c54;
     --blue-enough:#446b6a;
@@ -35,19 +35,39 @@ header img{
 }
 
 
-.cayleigh img{
+.logo img{
     float:left;
 }
 
 main {
     background-color: var(--primary-color);
-    max-width: 800px; /*sets maximum size not sure what of though*/
+    max-width: 800px; /*sets maximum size of the main "area"*/
+    
     margin: 75px auto; /* controls how big the space between main, header and footter */
     text-align: left;
-    
+  
     display:grid;
-    grid-template-columns: 2fr;
+    /* grid-template-areas:
+    "header header  header"
+    "ads    content sidebar"
+    "footer footer"; */
+    /* grid-template-columns: 2fr; */
+    /* grid-template-rows: 50px auto 70px; */
 } 
+
+/* try -Grid-template-areas another time */
+/* .header{
+    grid-area:topbar;
+}
+.ads{
+    grid-area:ads;
+}
+.content{
+    grid-area:content;
+}
+.nav{
+    grid-area:sidebar;
+}  */
 
 main ul{
     list-style-type: none; 
@@ -128,7 +148,7 @@ nav li{
 body {
     font-size:20px;
     color:var(--background-color);
-    background-color:var(--primary-color)
+    background-color:var(--primary-color);
 }
 
 img{
@@ -143,64 +163,20 @@ h1{
 
 }
 
-
                                 /* Section .card */
 .card {
     font-size: 25px;
-    border-style: solid; /*shows that we want a border with this style */
-    border-width: 3.8px; /* width of the border*/
-    border-radius: .4rem; /*seems to control the curve of the border*/
-    /* width: 100%;  this made the cards stack besides each other*/
+    border-style: solid;
+    border-width: 3.8px; 
+    border-radius: .4rem; 
+    /* width: 98%; --> this made the cards stack besides each other */
     padding: 35px;
-    margin: 1rem;  /* this gave the cards spacing between each other */   
-
-}
-
-.card ul li{           /* PLAY AROUND WITH THIS */
-    font-weight:900px;/* change font weight of text */
+    margin: 1rem;  
 }
 
 .card a:hover{
     color:var(--primary-color); 
-
 }
-
-
-/* Colors in Color Schema */
-.colors {
-    width: 100%;
-    min-width: 350px;
-    margin: auto;
-    text-align: center;
-}
-.colors th {
-    background-color: #999;
-}
-.colors td{
-    width: 25%;
-    height: 3em;
-}
-
-.background-color{
-    background-color: var(--background-color);
-}
-.primary-color{
-    background-color:var(--primary-color);
-}
-.grey-blue{
-    background-color:var(--grey-blue)
-}
-.blue-enough{
-    background-color: var(--blue-enough);
-}
-.almost-teal{
-    background-color:var(--almost-teal)
-}
-.sea-green{
-    background-color:var(--sea-green)
-}
-
-
 
 /* Google Maps  */
 .google-maps{
@@ -219,9 +195,7 @@ h1{
     top: 0%;
     position: absolute;  /*this makes maps disappear when set to absolut  
 
-}   */
-
-
+}*/
 
 /* Footer */
 footer{

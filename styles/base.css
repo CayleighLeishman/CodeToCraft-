@@ -35,7 +35,6 @@ main {
     max-width: 800px; /*sets maximum size not sure what of though*/
     margin: 75px auto; /* controls how big the space between main, header and footter */
     text-align: left;
-    
     display:grid;
     grid-template-columns: 2fr;
 } 
@@ -125,9 +124,6 @@ body {
     padding: 35px;
     margin: 1rem;  /* this gave the cards spacing between each other */   
 }
-/* main a {
-    color:#8B008B;
-} */
 
 .card a:hover{
     color: floralwhite; 
@@ -136,7 +132,6 @@ body {
 }
 .card a:link{
     color:hotpink;
-
 }
 
 
