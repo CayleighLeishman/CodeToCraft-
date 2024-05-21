@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Handlee&family=Nanum+Myeongjo&family=Playpen+Sans:wght@300&family=Silkscreen&family=Tektur&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+* {
+    font-family: 'Averia-Serif-Libre','san-serif';
+    box-sizing: border-box;
+    --background-color: #32343e; 
+    --primary-color:white;;
+    --grey-blue:#404c54;
+    --blue-enough:#446b6a;
+    --almost-teal:#478d73;
+    --sea-green:#5ba95d;
+    
+}
 
 * {
     font-family: 'tektur','san-serif';
@@ -6,13 +20,13 @@
 }
 
 ::selection {
-    color: floralwhite;
-    background: #99005C;
+    color:var(--white);
+    background: var(--sea-green);
     /* #8B008B; */
 }
     
 header{
-    background-color: floralwhite;
+    background-color: var(--primary-color);
     display:grid;
     grid-column:2/4 ;
 }
@@ -30,9 +44,9 @@ header img{
 }
 
 main {
-    background-color: floralwhite;
-    max-width: 800px; /*sets maximum size not sure what of though*/
-    margin: 75px auto; /* controls how big the space between main, header and footter */
+    background-color: var(--primary-color);
+    max-width: 800px; 
+    margin: 75px auto;
     text-align: left;
     
     display:grid;
@@ -44,19 +58,19 @@ main ul{
 }
 
 main a {
-    color:#8B008B;
+    color:var(--background-color);
 }
 
 nav{
-    background-color: #8B008B;
-    color: floralwhite;
+    background-color:var(--background-color);
+    color: var(--primary-color);
     grid-column:span;
     text-align: center;
 }
 
 
 #menu-button{
-    background-color:#8B008B;
+    background-color:var(--background-color);
     font-size: 2rem;
     padding:.5rem;
 }
@@ -74,7 +88,7 @@ nav{
 nav ul{ 
     list-style:none; /*what does this do?*/
     text-align: center;
-    background-color: #8B008B;
+    background-color: var(--background-color);
     padding-inline-start: 0px; /*what does this do?*/
     display:none; 
 }
@@ -98,13 +112,13 @@ nav ul li a{
 }
 
 nav a{
-    color: floralwhite;
+    color: var(--primary-color);
     text-align: center;
     
 }
 
 nav ul li a:hover{
-    color: #8B008B;
+    color:var(--background-color);
     background-color: white;
     font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
     /* #f028f0 */
@@ -116,7 +130,7 @@ nav li{
 
 body {
     color:black;
-    background-color:floralwhite;
+    background-color:var(--primary-color);
 }
 
 .card {
@@ -130,16 +144,16 @@ body {
 
 
 .card a:hover{
-    color: floralwhite; 
+    color: var(--primary-color); 
 
 }
 
 
 
 footer{
-    background-color: #8B008B;
+    background-color:var(--background-color);
     padding: 45px;
-    color: floralwhite;
+    color: var(--primary-color);
     text-align: center;
     
 }
