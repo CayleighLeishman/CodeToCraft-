@@ -23,9 +23,18 @@
         grid-template-columns: 2fr 1fr;
         padding:4px;
     }
-    /* fix this */
+    /* TO DO/to do: fix this */
     #menu-button{
         display: none;
     }
+
+    /* worked in large view */
+    /* .google-maps{
+        position:relative;  
+        padding:1rem;
+        width: 100%;
+        height: 100%; 
+    } */
+
 } 
 

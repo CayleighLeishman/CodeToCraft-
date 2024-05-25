@@ -27,17 +27,29 @@ header{
     text-align:center;
     
 }
-
-header img{
+                                    /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG */
+header img{                     /*This is supposed to work for the logo image at the TOP only*/
     border-radius:100px;  /* this changes the shape of the image */
     padding: 15px; /*  gives spacing but shortens image */
     width:175px; /*changes width of image*/
-}
-
-
-.logo img{
     float:left;
 }
+
+
+/* to do/TO DO: WHY DOES THIS WORK FINE BUT >HEADER_IMG< WONT WORK???? */
+/*img{
+    /*border-radius:400px;  changes the shape of the image *
+    padding: 15px;        /*gives spacing but shortens image *
+    width:300px;          /*changes width of image*
+}*/
+
+footer img{
+    float:left;
+    border-radius:100px;  /*this changes the shape of the image */
+    padding: 15px; /* gives spacing but shortens image */
+    width:150px; /*changes width of image*/
+}
+                                    /* INPUT IMG ABOVE HERE UNTIL BUG IS RESOLVED */
 
 main {
     background-color: var(--primary-color);
@@ -78,9 +90,9 @@ nav{
     content: 'x';
 }
 
-/*nav when it's closed  */
+                                    /*nav when it's closed  */
 nav ul{ 
-    list-style:none; /*what does this do?*/
+    list-style:none;
     text-align: center;
     background-color: var(--sea-green);
     padding-inline-start: 0px; /*what does this do?*/
@@ -132,17 +144,10 @@ body {
     background-color:var(--background-color);
 }
 
-img{
-    border-radius:400px;  /* this changes the shape of the image */
-    padding: 15px; /*  gives spacing but shortens image */
-    width:300px; /*changes width of image*/
-
-}
 
 
 h1{
     color:var(--background-color);
-
 }
 
                                 /* Section .card */
@@ -163,21 +168,10 @@ h1{
                                 /* Google Maps  */
 .google-maps{
     position:relative;  
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     padding:1rem;
     width: 100%;
-    /* height: 100%; */
-    top:15%;
 }
-
-/* .google-maps iframe{
-    height: 100%;
-    width:100% ;
-    left: 0%;  
-    top: 0%;
-    position: absolute;  /*this makes maps disappear when set to absolut  
-
-}*/
 
                                         /* Footer */
 footer{
@@ -188,9 +182,16 @@ footer{
     
 }
 
-footer img{
-    float:left;
-    /* border-radius:100px;  this changes the shape of the image */
-    padding: 15px; /* gives spacing but shortens image */
-    width:150px; /*changes width of image*/
+
+
+footer li{
+    list-style:none;
+}
+
+footer a{
+    color:var(--sea-green);
+}
+
+footer a:hover{
+    color:var(--almost-teal)
 }
