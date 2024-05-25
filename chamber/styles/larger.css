@@ -14,6 +14,10 @@
         justify-content: space-around;
     }
 
+    main{
+        display:grid;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
     #cards{
         display: grid;
         grid-template-columns: 2fr 1fr;

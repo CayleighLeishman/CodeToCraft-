@@ -3,6 +3,26 @@
 	padding: 0;
 }
 
+header{
+    background-color: floralwhite;
+    display:grid;
+    grid-column:2/4 ;
+}
+nav{
+	background-color: #8b008b ;
+	grid-column:span;
+	text-align: center;
+}
+
+nav a{
+	color:floralwhite;
+}
+
+nav ul li a:hover{
+    color: #8B008B;
+    background-color: white;
+    font-weight: bold; 
+}
 body {
 	height: 100vh;
 	display: flex;

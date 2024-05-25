@@ -69,7 +69,7 @@ nav{
 
 /*nav when it's closed  */
 nav ul{ 
-    list-style:none; /*what does this do?*/
+    list-style:none; 
     text-align: center;
     background-color: #8B008B;
     padding-inline-start: 0px; /*what does this do?*/
@@ -134,26 +134,24 @@ body {
     color:hotpink;
 }
 
-
+/* 
 .google-maps{
     position:relative;  
     padding-bottom: 50px;
     padding:1rem;
     width: 100%;
-    /* height: 100%; */
+    /* height: 100%; 
     
     top:60%;
     
-}
+}*/
 
-/* .google-maps iframe{
-    height: 100%;
-    width:100% ;
-    left: 0%;  
-    top: 0%;
-    position: absolute;  /*this makes maps disappear when set to absolut  
+.google-maps iframe{
 
-}   */
+    position: relative; 
+    grid: span;
+
+}   
 
 footer{
     background-color: #8B008B;
