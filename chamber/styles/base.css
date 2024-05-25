@@ -28,28 +28,28 @@ header{
     
 }
                                     /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG */
-header img{                     /*This is supposed to work for the logo image at the TOP only*/
+header img{                /*This is supposed to work for the logo image at the TOP only*/
     border-radius:100px;  /* this changes the shape of the image */
-    padding: 15px; /*  gives spacing but shortens image */
-    width:175px; /*changes width of image*/
-    float:left;
+    padding: 15px;       /*  gives spacing but shortens image */
+    width:175px;        /*changes width of image*/
+    float:left;        /*tells image to go to the left of the page*/
 }
 
 
-/* to do/TO DO: WHY DOES THIS WORK FINE BUT >HEADER_IMG< WONT WORK???? */
-/*img{
-    /*border-radius:400px;  changes the shape of the image *
-    padding: 15px;        /*gives spacing but shortens image *
-    width:300px;          /*changes width of image*
-}*/
-
-footer img{
-    float:left;
-    border-radius:100px;  /*this changes the shape of the image */
-    padding: 15px; /* gives spacing but shortens image */
-    width:150px; /*changes width of image*/
+/* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
+img{
+   border-radius:400px;     /*changes the shape of the image */
+    padding: 15px;         /*gives spacing but shortens image */
+    width:300px;          /*changes width of image*/
 }
-                                    /* INPUT IMG ABOVE HERE UNTIL BUG IS RESOLVED */
+
+footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
+    float:left;                /*tells image to go to the left of the page*/
+    border-radius:100px;      /*this changes the shape of the image */
+    padding: 15px;           /* gives spacing but shortens image */
+    width:150px;            /*changes width of image*/
+}
+                                    /* KEEP IMG ABOVE HERE UNTIL BUG IS RESOLVED */
 
 main {
     background-color: var(--primary-color);
@@ -57,14 +57,11 @@ main {
     
     margin: 75px auto; /* controls how big the space between main, header and footter */
     text-align: left;
-  
       
 } 
 
-
 main ul{
-    list-style-type: none; 
-    
+    list-style-type: none;   
 }
 
                                         /* Navigation */
@@ -124,18 +121,15 @@ nav a{
     font-size: large;
     
 }
-
 nav ul li a:hover{
     color:var(--grey-blue);
     background-color: var(--sea-green);
     font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
     
 }
-
 nav li{
     list-style-type: none; /*this makes the dots besides the link disapear */
 }
-
 
                     /* Stuff After Navigator [Stuff within body] */
 body {
@@ -143,13 +137,9 @@ body {
     color:var(--primary-color);
     background-color:var(--background-color);
 }
-
-
-
 h1{
     color:var(--background-color);
 }
-
                                 /* Section .card */
 .card {
     font-size: 25px;
@@ -172,7 +162,6 @@ h1{
     padding:1rem;
     width: 100%;
 }
-
                                         /* Footer */
 footer{
     background-color:var(--background-color);
@@ -181,17 +170,12 @@ footer{
     text-align: center;
     
 }
-
-
-
 footer li{
     list-style:none;
 }
-
 footer a{
     color:var(--sea-green);
 }
-
 footer a:hover{
     color:var(--almost-teal)
 }
