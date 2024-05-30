@@ -156,9 +156,9 @@ h1{
 
 }
 
-.card ul li{           /* PLAY AROUND WITH THIS */
-    font-weight:900px;/* change font weight of text */
-}
+/*.card ul li{           * PLAY AROUND WITH THIS *
+    font-weight:900px;/* change font weight of text *
+}*/
 
 .card a:hover{
     color:var(--primary-color); 
