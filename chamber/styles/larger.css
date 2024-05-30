@@ -23,10 +23,7 @@
         grid-template-columns: 2fr 1fr;
         padding:4px;
     }
-    /* TO DO/to do: fix this */
-    #menu-button{
-        display: none;
-    }
+
 
     /* worked in large view */
     /* .google-maps{
@@ -35,6 +32,10 @@
         width: 100%;
         height: 100%; 
     } */
-
+    
+    /* TO DO/to do: fix this */
+    #menu-button{
+        display: none;
+    }
 } 
 
