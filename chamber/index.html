@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
 
                                  <!-- Java Script -->
-    <script src="scripts/" defer> </script>
     <script src="scripts/hamburger.js" defer> </script>
+    <script src="scripts/windchill.js" defer></script>
                                     
                                     <!-- favicon -->
     <link rel="icon" href="images/favicon_io/favicon-16x16.png">
@@ -54,19 +54,25 @@
         </ul>
 
     </nav>
-    
+  
+    <main>
     <div class="header_img">
-        <img src="images/smaller-pocatello.jpg" alt="Pocatello Idaho">
+          <!-- TO DO/to do: span grid image grid-columns: 1/4; -->
+          <img src="images/smaller-pocatello.jpg" alt="Pocatello Idaho">
     </div>
 
-    <main>
+        <!--TO DO/todo:
+            add
+            =a hero with a call to action button in it, 
+            = section with 3 more sections in it called "spotlight1" "spotlight2" and "spotlight3". -->
         <section class="card">
-            <h2>info two!</h2>
+            <h2>Call to Action</h2>
+            <!-- TO DO/ to do: action button insert here -->
         
         </section>
 
         <section class="card">
-            <h2>ALERT</h2>
+            <h2>Current Events</h2>
         </section>
 
         <section class="card">
@@ -78,16 +84,17 @@
 
         <section class="card">
             <h2>Weather</h2>
-            <!-- <p>current condition: ugly</p>
-            <p>current temp:&degre;.</p> -->
+            <p>current condition: <span id="current-conditions">partly cloudy></span></p>
+            <p>current temp: <span id="temperature">20</span>&deg</p> 
+            <p> cuurent wind: <span id="windspeed">10</span>MPH </p>
+            <p>windchill:<span id="windchill"></span></p>
         </section>
 
-   
-
-    </main>
-
-       <!-- pocatello maps -->
-        <!-- TO DO/to do: move this into the <main> and figure out the bug -->
+    <!-- pocatello maps -->
+        <!-- TO DO/to do: 
+            fIGure out how to tell larger.css to 
+            move this to bottom of pageand span 
+            the whole median (ikely grid-columns: 1/4; or something like that.) -->
        <iframe class="google-maps" 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
         width= 600  
@@ -98,6 +105,10 @@
         referrerpolicy="no-referrer-when-downgrade">
         </iframe>
 
+
+    </main>
+
+      
         
     <footer>
         <img src="images/Poky-logo.jpg" alt="logo image">

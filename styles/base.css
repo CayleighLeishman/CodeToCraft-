@@ -149,7 +149,7 @@ body {
 .google-maps iframe{
 
     position: relative; 
-    grid: span;
+    /* grid: span; */
 
 }   
 

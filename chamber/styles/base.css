@@ -1,9 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* use this for help with css grid stuff: https://www.youtube.com/watch?v=uuOXPWCh-6o */
 * {
-    font-family: 'Averia-Serif-Libre','san-serif';
+    font-family: 'Roboto';
     box-sizing: border-box;
     --background-color: #32343e; 
     --primary-color:white;;
@@ -27,27 +28,27 @@ header{
     text-align:center;
     
 }
-                                    /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG */
+                                    /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG            */
 header img{                /*This is supposed to work for the logo image at the TOP only*/
-    border-radius:100px;  /* this changes the shape of the image */
-    padding: 15px;       /*  gives spacing but shortens image */
-    width:175px;        /*changes width of image*/
-    float:left;        /*tells image to go to the left of the page*/
+    border-radius:100px;  /* this changes the shape of the image                       */
+    padding: 15px;       /*  gives spacing but shortens image                         */
+    width:175px;        /*changes width of image                                     */
+    float:left;        /*tells image to go to the left of the page                  */
 }
 
 
 /* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
 img{
-   border-radius:400px;     /*changes the shape of the image */
+   border-radius:400px;     /*changes the shape of the image   */
     padding: 15px;         /*gives spacing but shortens image */
-    width:300px;          /*changes width of image*/
+    width:300px;          /*changes width of image           */
 }
 
 footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
-    float:left;                /*tells image to go to the left of the page*/
-    border-radius:100px;      /*this changes the shape of the image */
-    padding: 15px;           /* gives spacing but shortens image */
-    width:150px;            /*changes width of image*/
+    float:left;                /*tells image to go to the left of the page                                     */
+    border-radius:100px;      /*this changes the shape of the image                                           */
+    padding: 15px;           /* gives spacing but shortens image                                             */
+    width:150px;            /*changes width of image                                                        */
 }
                                     /* KEEP IMG ABOVE HERE UNTIL BUG IS RESOLVED */
 
