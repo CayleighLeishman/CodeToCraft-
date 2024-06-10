@@ -155,6 +155,13 @@ h1{
 .card a:hover{
     color:var(--primary-color); 
 }
+                                /* MAIN */
+.discover-images img{
+    border: 5px solid var(--almost-teal);
+    transition: opacity 2s;
+
+
+} 
 
                                 /* Google Maps  */
 .google-maps{
