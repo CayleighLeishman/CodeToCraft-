@@ -30,16 +30,18 @@ header{
 }
                                     /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG            */
 header img{                /*This is supposed to work for the logo image at the TOP only*/
-    border-radius:100px;  /* this changes the shape of the image                       */
-    padding: 15px;       /*  gives spacing but shortens image                         */
-    width:175px;        /*changes width of image                                     */
-    float:left;        /*tells image to go to the left of the page                  */
+    display:grid;
+    grid-column: 1/4;
+    border-radius:100px;  /* this changes the shape of the image*/
+    padding: 15px;       /*  gives spacing but shortens image */
+    width:175px;        /*changes width of image             */
+    
 }
 
 
 /* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
 img{
-   border-radius:400px;     /*changes the shape of the image   */
+  
     padding: 15px;         /*gives spacing but shortens image */
     width:300px;          /*changes width of image           */
 }
@@ -53,13 +55,31 @@ footer img{                     /*This is supposed to work with the logo and any
                                     /* KEEP IMG ABOVE HERE UNTIL BUG IS RESOLVED */
 
 main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* I set it to 2fr 1fr 
+    to see if it would span 2 columns and one more.
+     I tried: 
+     1fr 1fr 1fr 1fr 
+     but it just stayed the same */
+
+
+
     background-color: var(--primary-color);
     max-width: 800px; /*sets maximum size of the main "area"*/
     
     margin: 75px auto; /* controls how big the space between main, header and footter */
-    text-align: left;
       
-} 
+    /* TO DO/ to do */
+    /* Chatgbt help to display grid */
+    /* Define your grid styles */      
+}
+
+    /* Style for grid items */
+.grid-item {
+    /* Add some padding to see grid lines clearly */
+    padding: 20px;
+}
+
 
 main ul{
     list-style-type: none;   
@@ -142,7 +162,7 @@ h1{
     color:var(--background-color);
 }
                                 /* Section .card */
-.card {
+section {
     font-size: 25px;
     border-style: solid;
     border-width: 3.8px; 
