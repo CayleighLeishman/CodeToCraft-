@@ -40,34 +40,33 @@ header img{                /*This is supposed to work for the logo image at the 
 
 
 /* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
-img{
-  
+
+.logo_img{
+
     padding: 15px;         /*gives spacing but shortens image */
-    width:300px;          /*changes width of image           */
+    width:300px;          /*changes width of image   */      
 }
 
 footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
-    float:left;                /*tells image to go to the left of the page                                     */
-    border-radius:100px;      /*this changes the shape of the image                                           */
-    padding: 15px;           /* gives spacing but shortens image                                             */
-    width:150px;            /*changes width of image                                                        */
+    float:left;                /*tells image to go to the left of the page   */
+    border-radius:100px;      /*this changes the shape of the image   */
+    padding: 15px;           /* gives spacing but shortens image  */
+    width:150px;            /*changes width of image */
 }
                                     /* KEEP IMG ABOVE HERE UNTIL BUG IS RESOLVED */
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr; /* I set it to 2fr 1fr 
-    to see if it would span 2 columns and one more.
+    grid-template-columns: 1fr 1fr 1fr; /* I set it to 2fr 1fr to see if it would span 2 columns and one more.
      I tried: 
      1fr 1fr 1fr 1fr 
+     
      but it just stayed the same */
-
-
-
-    background-color: var(--primary-color);
-    max-width: 800px; /*sets maximum size of the main "area"*/
     
-    margin: 75px auto; /* controls how big the space between main, header and footter */
+    background-color: var(--primary-color);
+    max-width: 800px; 
+    
+    margin: 75px auto; 
       
     /* TO DO/ to do */
     /* Chatgbt help to display grid */
