@@ -38,8 +38,10 @@ header img{                /*This is supposed to work for the logo image at the 
     
 }
 
-
 /* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
+.pocatello_img{
+    width:100%;
+}
 
 .logo_img{
 
@@ -160,7 +162,7 @@ body {
 h1{
     color:var(--background-color);
 }
-                                /* Section .card */
+                                /* Section (all the cards on the page) */
 section {
     font-size: 25px;
     border-style: solid;
@@ -171,7 +173,7 @@ section {
     margin: 1rem;  
 }
 
-.card a:hover{
+section a:hover{
     color:var(--primary-color); 
 }
                                 /* MAIN */
