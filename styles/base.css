@@ -120,10 +120,15 @@ body {
     background-color:floralwhite;
 }
 
-.temple p{
+.temple{
+    text-align: center;
+    position: relative;
+}
+
+.temple_label{
     position:absolute;
-    top:255px;
-    left: 185px;
+    top: 35px;
+    left: 35px;
     background-color:#99005C;
     padding:1rem;
     box-shadow: 0 0 1rem ;
