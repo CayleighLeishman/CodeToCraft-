@@ -120,6 +120,17 @@ body {
     background-color:floralwhite;
 }
 
+.temple p{
+    position:absolute;
+    top:255px;
+    left: 185px;
+    background-color:#99005C;
+    padding:1rem;
+    box-shadow: 0 0 1rem ;
+    opacity: .75;
+
+
+}
 .card {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
