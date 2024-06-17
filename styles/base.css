@@ -166,10 +166,12 @@ body {
     
 }*/
 
-.google-maps iframe{
+.google-maps{
 
     position: relative; 
-    /* grid: span; */
+    width:100%;
+    height:500px;
+
 
 }   
 
