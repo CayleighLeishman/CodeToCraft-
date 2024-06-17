@@ -18,12 +18,16 @@ header{
     grid-column:2/4 ;
 }
 
+                                                /* IMAGES HERE */
 header img{
     border-radius:100px;  /* this changes the shape of the image */
     padding: 15px; /*  gives spacing but shortens image */
     width:100px; /*changes width of image*/
 }
 
+.temple img{
+    width:100%;
+}
 
 .cayleigh img{
     float:left;
