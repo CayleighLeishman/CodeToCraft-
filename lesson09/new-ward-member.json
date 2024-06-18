@@ -1,0 +1,17 @@
+{
+    
+    "familyName" : "Briggs",
+    "moveInDate" : "2024-06-01",
+    "numberfRecords" : 8,
+    "visited" : true,
+    "familyData" : [
+         {"name": "Quinn", 
+         "gender": "M", 
+         "Birthday" :"1974-06-06"},
+
+         {"name": "Mary Alice", 
+         "gender": "F", 
+         "Birthday" : "1974-06-05"}
+    ]
+
+}
