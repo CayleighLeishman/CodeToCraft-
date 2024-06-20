@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card list example</title>
+
+    <meta name="description" content = "WDD 230 -BYUI idaho-spring 1024 .">
+    <meta name="author" content="Cayleigh Leishman">
+
+                            <!-- meta property tags -->
+    <meta property = "og:title" content = "Pocatello Idaho USA Chamber of Commerce - discover page" >
+    <meta property = "og:type"  content = "Website" >
+    <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/chamber/discover.html"> 
+    <meta property = "og:image" content = "images/poky-logo.jpg" >
+
+                                    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="styles/normalize.css" >  
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">     -->
+
+                                 <!-- Java Script -->
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+                                    
+                                    <!-- favicon -->
+    <link rel="icon" href="images/favicon_io/favicon-16x16.png">
+
+</head>
+<body>
+    
+<body>
+
+    <head>
+        <style>
+            /** Card View **/
+            #data.cards {
+                display: flex ;
+                text-align: center;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+    
+            #data.cards div {
+                border: 2px solid black;
+                margin: 2rem;
+                width: 350px;
+            }
+    
+            #data.cards img {
+                border: 1px dashed grey;
+                margin: 1rem;
+            }
+            #data.cards div:nth-child(1){
+                display: none;
+            }
+    
+    
+            /** List View **/
+            #data.list {
+                display: grid;
+            }
+    
+            #data.list img {
+                display: none;
+            }
+    
+            #data.list div {
+                display: flex;
+                justify-content: space-around;
+            }
+    
+            #data.list div:nth-child(odd) {
+                background-color: grey;
+            }
+            #data.list div:nth-child(1){
+                display: flex;
+            }
+    
+        </style>
+    </head>
+    
+    <body>
+        <button>Toggle View</button>
+    
+        <div id="data" class="cards">
+            <div>
+                <p>NAME</p>
+                <p>ADDRESS</p>
+                <p>PHONE NUMBER</p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/200/200" alt="Profile Image">
+                <p>John Doe</p>
+                <p>123 Main St</p>
+                <p>(555) 555-5555</p>
+            </div>
+            
+            <div>
+                <img src="https://picsum.photos/200/200" alt="Profile Image">
+                <p>Jane Smith</p>
+                <p>456 Elm St</p>
+                <p>(555) 555-1234</p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/200/200" alt="Profile Image">
+                <p>Jane Smith</p>
+                <p>456 Elm St</p>
+                <p>(555) 555-1234</p>
+            </div>
+            <div>
+                <img src="https://picsum.photos/200/200" alt="Profile Image">
+                <p>Jane Smith</p>
+                <p>456 Elm St</p>
+                <p>(555) 555-1234</p>
+            </div>
+        </div>
+    
+        <script>
+            document.querySelector("button").addEventListener("click", () => {
+                const data = document.querySelector('#data');
+                data.classList.toggle("cards");
+                data.classList.toggle("list");
+            })
+        </script>
+    </body>
+    
+    </html>
+
+</body>
+    
+</body>
+</html>
