@@ -38,7 +38,6 @@ header img{                /*This is supposed to work for the logo image at the 
     
 }
 
-/* to do/TO DO: WHY IS MAIN IMAGE NOT WORKING */
 .pocatello_img{
     width:100%;
 }
@@ -197,12 +196,12 @@ header{
 }
 
 #cards section{
-    max-width: fit-content;
+    /* max-width: fit-content;
     margin: .6rem;
     padding: 35px;
     border-style: solid; 
     border-width: 3.8px; 
-    border-radius: 5rem; 
+    border-radius: 5rem;  */
 }
 
 footer{
@@ -211,10 +210,25 @@ footer{
 }
 
                 /* INSERT ANY CODE FOR the business page (directory.html) */
+.business_main{
+   background-color: #478d73;
+   margin: auto;
+    
+}
 
+.business_cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+       
+#business_cards section{
 
-
-
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5rem;
+    padding: 20px; 
+    margin: 10px;
+}
 
                 /* END FOR BUSINESS PAGE (directory.html) */
 #cards section{
