@@ -1,0 +1,88 @@
+{
+
+    "Businesses" : [
+       { "names" : "Idaho State University",
+        "address" : "1111 Martin Luther King Jr Way ",
+        "label" : "School",
+        "phone_number" : "208-232-8034",
+        "websiteURL" : "https://www.isu.edu/",
+        "imageURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.appily.com%2Fcolleges%2Fidaho-state-university&psig=AOvVaw0c8MIgPl3gOd6HeIIXULfv&ust=1719356393653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDBv-ur9YYDFQAAAAAdAAAAABAE" 
+    },
+        
+        { "names" : "Bannock County Courthouse",
+        "address" : "624 E Center St",
+        "label" : "Courthouse",
+        "phone_number" : "208-236-7000",
+        "websiteURL" : "https://www.bannockcounty.us/",
+        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipN6SvxYmWG_YW3Cy7iX48LTjI2Fl6-vy_7Z8kRT=s680-w680-h510"
+        },
+
+        { "names" : "Pocatello Idaho Temple",
+        "address" : "3100 Butte St",
+        "label" : "Church",
+        "phone_number" : "208-646-7730",
+        "websiteURL" : "https://www.churchofjesuschrist.org/temples/details/pocatello-idaho-temple?lang=eng",
+        "imageURL" : "https://www.churchofjesuschrist.org/imgs/088138fe9fc211ec987feeeeac1e2a17f945bcb2/full/320%2C/0/default"},
+
+        { "names" : "Outer Limit Fun Zone",
+        "address" : "1800 Garrett Way",
+        "label": "Archade",
+        "phone_number" : "208-232-7529",
+        "websiteURL" : "https://outerlimitsfunzone.com/",
+        "imageURL" : "https://outerlimitsfunzone.com/wp-content/uploads/2017/03/Outer-Limits-Logo_200_glow.png"},
+
+        { "names" : "Pine Ridge Mall",
+        "address" : "4155 Yellowstone Ave",
+        "label": "shop",
+        "phone_number" : "208-237-7160",
+        "websiteURL" : "Not Applicable",
+        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipNb2L1AmI5yrfhEsa5VsaaIfY9HwnlhcNxyj5mC=s680-w680-h510"},
+
+        { "names" : "Bannock County Courthouse",
+        "address" : "624 E Center St",
+        "label" : "Courthouse",
+        "phone_number" : "208-236-7000",
+        "websiteURL" : "https://www.bannockcounty.us/",
+        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipN6SvxYmWG_YW3Cy7iX48LTjI2Fl6-vy_7Z8kRT=s680-w680-h510"
+        },
+
+        { "names" : "Bannock County Courthouse",
+        "address" : "624 E Center St",
+        "label" : "Courthouse",
+        "phone_number" : "208-236-7000",
+        "websiteURL" : "https://www.bannockcounty.us/",
+        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipN6SvxYmWG_YW3Cy7iX48LTjI2Fl6-vy_7Z8kRT=s680-w680-h510"
+        },
+
+        { "names" : "Museum of Clean",
+        "address" : " 711 S 2nd Ave",
+        "label" : "Museum",
+        "phone_number" : "208-236-6906",
+        "websiteURL" : "https://museumofclean.com/visit/",
+        "imageURL" : "https://museumofclean.com/wp-content/uploads/2019/10/MOC_Contact_Pocatello.jpg" },
+
+        { "names" : "Idaho Haunted House",
+        "address" : "10588 Fairground Dr D Barn",
+        "label" : "Attraction",
+        "phone_number" : "208-705-8978",
+        "websiteURL" : "https://www.idahohauntedhouses.com/halloween-attractions/pocatello.html",
+        "imageURL" : "https://images.haunt.photos/images/li_r1_c2.gif" },
+
+        { "names" : "Idaho zoo",
+        "address" : "3000 S 2nd Ave, Pocatello",
+        "label" : "Attraction",
+        "phone_number" : "208-234-6264",
+        "websiteURL" : "https://zooidaho.org/",
+        "imageURL" : "https://idahohighcountry.org/wp-content/uploads/zoo-idaho-pocatello-2.jpg" },
+
+        { "names" : "El Caporal Mexican Restaurant",
+        "address" : "612 Yellowstone Ave",
+        "label" : "food",
+        "phone_number" : "208) 233-9933",
+        "websiteURL" : "https://elcaporalpocatello.com/",
+        "imageURL" : "https://elcaporalpocatello.com/wp-content/uploads/2024/03/Logo-WP.png" }
+
+        
+    ]
+        
+}
