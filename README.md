@@ -1,4 +1,4 @@
-# wdd230
+# WDD230
 Creating a Student-Personal Website Where we showcase our new learned skills!
 
 # Description
