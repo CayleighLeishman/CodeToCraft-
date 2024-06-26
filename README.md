@@ -1,5 +1,5 @@
 # WDD230
-Creating a Student-Personal Website Where we showcase our new learned skills!
+Creating a Student-Personal Website Where I utilize new concepts of Web Development
 
 # Description
 Through this website, I acquired new knowledge and coding techniques to enhance website efficiency. I learned to effectively utilize WebDev tools such as Lighthouse, the Console, and Networking.
