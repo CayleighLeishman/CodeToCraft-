@@ -18,7 +18,7 @@ async function getBusinessData(){
         const response = await fetch(site);
         if (response.ok){
             const data = await response.json();
-            displayBusiness(data.Businesses); // Corrected to pass data.Businesses
+            displayBusiness(data.businesses); // Corrected to pass data.Businesses
         } else {
             console.log("Oops! Something went wrong");
         }
