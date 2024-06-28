@@ -24,6 +24,11 @@
         padding:4px;
     }
 
+    #hero_label::after{
+        content: "large";
+    }
+    
+
 
     /* worked in large view */
     /* .google-maps{

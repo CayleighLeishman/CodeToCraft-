@@ -1,11 +1,12 @@
 {
-    "businesses" : [
+    "members" : [
        {"name" : "Idaho State University",
         "address" : "1111 Martin Luther King Jr Way ",
         "label" : "School",
         "phone_number" : "208-232-8034",
         "websiteURL" : "https://www.isu.edu/",
-        "imageURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.appily.com%2Fcolleges%2Fidaho-state-university&psig=AOvVaw0c8MIgPl3gOd6HeIIXULfv&ust=1719356393653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDBv-ur9YYDFQAAAAAdAAAAABAE" 
+        "imageURL" : "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.appily.com%2Fcolleges%2Fidaho-state-university&psig=AOvVaw0c8MIgPl3gOd6HeIIXULfv&ust=1719356393653000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIDBv-ur9YYDFQAAAAAdAAAAABAE",
+       "membership_level" : "JUST AS COMMENT: gold, silver or bronze or none"
     },
         
         { "name" : "Bannock County Courthouse",

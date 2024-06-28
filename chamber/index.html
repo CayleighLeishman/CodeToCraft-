@@ -20,14 +20,15 @@
 
                                     <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css" >  <!-- Runs first -->
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
 
                                  <!-- Java Script -->
     <!-- <script src="scripts/hamburger.js" defer> </script> -->
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
                                     
                                     <!-- favicon -->
     <link rel="icon" href="images/favicon_io/favicon-16x16.png">
@@ -36,7 +37,7 @@
 
 <body>
     <header>
-        <button title="darkmode" id="dark-mode"></button>
+        <button id="dark-mode"></button>
         <div class="logo">
             <img src="images/poky-logo.webp" alt="logo image">
             <h1>Pocatello Idaho Chamber of Commerce</h1>
@@ -64,28 +65,20 @@
 <!-- BUG: so when i had it above main it showed a giant picture.
 I wasn't sure what picture it was though so I put it in different DIVs
  Now all of the images are running and I can't figure out how to make it the proper size-->
- <!-- <div class = "picture">
+ <div class = "picture">
    
+
     <picture>
-        <div class="picture_large">
-            <source media="(min-width:1000px)" srcset="images/wdd230-large-org.jpg" alt="three people chatting">
-            <h2>LARGE</h2>
-        </div>
-    
-        <div class ="picture_medium">    
-            <source media ="(min-width:600px)" srcset="images/wdd230-medium.org" alt ="three people chatting">
-            <h2>Medium</h2>
-        </div>
+        <!-- Change to webp format not jpeg -->
+        <source media="(min-width:800px)" srcset="images/wdd230-large-org.jpg" alt="three people chatting">
+        <source media ="(min-width:600px)" srcset="images/wdd230-medium-org.jpg" alt ="three people chatting">
+        <source media="(min-width:300px)" srcset="images/wdd230-small-org.jpg" alt="three people chatting">
+         
+        <img src="images/wdd230-small-org.jpg" alt="three people cahtting">
+        <p id="hero_label"></p>
+    </picture> 
 
-<div class="picture_small">
-   <source media="(min-width:300px)" srcset="images/wdd230-small-org.jpg" alt="three people chatting">
-   <h2>small</h2>
 </div>
-
-<img src="images/wdd230-small-org.jpg" alt="three people cahtting">
-</picture> 
-
-</div>-->
  
     <main>
 

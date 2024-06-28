@@ -1,21 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* use this for help with css grid stuff: https://www.youtube.com/watch?v=uuOXPWCh-6o */
-* {
-    font-family: 'Roboto';
-    box-sizing: border-box;
+
+
+/* _______________________________________________________________________________________________________________________________________ */
+/* For Most, If not All pages */
+:root{
     --background-color: #32343e; 
     --primary-color:white;;
     --grey-blue:#404c54;
     --blue-enough:#446b6a;
     --almost-teal:#478d73;
     --sea-green:#5ba95d;
-    
+    --text-color:black;
 }
 
 
+
+
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    
+    
+}
+
 ::selection {
-    color: var(--primary-color);
+    color: var(--text-color);
     background-color: var(--background-color);
 } 
 
@@ -26,120 +37,13 @@ header{
     text-align:center;
     
 }
-#cards{
-    display: grid;
-    color: #000000;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-/*#cards section{
-     max-width: fit-content;
-    margin: .6rem;
-    padding: 35px;
-    border-style: solid; 
-    border-width: 3.8px; 
-    border-radius: 5rem;  
-}*/
-                                                /*Buttons */
-                                                
-    /*navigation button */
-#menu-button{
-    background-color:var(--background-color);
-    font-size: 2rem;
-    padding:.5rem;
-}
-
-#menu-button::before{ 
-    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
-    content: "☰";
-}
-        /*nav when it's closed  */
-#menu-button.open::before{
-    content: 'x';
-}
-
-    /* dark mode button */
-#dark-mode{
-    background-color: Var(--grey-blue);
-    height: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-#dark-mode::before{
-    content: "Dark";
-}
-
-#dark-mode.dark::before{
-    content: "Light";
-}
-
-/* _____________________________________________________________________________________________________________ */
-/* week 6 project */
-.picture{
-    /* text-align: center; */
-    position: relative;
-}
-
-.picture_small, .picture_medium, .picture_large{
-    position:absolute;
-    top: 35px;
-    left: 35px;
-    background-color:Var(--grey-blue);
-    padding:1rem;
-    box-shadow: 0 0 1rem ;
-    opacity: .75;
-}
-
-                                      /* ALL IMAGES HERE  */
-header img{                /*logo image at the TOP only*/
-    display:grid;
-    grid-column: 1/4;
-    border-radius:100px;  /* this changes the shape of the image*/
-    padding: 15px;       /*  gives spacing but shortens image */
-    width:175px;        /*changes width of image             */
-}
-
-.pocatello_img{
-    width:100%;
-}
-
-.logo_img{
-
-    padding: 15px;         /*gives spacing but shortens image */
-    width:300px;          /*changes width of image   */      
-}
-
-footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
-    float:left;                /*tells image to go to the left of the page   */
-    border-radius:100px;      /*this changes the shape of the image   */
-    padding: 15px;           /* gives spacing but shortens image  */
-    width:150px;            /*changes width of image */
-}
-
-.discover-images img{
-    border: 5px solid var(--almost-teal);
-    transition: opacity 2s;
-} 
-                                    /* KEEP IMG ABOVE HERE */
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* I set it to 2fr 1fr to see if it would span 2 columns and one more.
-     I tried: 
-     1fr 1fr 1fr 1fr 
-     
-     but it just stayed the same */
-    
+    grid-template-columns: 1fr 1fr 1fr;    
     background-color: var(--primary-color);
     max-width: 800px; 
-    
     margin: 75px auto; 
-      
-    /* TO DO/ to do */
-    /* Chatgbt help to display grid */
-    /* Define your grid styles */      
 }
 
 .grid-item {
@@ -153,7 +57,7 @@ main ul{
                                         /*  ALL Navigation */
 nav{
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--text-color);
     grid-column:span;
     text-align: center;
 }
@@ -181,12 +85,12 @@ nav ul li{
 nav ul li a{
     display:block;
     text-decoration:none;
-    color:white;
+    color:var(--text-color);
     padding: 1rem;
 }
 
 nav a{
-    color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
     font-size: large;
     
@@ -205,13 +109,14 @@ nav ul li a:hover{
     /* Stuff After Navigator [Stuff within body] */
 body {
     font-size:20px;
-    color:var(--primary-color);
-    background-color:var(--background-color);
+    color:var(--text-color);
+    background-color: var(--primary-color);
 }
 h1{
-    color:var(--background-color);
+    color:var(--text-color);
 }
-                             
+
+    /*__________ Card Stuff___________  */
 section {
     font-size: 25px;
     border-style: solid;
@@ -223,7 +128,7 @@ section {
 }
 
 section a:hover{
-    color:var(--primary-color); 
+    color:var(--text-color); 
 }
 
 #cards section{
@@ -235,6 +140,21 @@ section a:hover{
     border-radius: 5rem; 
 }
 
+#cards{
+    display: grid;
+    color: #000000;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/*#cards section{
+     max-width: fit-content;
+    margin: .6rem;
+    padding: 35px;
+    border-style: solid; 
+    border-width: 3.8px; 
+    border-radius: 5rem;  
+}*/
+
 #weather_main{
     display: grid;
     grid-template-columns: auto;
@@ -242,39 +162,171 @@ section a:hover{
     background-color: var(--grey-blue);
 }
 
-/* header{
-    text-align: center;
-    color: #000000;
-} */
-                        /*Begining of  DISCOVER Page (discover.html)*/
+/* _______ Google Maps_________  */
+ .google-maps{
+    position:relative;  
+    /* padding-bottom: 50px; */
+    padding:1rem;
+    width: 100%;
+}
+
+/* __________Footer__________ */
+
+footer{
+    background-color:var(--background-color);
+    padding: 45px;
+    font-size:15px;
+    color: var(--text-color);
+    text-align: center;   
+}
+footer li{
+    list-style:none;
+}
+footer a{
+    color:var(--sea-green);
+}
+footer a:hover{
+    color:var(--almost-teal)
+}
+/*______________Buttons___________*/
+                                                
+    /*navigation button */
+#menu-button{
+    background-color:var(--background-color);
+    font-size: 2rem;
+    padding:.5rem;
+}
+
+#menu-button::before{ 
+    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+    content: "☰";
+}
+    /*nav when it's closed  */
+#menu-button.open::before{
+    content: 'x';
+}
+
+    /* dark mode button */
+#dark-mode{
+    background-color: var(--grey-blue);
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#dark-mode::before{
+    content: "Dark";
+}
+
+#dark-mode.dark::before{
+    content: "Light";
+}
+
+/* _____________________________________________________________________________________________________________ */
+/* week 6 project */
+
+.picture{
+   width:10%;
+   position:relative;    
+}
+
+#hero_label::after{
+    content: "small";
+}
+
+#hero_label{
+    position: absolute;
+    background-color: var(--sea-green);
+    top: 0px;
+    left: 50px;
+}
+
+/* ________________________________________________________________IMAGES________________________________________________________________________ */
+                                      /* ALL IMAGES HERE  */
+header img{               
+   /* display:grid;
+     grid-column: 1/4; */
+    border-radius:100px;  /* this changes the shape of the image*/
+    padding: 20px;       /*  gives spacing but shortens image */
+    width:175px;        /*changes width of image             */
+    justify-content: left;
+}
+
+.pocatello_img{
+    width:100%;
+}
+
+.logo_img{
+
+    padding: 15px;         /*gives spacing but shortens image */
+    width:30px;          /*changes width of image   */      
+}
+
+footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
+    float:left;                /*tells image to go to the left of the page   */
+    border-radius:100px;      /*this changes the shape of the image   */
+    padding: 15px;           /* gives spacing but shortens image  */
+    width:150px;            /*changes width of image */
+}
+
+.discover-images img{
+    border: 5px solid var(--almost-teal);
+    transition: opacity 2s;
+} 
+
+ /* _________________________________________________________________________________________________________________________________________ */
+                        /* DISCOVER Page (discover.html)*/
                         
 .discover {
     text-align: center;
 }
-                        /* End of Discover Page (discover.html) */
+/* ___________________________________________________________________________________________________________________________________________ */
 
-
-                         /* Business page (directory.html) */
-.business_main{
-   margin: auto;
+                                                /* Business page (directory.html) */
+#business_main{
+   margin: 1rem auto;
+   padding:2rem;
+   text-align: center;
 }
-
+       
 .business_cards{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
-       
-#business_cards section {
 
+#business_cards section {
     border-style: solid;
     border-width: 3px;
     border-radius: 5rem;
     padding: 20px; 
     margin: 10px;
 }
-                                        /* END FOR BUSINESS PAGE (directory.html) */
-                                           
-                                        /* /* ALSO FORM CSS    */
+
+.business_cards button{
+    padding: 2rem;
+    font-weight: 300;
+    background-color: var(--background-color);
+    color:#478d73;
+}
+
+.business_cards button:hover{
+    background-color: var(--sea-green);
+    color: var(--grey-blue);
+}
+
+.list section{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:0;
+    padding: 1rem;
+    text-align: center;
+
+}               
+                                                  /* END FOR BUSINESS PAGE (directory.html) */
+/* _________________________________________________________________________________________________________________________________________ */
+                                         
+                                                                 /* /*  FORM CSS    */
 
 .join{
 
@@ -317,7 +369,7 @@ label.myradio input{
 
 .mysubmit{
     background-color: var(--blue-enough);
-    color: white;
+    color: var(--text-color);
     margin: 1rem 0 0 0;
     padding: .5rem;
     font-size: 1.5rem;
@@ -347,37 +399,6 @@ input:invalid{
     margin-block-end: 0;
     padding: 1rem 0;
 }
-                        
-                                           /* End of Form (join.html) */
 
-                                        /* Google Maps  */
-.google-maps{
-    position:relative;  
-    /* padding-bottom: 50px; */
-    padding:1rem;
-    width: 100%;
-}
-                                        /* Footer */
-
-/* Unsure what this was for
-footer{
-    font-size: 15px;
-    text-align: center; 
-}*/
-
-footer{
-    background-color:var(--background-color);
-    padding: 45px;
-    color: var(--primary-color);
-    text-align: center;
-    
-}
-footer li{
-    list-style:none;
-}
-footer a{
-    color:var(--sea-green);
-}
-footer a:hover{
-    color:var(--almost-teal)
-}
+                                                       /* End of Form (join.html) */
+/* __________________________________________________________________________________________________________________________________________ */
