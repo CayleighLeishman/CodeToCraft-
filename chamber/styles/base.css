@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* use this for help with css grid stuff: https://www.youtube.com/watch?v=uuOXPWCh-6o */
@@ -14,13 +12,12 @@
     --sea-green:#5ba95d;
     
 }
-                             /* Stuff that applies everywhere */
+
 ::selection {
     color: var(--primary-color);
     background-color: var(--background-color);
-}
-    
-                                /* Header */
+} 
+
 header{
     background-color:var(--background-color);
     display:grid;
@@ -28,14 +25,28 @@ header{
     text-align:center;
     
 }
-                                    /* ALL IMAGES HERE UNTIL I FIGURE OUT BUG            */
-header img{                /*This is supposed to work for the logo image at the TOP only*/
+#cards{
+    display: grid;
+    color: #000000;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+/*#cards section{
+     max-width: fit-content;
+    margin: .6rem;
+    padding: 35px;
+    border-style: solid; 
+    border-width: 3.8px; 
+    border-radius: 5rem;  
+}*/
+
+                                      /* ALL IMAGES HERE  */
+header img{                /*logo image at the TOP only*/
     display:grid;
     grid-column: 1/4;
     border-radius:100px;  /* this changes the shape of the image*/
     padding: 15px;       /*  gives spacing but shortens image */
     width:175px;        /*changes width of image             */
-    
 }
 
 .pocatello_img{
@@ -54,7 +65,12 @@ footer img{                     /*This is supposed to work with the logo and any
     padding: 15px;           /* gives spacing but shortens image  */
     width:150px;            /*changes width of image */
 }
-                                    /* KEEP IMG ABOVE HERE UNTIL BUG IS RESOLVED */
+
+.discover-images img{
+    border: 5px solid var(--almost-teal);
+    transition: opacity 2s;
+} 
+                                    /* KEEP IMG ABOVE HERE */
 
 main {
     display: grid;
@@ -74,18 +90,15 @@ main {
     /* Define your grid styles */      
 }
 
-    /* Style for grid items */
 .grid-item {
-    /* Add some padding to see grid lines clearly */
     padding: 20px;
 }
-
 
 main ul{
     list-style-type: none;   
 }
 
-                                        /* Navigation */
+                                        /*  ALL Navigation */
 nav{
     background-color: var(--background-color);
     color: var(--primary-color);
@@ -103,12 +116,11 @@ nav{
     /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
     content: "☰";
 }
-
+        /*nav when it's closed  */
 #menu-button.open::before{
     content: 'x';
 }
 
-                                    /*nav when it's closed  */
 nav ul{ 
     list-style:none;
     text-align: center;
@@ -145,14 +157,15 @@ nav a{
 nav ul li a:hover{
     color:var(--grey-blue);
     background-color: var(--sea-green);
-    font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
+    font-weight: bold; 
     
 }
-nav li{
-    list-style-type: none; /*this makes the dots besides the link disapear */
+ nav li{    
+    /*this makes the dots besides the link disapear  */
+    list-style-type: none; 
 }
 
-                    /* Stuff After Navigator [Stuff within body] */
+    /* Stuff After Navigator [Stuff within body] */
 body {
     font-size:20px;
     color:var(--primary-color);
@@ -161,7 +174,7 @@ body {
 h1{
     color:var(--background-color);
 }
-                                /* Section (all the cards on the page) */
+                             
 section {
     font-size: 25px;
     border-style: solid;
@@ -175,45 +188,36 @@ section {
 section a:hover{
     color:var(--primary-color); 
 }
-                                /* MAIN */
-.discover-images img{
-    border: 5px solid var(--almost-teal);
-    transition: opacity 2s;
 
-
-} 
-
-                                    /*  */
-header{
-    text-align: center;
-    color: #000000;
-}
-
-#cards{
-    display: grid;
-    color: #000000;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-}
-
-/*#cards section{
-     max-width: fit-content;
+#cards section{
+    max-width: fit-content;
     margin: .6rem;
     padding: 35px;
     border-style: solid; 
     border-width: 3.8px; 
-    border-radius: 5rem;  
-}*/
-
-footer{
-    font-size: 15px;
-    text-align: center;
+    border-radius: 5rem; 
 }
 
-                /* INSERT ANY CODE FOR the business page (directory.html) */
+#weather_main{
+    text-align: center;
+    background-color: var(--grey-blue);
+}
+
+/* header{
+    text-align: center;
+    color: #000000;
+} */
+                        /*Begining of  DISCOVER Page (discover.html)*/
+                        
+.discover {
+    text-align: center;
+}
+                        /* End of Discover Page (discover.html) */
+
+
+                         /* Business page (directory.html) */
 .business_main{
-   /* background-color: #478d73;   this was to see if main was connectign*/
    margin: auto;
-    
 }
 
 .business_cards{
@@ -227,10 +231,11 @@ footer{
     border-width: 3px;
     border-radius: 5rem;
     padding: 20px; 
-    margin: 10p
+    margin: 10px;
 }
-
-                     /* /* START OF FORM CSS    */
+                                        /* END FOR BUSINESS PAGE (directory.html) */
+                                           
+                                        /* /* ALSO FORM CSS    */
 
 .join{
 
@@ -238,37 +243,38 @@ footer{
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
  }
 
-
-
 .join > div{
     margin: 5rem;
     padding: 1rem;
     border: 1px black solid;
     border-radius: 5px;  
     width: 90%;
-    min-width: 400px;}
-
-
+    min-width: 400px;
+}
 
 label.myinput{
     display:block;
-    padding-top: 1rem;}
+    padding-top: 1rem;
+}
 
 label.myinput input, label.myinput textarea{
     display:block;
     font-size: 1.2rem;
     padding: .5rem;
     width: 20rem;
-    max-width: 20rem;}
+    max-width: 20rem;
+}
 
 label.myradio{
     display: block;
     margin-right: .2rem;
     font-size: 1.3rem;  
-    padding-top: .5rem; }
+    padding-top: .5rem; 
+}
 
 label.myradio input{
-  margin-right: 1rem;}
+  margin-right: 1rem;
+}
 
 .mysubmit{
     background-color: var(--blue-enough);
@@ -276,43 +282,36 @@ label.myradio input{
     margin: 1rem 0 0 0;
     padding: .5rem;
     font-size: 1.5rem;
-    }
-
-    label.myinput input:required{
-  border-color: #922;
-  }
-
-    input:valid{
-  background-color: rgb(200, 255, 200);
-  }
-
-    input:invalid{
-  background-color: rgb(255, 200, 200);
-  }
-
-    .join-confirm{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-    text-align: center;
-    }
-
-    #thankyou-main h2{
-  text-align: center;
-  margin-block-start: 0;
-    margin-block-end: 0;
-    padding: 1rem 0; }
-
-                /* END FOR BUSINESS PAGE (directory.html) */
-
-#cards section{
-    max-width: fit-content;
-    margin: .6rem;
-    padding: 35px;
-    border-style: solid; 
-    border-width: 3.8px; 
-    border-radius: 5rem; 
 }
-                            /* Google Maps  */
+
+label.myinput input:required{
+    border-color: #922;
+}
+
+input:valid{
+    background-color:var(--grey-blue);
+}
+
+input:invalid{
+    background-color: var(--grey-blue);
+}
+
+.join-confirm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+#thankyou-main h2{
+    text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 1rem 0;
+}
+                        
+                                           /* End of Form (join.html) */
+
+                                        /* Google Maps  */
 .google-maps{
     position:relative;  
     /* padding-bottom: 50px; */
@@ -320,6 +319,13 @@ label.myradio input{
     width: 100%;
 }
                                         /* Footer */
+
+/* Unsure what this was for
+footer{
+    font-size: 15px;
+    text-align: center; 
+}*/
+
 footer{
     background-color:var(--background-color);
     padding: 45px;
