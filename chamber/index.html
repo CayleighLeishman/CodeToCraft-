@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
 
                                  <!-- Java Script -->
-    <script src="scripts/hamburger.js" defer> </script>
+    <!-- <script src="scripts/hamburger.js" defer> </script> -->
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/weather.js" defer></script>
                                     
@@ -36,11 +36,12 @@
 
 <body>
     <header>
+        <button title="darkmode" id="dark-mode"></button>
         <div class="logo">
             <img src="images/poky-logo.webp" alt="logo image">
             <h1>Pocatello Idaho Chamber of Commerce</h1>
         </div>
-
+        
 
         <!-- use this for when you hover over nav. similar to pocatello website's picture -->
         <!-- <img class="flag" src="images/poky-flag.png" alt="pocatello flag"> -->
@@ -57,9 +58,34 @@
 
     </nav>
 
-        <!-- TO DO/to do: span grid image grid-columns: 1/4; -->
     <img src="images/smaller-pocatello.webp" alt="Pocatello Idaho" class="pocatello_img">
 
+<!-- Week 6 stuff -->
+<!-- BUG: so when i had it above main it showed a giant picture.
+I wasn't sure what picture it was though so I put it in different DIVs
+ Now all of the images are running and I can't figure out how to make it the proper size-->
+ <!-- <div class = "picture">
+   
+    <picture>
+        <div class="picture_large">
+            <source media="(min-width:1000px)" srcset="images/wdd230-large-org.jpg" alt="three people chatting">
+            <h2>LARGE</h2>
+        </div>
+    
+        <div class ="picture_medium">    
+            <source media ="(min-width:600px)" srcset="images/wdd230-medium.org" alt ="three people chatting">
+            <h2>Medium</h2>
+        </div>
+
+<div class="picture_small">
+   <source media="(min-width:300px)" srcset="images/wdd230-small-org.jpg" alt="three people chatting">
+   <h2>small</h2>
+</div>
+
+<img src="images/wdd230-small-org.jpg" alt="three people cahtting">
+</picture> 
+
+</div>-->
  
     <main>
 
@@ -106,14 +132,17 @@
 
         </section>
 
+        
     
 
 
     </main>
+  
+    
       <!-- pocatello maps -->
         <!-- TO DO/to do: 
             IF YOU WANT IN MAIN fIGure out how to tell larger.css to move this to bottom of pageand span the whole median (ikely grid-columns: 1/4; or something like that.) -->
-       <iframe class="google-maps" 
+        <iframe class="google-maps" 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
             width= 600  
             height="500"  

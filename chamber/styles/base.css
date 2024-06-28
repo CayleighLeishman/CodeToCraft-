@@ -13,6 +13,7 @@
     
 }
 
+
 ::selection {
     color: var(--primary-color);
     background-color: var(--background-color);
@@ -39,6 +40,57 @@ header{
     border-width: 3.8px; 
     border-radius: 5rem;  
 }*/
+                                                /*Buttons */
+                                                
+    /*navigation button */
+#menu-button{
+    background-color:var(--background-color);
+    font-size: 2rem;
+    padding:.5rem;
+}
+
+#menu-button::before{ 
+    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+    content: "☰";
+}
+        /*nav when it's closed  */
+#menu-button.open::before{
+    content: 'x';
+}
+
+    /* dark mode button */
+#dark-mode{
+    background-color: Var(--grey-blue);
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#dark-mode::before{
+    content: "Dark";
+}
+
+#dark-mode.dark::before{
+    content: "Light";
+}
+
+/* _____________________________________________________________________________________________________________ */
+/* week 6 project */
+.picture{
+    /* text-align: center; */
+    position: relative;
+}
+
+.picture_small, .picture_medium, .picture_large{
+    position:absolute;
+    top: 35px;
+    left: 35px;
+    background-color:Var(--grey-blue);
+    padding:1rem;
+    box-shadow: 0 0 1rem ;
+    opacity: .75;
+}
 
                                       /* ALL IMAGES HERE  */
 header img{                /*logo image at the TOP only*/
@@ -104,21 +156,6 @@ nav{
     color: var(--primary-color);
     grid-column:span;
     text-align: center;
-}
-
-#menu-button{
-    background-color:var(--background-color);
-    font-size: 2rem;
-    padding:.5rem;
-}
-
-#menu-button::before{ 
-    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
-    content: "☰";
-}
-        /*nav when it's closed  */
-#menu-button.open::before{
-    content: 'x';
 }
 
 nav ul{ 
@@ -199,6 +236,8 @@ section a:hover{
 }
 
 #weather_main{
+    display: grid;
+    grid-template-columns: auto;
     text-align: center;
     background-color: var(--grey-blue);
 }
