@@ -15,14 +15,9 @@
     --text-color:black;
 }
 
-
-
-
 * {
     font-family: 'Roboto';
-    box-sizing: border-box;
-    
-    
+    box-sizing: border-box;  
 }
 
 ::selection {
@@ -31,11 +26,10 @@
 } 
 
 header{
-    background-color:var(--background-color);
+    background-color:var(--primary-color);
     display:grid;
     grid-column:2/4 ;
     text-align:center;
-    
 }
 
 main {
@@ -60,12 +54,13 @@ nav{
     color: var(--text-color);
     grid-column:span;
     text-align: center;
+    border-style:var(--primary-color);
 }
 
 nav ul{ 
     list-style:none;
     text-align: center;
-    background-color: var(--sea-green);
+    background-color: var(--blue-enough);
     padding-inline-start: 0px; /*what does this do?*/
     display:none; 
     font-size:20px;
@@ -96,17 +91,17 @@ nav a{
     
 }
 nav ul li a:hover{
-    color:var(--grey-blue);
-    background-color: var(--sea-green);
+    color:var(--primary-color);
+    background-color: var(--almost-teal);
     font-weight: bold; 
     
 }
  nav li{    
-    /*this makes the dots besides the link disapear  */
-    list-style-type: none; 
+
+    list-style-type: none;     /*this makes the dots besides the link disapear  */
 }
 
-    /* Stuff After Navigator [Stuff within body] */
+     /*[Stuff within body] */
 body {
     font-size:20px;
     color:var(--text-color);
@@ -142,7 +137,7 @@ section a:hover{
 
 #cards{
     display: grid;
-    color: #000000;
+    color: var(--text-color);
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
@@ -176,7 +171,7 @@ footer{
     background-color:var(--background-color);
     padding: 45px;
     font-size:15px;
-    color: var(--text-color);
+    color: var(--primary-color);
     text-align: center;   
 }
 footer li{
@@ -188,27 +183,27 @@ footer a{
 footer a:hover{
     color:var(--almost-teal)
 }
+
 /*______________Buttons___________*/
                                                 
-    /*navigation button */
+        /*navigation button */
 #menu-button{
-    background-color:var(--background-color);
+    background-color:var(--sea-green);
     font-size: 2rem;
     padding:.5rem;
 }
 
 #menu-button::before{ 
-    /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
-    content: "☰";
+    content: "☰";   /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+
 }
     /*nav when it's closed  */
 #menu-button.open::before{
     content: 'x';
 }
-
     /* dark mode button */
 #dark-mode{
-    background-color: var(--grey-blue);
+    /* background-color: var(--grey-blue); */
     height: 2rem;
     position: absolute;
     top: 1rem;
@@ -217,15 +212,15 @@ footer a:hover{
 
 #dark-mode::before{
     content: "Dark";
+    background-color:var(--text-color);
+    color:var(--primary-color)
 }
 
 #dark-mode.dark::before{
-    content: "Light";
+    content: "Light"; 
 }
-
 /* _____________________________________________________________________________________________________________ */
-/* week 6 project */
-
+            /* week 6 project */
 .picture{
    width:10%;
    position:relative;    
@@ -246,7 +241,7 @@ footer a:hover{
                                       /* ALL IMAGES HERE  */
 header img{               
    /* display:grid;
-     grid-column: 1/4; */
+    grid-column: 1/4; */
     border-radius:100px;  /* this changes the shape of the image*/
     padding: 20px;       /*  gives spacing but shortens image */
     width:175px;        /*changes width of image             */
@@ -258,28 +253,27 @@ header img{
 }
 
 .logo_img{
-
     padding: 15px;         /*gives spacing but shortens image */
     width:30px;          /*changes width of image   */      
 }
 
-footer img{                     /*This is supposed to work with the logo and any other images in the footer ONLY*/
-    float:left;                /*tells image to go to the left of the page   */
-    border-radius:100px;      /*this changes the shape of the image   */
-    padding: 15px;           /* gives spacing but shortens image  */
-    width:150px;            /*changes width of image */
+footer img{                   /*This is supposed to work with the logo and any other images in the footer ONLY*/
+    float:left;               
+    border-radius:100px;      
+    padding: 15px;     /* gives spacing but shortens image  */
+    width:150px;           
 }
-
-.discover-images img{
+     /* an image in the discover.html page */
+.discover-images img{     
     border: 5px solid var(--almost-teal);
     transition: opacity 2s;
 } 
-
  /* _________________________________________________________________________________________________________________________________________ */
                         /* DISCOVER Page (discover.html)*/
-                        
 .discover {
-    text-align: center;
+    text-align: right;
+    font-size:2rem;
+    padding-bottom: 35rem ;
 }
 /* ___________________________________________________________________________________________________________________________________________ */
 
@@ -302,12 +296,11 @@ footer img{                     /*This is supposed to work with the logo and any
     padding: 20px; 
     margin: 10px;
 }
-
 .business_cards button{
     padding: 2rem;
     font-weight: 300;
     background-color: var(--background-color);
-    color:#478d73;
+     color: var(--almost-teal) /*was previously set to "#478d73"*/
 }
 
 .business_cards button:hover{
@@ -321,7 +314,6 @@ footer img{                     /*This is supposed to work with the logo and any
     margin:0;
     padding: 1rem;
     text-align: center;
-
 }               
                                                   /* END FOR BUSINESS PAGE (directory.html) */
 /* _________________________________________________________________________________________________________________________________________ */
@@ -329,15 +321,14 @@ footer img{                     /*This is supposed to work with the logo and any
                                                                  /* /*  FORM CSS    */
 
 .join{
-
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
- }
+}
 
 .join > div{
     margin: 5rem;
     padding: 1rem;
-    border: 1px black solid;
+    border: 1px var(--text-color) solid;
     border-radius: 5px;  
     width: 90%;
     min-width: 400px;
@@ -376,7 +367,7 @@ label.myradio input{
 }
 
 label.myinput input:required{
-    border-color: #922;
+    border-color: var(--sea-green);
 }
 
 input:valid{

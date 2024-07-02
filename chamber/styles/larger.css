@@ -1,5 +1,6 @@
 @media screen and (min-width: 800px){
     
+    /* all */
     nav{
         padding: 8px 5px .3px 5px;
         grid-column:span;
@@ -23,24 +24,15 @@
         grid-template-columns: 2fr 1fr;
         padding:4px;
     }
-
+     /* TO DO/to do: fix this */
+    #menu-button{
+        display: none;
+    }
+    /* Indext page only */
     #hero_label::after{
         content: "large";
     }
     
-
-
-    /* worked in large view */
-    /* .google-maps{
-        position:relative;  
-        padding:1rem;
-        width: 100%;
-        height: 100%; 
-    } */
-    
-    /* TO DO/to do: fix this */
-    #menu-button{
-        display: none;
-    }
+   
 } 
 
