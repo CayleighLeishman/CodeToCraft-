@@ -54,7 +54,7 @@ nav{
     color: var(--text-color);
     grid-column:span;
     text-align: center;
-    border-style:var(--primary-color);
+    /* border-style: var(--primary-color); */
 }
 
 nav ul{ 

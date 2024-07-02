@@ -1,4 +1,4 @@
-<!-- CHAMBER ASSINGMENT -->
+<!-- CHAMBER Page -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,19 +66,18 @@
 <!-- BUG: so when i had it above main it showed a giant picture.
 I wasn't sure what picture it was though so I put it in different DIVs
  Now all of the images are running and I can't figure out how to make it the proper size-->
- <div class = "picture">
+<div class = "picture">
    
 
     <picture>
-        <!-- Change to webp format not jpeg -->
-        <source media="(min-width:800px)" srcset="images/wdd230-large-org.jpg" alt="three people chatting">
-        <source media ="(min-width:600px)" srcset="images/wdd230-medium-org.jpg" alt ="three people chatting">
-        <source media="(min-width:300px)" srcset="images/wdd230-small-org.jpg" alt="three people chatting">
-         
+        <!-- TO DO: Change to webp format not jpeg -->
+         <!-- Source won't allow me to put in Alt when i use validator hence why alt tag is in comments -->
+        <source media="(min-width:800px)" srcset="images/wdd230-large-org.jpg" > <!--alt="three people chatting"-->
+        <source media ="(min-width:600px)" srcset="images/wdd230-medium-org.jpg"> <!--alt="three people chatting"-->
+        <source media="(min-width:300px)" srcset="images/wdd230-small-org.jpg" > <!--alt="three people chatting"-->
         <img src="images/wdd230-small-org.jpg" alt="three people cahtting">
-        <p id="hero_label"></p>
     </picture> 
-
+    <p id="hero_label"></p>
 </div>
  
     <main>
@@ -108,7 +107,7 @@ I wasn't sure what picture it was though so I put it in different DIVs
               <p>The current temperature in Pocatello, Idaho is <span id="current-temp"></span></p>
               
               <figure>
-                <!-- professor has it set this way, but this way gives me two errors 
+                <!-- TO DO/to do:  ASK why this gives me two errors on validitation
                 <img id="weather-icon" src alt>-->
                 <img id="weather-icon" src="" alt="">
                 <figcaption></figcaption>
