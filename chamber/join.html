@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
     
                                      <!-- Java Script -->
-        <script src="scripts/hamburger.js" defer> </script>
+        <!-- <script src="scripts/hamburger.js" defer> </script> -->
         <script src="scripts/windchill.js" defer></script>
         <script src="scripts/header-footer.js" defer></script>
                                         
@@ -55,25 +55,57 @@
         </ul>
 
     </nav>
-
+    <section  class="membership">
     <form method="GET" action="thankyou.html">
-        <label class="myinput">First Name*<input id="fname" type="text" name="fname" required></label>
-        <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required></label>
+        <label class="myinput">First Name*<input id="fname" type="text" name="fname" required placeholder="First Name"></label>
+        <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required placeholder="Last Name"></label>
         <label class="myinput">Title<input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}"></label>
         <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
-        <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required></label>
-        <label class="myinput">Business Name*<input type="text" name="bizname" required></label>
+        <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required placeholder="111-111-111"></label>
+        <label class="myinput">Business Name*<input type="text" name="bizname" required placeholder="Business Name"></label>
        
-        
         <button class="mysubmit">Join the Chamber!</button>
     </form>
-    </div>
-    <div>
+    </section>
+
+    <section class="membership">
+        <h2>Membership Levels Benefits</h2>
+        <h3>NP Membership</h3>
+        <ul>
+            <li>For non profit organizations and there is no fee</li>
+        </ul>
+        <h3>Bronze Membership</h3>
+        <ul>
+            <li>15% discount on events</li>
+            <li>10% discount on advertising</li>
+            <li>Fee of $50/month</li>
+        </ul>
+
+        <h3>Silver Membership</h3>
+        <ul>
+            <li>25% discount on events</li>
+            <li>15% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>Fee of $100/month</li>
+        </ul>
+
+        <h3>Gold Membership</h3>
+        <ul>
+            <li>50% discount on events</li>
+            <li>50% discount on advertising</li>
+            <li>Free participation in the trade fair</li>
+            <li>5 free featured ads per year</li>
+            <li>1 free training per quarter</li>
+            <li>Fee of $250/month</li>
+        </ul>
+    </section>
+
      
     <footer>
         <div class="logo_img" >
-        <img src="images/poky-logo.webp" alt="logo image">
+            <img src="images/poky-logo.webp" alt="logo image">
         </div>
+
         <p>Pocatello Idaho Chamber of Commerce</p>
         <p>123 main street</p>
         <p>info@dontactuallyemail.com</p>
