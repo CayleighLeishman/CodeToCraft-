@@ -73,19 +73,19 @@
         },
     
         { "name" : "Delta skating and Family Fun Center",
-        "address" : "624 E Center St",
-        "label" : "Courthouse",
-        "phone_number" : "208-236-7000",
+        "address" : "Fake address",
+        "label" : "Attraction",
+        "phone_number" : "208-55-7000",
         "websiteURL" : "https://www.deletapocatello.com/",
         "imageURL" : ""
         },
 
-        { "name" : "Bannock County Courthouse",
+        { "name" : "Ross Park Aquatic Complex",
         "address" : "624 E Center St",
-        "label" : "Courthouse",
-        "phone_number" : "208-236-7000",
-        "websiteURL" : "https://www.bannockcounty.us/",
-        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipN6SvxYmWG_YW3Cy7iX48LTjI2Fl6-vy_7Z8kRT=s680-w680-h510"
+        "label" : "Attraction",
+        "phone_number" : "208-234-0472",
+        "websiteURL" : "https://pocatello.gov/331/Ross-Park-Aquatic-Complex",
+        "imageURL" : ""
         }
 
     ]
