@@ -5,7 +5,7 @@
         "label" : "School",
         "phone_number" : "208-232-8034",
         "websiteURL" : "https://www.isu.edu/",
-        "imageURL" : "[insert github link of image]",
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/isu-campus.webp",
         "membership_level" : "JUST AS COMMENT: gold, silver or bronze or none"
     },
         
@@ -14,15 +14,15 @@
         "label" : "Courthouse",
         "phone_number" : "208-236-7000",
         "websiteURL" : "https://www.bannockcounty.us/",
-        "imageURL" : "[insert github link of image]"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/bannok-courthouse.webp"
         },
 
         { "name" : "Pocatello Idaho Temple",
         "address" : "3100 Butte St",
         "label" : "Church",
         "phone_number" : "208-646-7730",
-        "websiteURL" : "[insert github link of image]",
-        "imageURL" : ""
+        "websiteURL" : "https://www.churchofjesuschrist.org/temples/details/pocatello-idaho-temple?lang=eng",
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pocatello_idaho_temple.webp"
         },
 
         { "name" : "Outer Limit Fun Zone",
@@ -30,49 +30,54 @@
         "label": "Archade",
         "phone_number" : "208-232-7529",
         "websiteURL" : "https://outerlimitsfunzone.com/",
-        "imageURL" : "[insert github link of image]"},
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/Outer-Limits-Logo_200_glow.webp"
+        },
 
         { "name" : "Pine Ridge Mall",
         "address" : "4155 Yellowstone Ave",
         "label": "shop",
         "phone_number" : "208-237-7160",
         "websiteURL" : "https://g.co/kgs/J1iNWHP",
-        "imageURL" : "[insert github link of image]"},
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pine-ridge-mall.webp"
+        },
        
         { "name" : "Museum of Clean",
         "address" : " 711 S 2nd Ave",
         "label" : "Museum",
         "phone_number" : "208-236-6906",
         "websiteURL" : "https://museumofclean.com/visit/",
-        "imageURL" : "[insert github link of image]" },
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/clean-museum.webp" },
 
         { "name" : "Idaho Haunted House",
         "address" : "10588 Fairground Dr D Barn",
         "label" : "Attraction",
         "phone_number" : "208-705-8978",
         "websiteURL" : "https://www.idahohauntedhouses.com/halloween-attractions/pocatello.html",
-        "imageURL" : "[insert github link of image]" },
+        "imageURL" : "https://github.com/CayleighLeishman/wdd230/blob/99522b716a53724830d6385ebda299f7fc6cb65c/chamber/images/halloween.gif" 
+        },
 
         { "name" : "Idaho zoo",
         "address" : "3000 S 2nd Ave, Pocatello",
         "label" : "Attraction",
         "phone_number" : "208-234-6264",
         "websiteURL" : "https://zooidaho.org/",
-        "imageURL" : "[insert github link of image]" },
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/zoo-idaho-pocatello.webp" 
+        },
 
         { "name" : "El Caporal Mexican Restaurant",
         "address" : "612 Yellowstone Ave",
         "label" : "food",
         "phone_number" : "208) 233-9933",
         "websiteURL" : "https://elcaporalpocatello.com/",
-        "imageURL" : "[insert github link of image]" },
-
-        { "name" : "Bannock County Courthouse",
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/el-corporal.webp" 
+        },
+    
+        { "name" : "Delta skating and Family Fun Center",
         "address" : "624 E Center St",
         "label" : "Courthouse",
         "phone_number" : "208-236-7000",
-        "websiteURL" : "https://www.bannockcounty.us/",
-        "imageURL" : "https://lh3.googleusercontent.com/p/AF1QipN6SvxYmWG_YW3Cy7iX48LTjI2Fl6-vy_7Z8kRT=s680-w680-h510"
+        "websiteURL" : "https://www.deletapocatello.com/",
+        "imageURL" : ""
         },
 
         { "name" : "Bannock County Courthouse",
