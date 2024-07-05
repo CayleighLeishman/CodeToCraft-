@@ -272,6 +272,10 @@ footer img{                   /*This is supposed to work with the logo and any o
     font-size:2rem;
 }
 
+.discover-main a{
+    color:var(--text-color);
+}
+
 .discover-main section {    
     margin: 1rem;
 }
@@ -304,7 +308,6 @@ footer img{                   /*This is supposed to work with the logo and any o
 .discover-demographics h3 {    
     margin: 1rem;
 }
-
 
 
 
