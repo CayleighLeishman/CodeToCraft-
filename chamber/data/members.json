@@ -77,7 +77,7 @@
         "label" : "Attraction",
         "phone_number" : "208-55-7000",
         "websiteURL" : "https://www.deletapocatello.com/",
-        "imageURL" : ""
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/delta_skating_rink.webp"
         },
 
         { "name" : "Ross Park Aquatic Complex",
@@ -85,7 +85,7 @@
         "label" : "Attraction",
         "phone_number" : "208-234-0472",
         "websiteURL" : "https://pocatello.gov/331/Ross-Park-Aquatic-Complex",
-        "imageURL" : ""
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/ross-park-swim.webp"
         }
 
     ]

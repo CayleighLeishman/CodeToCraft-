@@ -37,7 +37,8 @@ main {
     grid-template-columns: 1fr 1fr 1fr;    
     background-color: var(--primary-color);
     max-width: 800px; 
-    margin: 75px auto; 
+    margin: 75px auto;
+    
 }
 
 .grid-item {
@@ -280,10 +281,14 @@ footer img{                   /*This is supposed to work with the logo and any o
 
                                                 /* Business page (directory.html) */
         /* stuff for after Grid */
+        /* TO DO:  figure out why grid and list isn't working */
 #members_main{
-   margin: 1rem auto;
-   padding:2rem;
-   text-align: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    margin: 1rem auto;
+    padding:2rem;
+    text-align: center;
+   
 }
        
 .members_cards{
