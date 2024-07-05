@@ -38,14 +38,14 @@ header{
     text-align:center;
 }
 
-/* main { 
+.home_main { 
     display: grid;
     grid-template-columns: 1fr 1fr;    
     background-color: var(--primary-color);
     max-width: 800px; 
     margin: 75px auto;
     
-}  */
+} 
 
 .grid-item {
     padding: 20px;

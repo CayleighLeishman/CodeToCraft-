@@ -15,7 +15,7 @@
         justify-content: space-around;
     }
 
-    main{
+    .home_main{
         display:grid;
         grid-template-columns: 3fr 3fr;
     }
@@ -38,7 +38,6 @@
     .discover-main img{
         width: 600px;
     }
-
    
 } 
 

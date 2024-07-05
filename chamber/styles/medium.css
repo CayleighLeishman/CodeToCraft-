@@ -25,17 +25,18 @@ header img{
    
 }
 
-main {
+/* figure out what this applies to and change class name */
+.home_main {
     max-width: 800px; 
     margin: 75px auto;
     text-align: left;
     display:grid;
     grid-template-columns: 2fr;
 } 
-
+/* 
 main ul{
     list-style-type: none; 
-}
+} */
 
 nav{
 
