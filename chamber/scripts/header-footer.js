@@ -49,4 +49,4 @@ function openJoinPage(){
     window.open("join.html")
 }
 
-document.querySelector(".hero-pocatello button").addEventListener("click", openJoinPage)
+document.querySelector(".hero_pocatello button").addEventListener("click", openJoinPage)

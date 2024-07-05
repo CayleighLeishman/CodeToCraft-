@@ -116,8 +116,18 @@ h1{
     color:var(--text-color);
 }
 
+.hero_pocatello {
+ grid-column: 1/3;
+ position: relative;
+}
+.hero_pocatello button{
+    position:absolute;
+    top: 1rem;
+    left: 2rem;
+
+}
     /*__________ Card Stuff___________  */
-section {
+.home_main section {
     font-size: 25px;
     border-style: solid;
     border-width: 3.8px; 
@@ -127,7 +137,7 @@ section {
     margin: 1rem;  
 }
 
-section a:hover{
+.home_main section a:hover{
     color:var(--text-color); 
 }
 
@@ -353,11 +363,15 @@ footer img{                   /*This is supposed to work with the logo and any o
     background-color: var(--sea-green);
     color: var(--grey-blue);
 }
+
+
     /* List section in directory  */
+.members_list h2{
+ font-size: 1rem;
+}
 .members_list section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width:40%;
     padding-left: 1rem ;
     padding-right: 1rem;
     /* text-align: center; */
