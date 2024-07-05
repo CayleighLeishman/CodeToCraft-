@@ -42,8 +42,8 @@ input{
 }
 
 button{
-    background-color: var(--nav-color);
-    color: white;
+    background-color: floralwhite;
+    color: purple;
     padding: .5rem;
     margin: 1rem 0;
     font-size: 1.5rem;
@@ -51,9 +51,18 @@ button{
 }
 
 #message{
-    color: red;
+    color: black;
 }
 
 .redstar{
-    color: red;    
+    color: black;
+}
+
+footer ul li a{
+    color:floralwhite;
+}
+footer ul li a:hover{
+    color:floralwhite;
+    background-color:  #99005C;
+
 }
