@@ -277,6 +277,7 @@ footer img{                   /*This is supposed to work with the logo and any o
 /* ___________________________________________________________________________________________________________________________________________ */
 
                                                 /* Business page (directory.html) */
+        /* stuff for after Grid */
 #members_main{
    margin: 1rem auto;
    padding:2rem;
@@ -286,15 +287,19 @@ footer img{                   /*This is supposed to work with the logo and any o
 .members_cards{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
 }
 
 #members_cards section {
+    text-align: center;
     border-style: solid;
     border-width: 3px;
     border-radius: 5rem;
-    padding: 20px; 
-    margin: 10px;
+    padding: 1rem; 
+    margin: .5rem;
+    box-shadow: .5rem .5rem .5rem var(--almost-teal);
 }
+
 .members_cards button{
     padding: 2rem;
     font-weight: 300;
@@ -306,14 +311,26 @@ footer img{                   /*This is supposed to work with the logo and any o
     background-color: var(--sea-green);
     color: var(--grey-blue);
 }
-
-.list section{
+    /* List section in directory  */
+.members_list section{
     display: grid;
-    grid-template-columns: 1fr;
-    margin:0;
-    padding: 1rem;
-    text-align: center;
-}               
+    grid-template-columns: repeat(4, 1fr);
+    width:40%;
+    padding-left: 1rem ;
+    padding-right: 1rem;
+    /* text-align: center; */
+} 
+/* This didn't go in IMage section of base because there is no image to display */
+.members_list section img{
+    display: none;
+}
+
+.members_list section:nth-child(even){
+    background-color: var(--grey-blue);
+}
+.members_list section:nth-child(odd){
+    background-color: var(--sea-green);
+}
                                                   /* END FOR BUSINESS PAGE (directory.html) */
 /* _________________________________________________________________________________________________________________________________________ */
                                          

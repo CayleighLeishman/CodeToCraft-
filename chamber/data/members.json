@@ -35,7 +35,7 @@
 
         { "name" : "Pine Ridge Mall",
         "address" : "4155 Yellowstone Ave",
-        "label": "shop",
+        "label": "Shop",
         "phone_number" : "208-237-7160",
         "websiteURL" : "https://g.co/kgs/J1iNWHP",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pine-ridge-mall.webp"
@@ -67,7 +67,7 @@
         { "name" : "El Caporal Mexican Restaurant",
         "address" : "612 Yellowstone Ave",
         "label" : "food",
-        "phone_number" : "208) 233-9933",
+        "phone_number" : "208-233-9933",
         "websiteURL" : "https://elcaporalpocatello.com/",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/el-corporal.webp" 
         },
