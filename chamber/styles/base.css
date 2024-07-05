@@ -7,12 +7,14 @@
 /* For Most, If not All pages */
 :root{
     --background-color: #32343e; 
-    --primary-color:white;;
+    --primary-color:white;
+    --white-text: white;
     --grey-blue:#404c54;
     --blue-enough:#446b6a;
     --almost-teal:#478d73;
     --sea-green:#5ba95d;
     --text-color:black;
+    --cards-color: white;
     --orange: orange;
 }
 
@@ -82,7 +84,7 @@ nav ul li{
 nav ul li a{
     display:block;
     text-decoration:bold;
-    color:var(--primary-color);
+    color:var(--white-text);
     padding: 1rem;
 }
 nav a{
@@ -92,7 +94,7 @@ nav a{
     
 }
 nav ul li a:hover{
-    color:var(--primary-color);
+    color:var(--white-text);
     background-color: var(--blue-enough);
     font-weight: bold;  
 }
@@ -137,18 +139,9 @@ section a:hover{
 
 #cards{
     display: grid;
-    color: var(--text-color);
+    color: var(--cards-color);
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-
-/*#cards section{
-     max-width: fit-content;
-    margin: .6rem;
-    padding: 35px;
-    border-style: solid; 
-    border-width: 3.8px; 
-    border-radius: 5rem;  
-}*/
 
 #weather_main{
     display: grid;
@@ -171,14 +164,14 @@ footer{
     background-color:var(--background-color);
     padding: 45px;
     font-size:15px;
-    color: var(--primary-color);
+    color: var(--white-text);
     text-align: center;   
 }
 footer li{
     list-style:none;
 }
 footer a{
-    color:var(--primary-color);
+    color:var(--white-text);
 }
 footer a:hover{
     color:var(--orange)
@@ -211,13 +204,13 @@ footer a:hover{
 }
 
 #dark-mode::before{
-    content: "Dark";
+    content: "🌘";
     background-color:var(--text-color);
-    color:var(--primary-color)
+    color:var(--white-text)
 }
 
 #dark-mode.dark::before{
-    content: "Light"; 
+    content: "☀️"; 
 }
 /* _____________________________________________________________________________________________________________ */
             /* week 6 project */
@@ -311,7 +304,7 @@ footer img{                   /*This is supposed to work with the logo and any o
     padding: 2rem;
     font-weight: 300;
     background-color: var(--background-color);
-     color: var(--almost-teal) /*was previously set to "#478d73"*/
+    color: var(--almost-teal) /*was previously set to "#478d73"*/
 }
 
 .members_cards button:hover{
