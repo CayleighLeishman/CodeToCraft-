@@ -415,7 +415,7 @@ footer img{                   /*This is supposed to work with the logo and any o
   }
   
   .mysubmit{
-    background-color: var(--sea-green);
+    background-color: var(--almost-teal);
     color: var(--text-color);
     margin: 1rem 0 0 0;
     padding: .5rem;
