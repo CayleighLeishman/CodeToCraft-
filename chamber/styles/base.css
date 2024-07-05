@@ -13,6 +13,7 @@
     --almost-teal:#478d73;
     --sea-green:#5ba95d;
     --text-color:black;
+    --orange: orange;
 }
 
 * {
@@ -61,7 +62,7 @@ nav{
 nav ul{ 
     list-style:none;
     text-align: center;
-    background-color: var(--blue-enough);
+    background-color: var(--background-color);
     padding-inline-start: 0px; /*what does this do?*/
     display:none; 
     font-size:20px;
@@ -80,8 +81,8 @@ nav ul li{
 
 nav ul li a{
     display:block;
-    text-decoration:none;
-    color:var(--text-color);
+    text-decoration:bold;
+    color:var(--primary-color);
     padding: 1rem;
 }
 nav a{
@@ -92,9 +93,8 @@ nav a{
 }
 nav ul li a:hover{
     color:var(--primary-color);
-    background-color: var(--almost-teal);
-    font-weight: bold; 
-    
+    background-color: var(--blue-enough);
+    font-weight: bold;  
 }
  nav li{    
 
@@ -178,10 +178,10 @@ footer li{
     list-style:none;
 }
 footer a{
-    color:var(--sea-green);
+    color:var(--primary-color);
 }
 footer a:hover{
-    color:var(--almost-teal)
+    color:var(--orange)
 }
 
 /*______________Buttons___________*/
