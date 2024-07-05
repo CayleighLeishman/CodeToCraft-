@@ -1,12 +1,11 @@
-// Date Stuff
+/// Date Stuff
 let datespan =document.querySelector('#currentYear')
 datespan.innertext = new Date().getFullYear()
 
 let lastmodifiedspan = document.querySelector('#lastModified')
 lastmodifiedspan.innerText = document.lastModified
-
   
-  // // Navigation Hamburger
+// // Navigation Hamburger
   let menu_button = document.getElementById("menu-button")
   let navList = document.querySelector("nav ul")
   menu_button.addEventListener('click',() => {
@@ -14,7 +13,7 @@ lastmodifiedspan.innerText = document.lastModified
       navList.classList.toggle("open")
   })
   
-  
+
 // darkMode 
 let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{    
@@ -44,3 +43,10 @@ darkbutton.addEventListener("click", () =>{
         docuent.documentElement.style.setProperty('--cards-color','white');           
     } 
 })
+
+// Join button 
+function openJoinPage(){
+    window.open("join.html")
+}
+
+document.querySelector(".hero-pocatello button").addEventListener("click", openJoinPage)
