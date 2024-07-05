@@ -5,37 +5,58 @@
     font-family: 'tektur','san-serif';
     box-sizing: border-box;
 }
+:root{
+    --pink: #99005C;
+    --floral-white: floralwhite;
+    --text-color: black;
+    --background-color:#8B008B;
+    --main-color: white;
 
-::selection {
-    color: floralwhite;
-    background: #99005C;
-    /* #8B008B; */
 }
-    
+
+                                                    /* Fancy extra stuff */
+::selection {
+    color: var(--floral-white);
+    background-color: var(--pink);
+    /* var(--background-color); */
+}
+ /*_______________________________________________________________________________________________  */
 header{
-    background-color: floralwhite;
+    background-color: var(--floral-white);
     display:grid;
     grid-column:2/4 ;
 }
 
                                                 /* IMAGES HERE */
+.cayleigh img{
+    float:left;
+}
 header img{
     border-radius:100px;  /* this changes the shape of the image */
     padding: 15px; /*  gives spacing but shortens image */
     width:100px; /*changes width of image*/
 }
-
 .temple img{
     width:100%;
 }
-
-.cayleigh img{
-    float:left;
-   
+.temple{
+    /* text-align: center; */
+    position: relative;
 }
+.temple_label{
+    position:absolute;
+    top: 35px;
+    left: 35px;
+    background-color:var(--pink);
+    padding:1rem;
+    box-shadow: 0 0 1rem ;
+    opacity: .75;
+
+}
+/* ____________________________________________________________________________________________ */
 
 main {
-    background-color: floralwhite;
+    background-color: var(--floral-white);
     max-width: 800px; /*sets maximum size not sure what of though*/
     margin: 75px auto; /* controls how big the space between main, header and footter */
     text-align: left;
@@ -48,16 +69,10 @@ main ul{
 }
 
 
-nav{
-    background-color: #8B008B;
-    color: floralwhite;
-    grid-column:span;
-    text-align: center;
-}
 
-
+    /*________________________________________________________ Menu button____________________________*/
 #menu-button{
-    background-color:#8B008B;
+    background-color:var(--background-color);
     font-size: 2rem;
     padding:.5rem;
 }
@@ -70,12 +85,18 @@ nav{
 #menu-button.open::before{
     content: 'x';
 }
+/* ____________________________________________Navigation________________________________________________ */
+nav{
+    background-color: var(--background-color);
+    color: var(--floral-white);
+    grid-column:span;
+    text-align: center;
+}
 
-/*nav when it's closed  */
 nav ul{ 
     list-style:none; 
     text-align: center;
-    background-color: #8B008B;
+    background-color: var(--background-color);
     padding-inline-start: 0px; /*what does this do?*/
     display:none; 
 }
@@ -94,19 +115,19 @@ nav ul li{
 nav ul li a{
     display:block;
     text-decoration:none;
-    color:white;
+    color:var(--main-color);
     padding: 1rem;
 }
 
 nav a{
-    color: floralwhite;
+    color: var(--floral-white);
     text-align: center;
     
 }
 
 nav ul li a:hover{
-    color: #8B008B;
-    background-color: white;
+    color: var(--background-color);
+    /* background-color: var(--main-color); */
     font-weight: bold;  /* makes the text appear thicker/bolded when hovered */
     /* #f028f0 */
 }
@@ -115,27 +136,16 @@ nav li{
     list-style-type: none; /*this makes the dots besides the link disapear */
 }
 
+
+/* ________________________________________Stuff in body________________________________________________________ */
 body {
-    color:black;
-    background-color:floralwhite;
+    color:var(--text-color);
+    background-color:var(--floral-white);
 }
 
-.temple{
-    /* text-align: center; */
-    position: relative;
-}
-
-.temple_label{
-    position:absolute;
-    top: 35px;
-    left: 35px;
-    background-color:#99005C;
-    padding:1rem;
-    box-shadow: 0 0 1rem ;
-    opacity: .75;
 
 
-}
+/* ________________________________________________Cards stuff_______________________________ */
 .card {
     border-style: solid; /*shows that we want a border with this style */
     border-width: 3.8px; /* width of the border*/
@@ -146,39 +156,25 @@ body {
 }
 
 .card a:hover{
-    color: floralwhite; 
-    background: #99005C;
+    color: var(--floral-white); 
+    background: var(--background-color);
 
 }
 .card a:link{
-    color:hotpink;
+    color:var(--text-color);
 }
-
-/* 
+/* ___________________________________________________End of Cards________________________________________________________________ */
 .google-maps{
-    position:relative;  
-    padding-bottom: 50px;
-    padding:1rem;
-    width: 100%;
-    /* height: 100%; 
-    
-    top:60%;
-    
-}*/
-
-.google-maps{
-
     position: relative; 
     width:100%;
     height:500px;
-
-
 }   
 
+/* ___________________________________________________________footer_____________________________________________________ */
+
 footer{
-    background-color: #8B008B;
+    background-color: var(--background-color);
     padding: 45px;
-    color: floralwhite;
+    color: var(--floral-white);
     text-align: center;
-    
 }
