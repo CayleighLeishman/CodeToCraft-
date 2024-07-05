@@ -16,6 +16,9 @@
     --text-color:black;
     --cards-color: white;
     --orange: orange;
+    --border-red:#922;
+    --invalid-red:rgb(255, 200, 200);
+    --valid-green:rgb(200, 255, 200);
 }
 
 * {
@@ -35,14 +38,14 @@ header{
     text-align:center;
 }
 
-main {
+/* main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;    
     background-color: var(--primary-color);
     max-width: 800px; 
     margin: 75px auto;
     
-}
+} */
 
 .grid-item {
     padding: 20px;
@@ -264,11 +267,47 @@ footer img{                   /*This is supposed to work with the logo and any o
   /* _________________________________________________________________END images________________________________________________________________  */
  /*_____________________________________________________________________________________________________________________________________________ */
                         /* DISCOVER Page (discover.html)*/
-.discover {
+.discover-main {
     text-align: right;
     font-size:2rem;
-    padding-bottom: 35rem ;
 }
+
+.discover-main section {    
+    margin: 1rem;
+}
+
+.discover-main img {
+    width: 400px;
+    height: auto;
+}
+
+.discover-main section{
+    border: 2px black solid;
+    margin: 1rem;
+}
+
+.discover-image{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 432px;    
+}
+
+.discover-image div {    
+    margin: 1rem;    
+}
+
+.discover-demographics h2 {    
+    margin: 1rem;
+}
+
+.discover-demographics h3 {    
+    margin: 1rem;
+}
+
+
+
+
 
 /* ___________________________________________________________________________________________________________________________________________ */
 
@@ -336,76 +375,78 @@ footer img{                   /*This is supposed to work with the logo and any o
                                          
                                                                  /* /*  FORM CSS    */
 
+
 .join{
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
+  }
 
-.join > div{
-    margin: 5rem;
+  .join > div{
+    margin: 1rem;
     padding: 1rem;
-    border: 1px var(--text-color) solid;
+    border: 1px black solid;
     border-radius: 5px;  
     width: 90%;
     min-width: 400px;
-}
+  }
 
-label.myinput{
+  label.myinput{
     display:block;
     padding-top: 1rem;
-}
-
-label.myinput input, label.myinput textarea{
+  }
+  
+  label.myinput input, label.myinput textarea{
     display:block;
     font-size: 1.2rem;
     padding: .5rem;
     width: 20rem;
     max-width: 20rem;
-}
-
-label.myradio{
+  }
+  
+  label.myradio{
     display: block;
     margin-right: .2rem;
     font-size: 1.3rem;  
-    padding-top: .5rem; 
-}
-
-label.myradio input{
-  margin-right: 1rem;
-}
-
-.mysubmit{
-    background-color: var(--blue-enough);
+    padding-top: .5rem;
+  }
+  
+  label.myradio input{
+    margin-right: 1rem;
+  }
+  
+  .mysubmit{
+    background-color: var(--sea-green);
     color: var(--text-color);
     margin: 1rem 0 0 0;
     padding: .5rem;
     font-size: 1.5rem;
-}
+  }
+  
+  label.myinput input:required{
+    border-color: var(--border-red);
+  }
+  
+  input:valid{
+    background-color: var(--valid-green);
+  }
 
-label.myinput input:required{
-    border-color: var(--sea-green);
-}
+  input:invalid{
+    background-color: var(--invalid-red) ;
+  }
 
-input:valid{
-    background-color:var(--grey-blue);
-}
-
-input:invalid{
-    background-color: var(--grey-blue);
-}
-
-.join-confirm{
+  .join-confirm{
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-}
+  }
 
-#thankyou-main h2{
+  #thankyou-main h2{
     text-align: center;
     margin-block-start: 0;
     margin-block-end: 0;
     padding: 1rem 0;
-}
+  }
+
 
                                                        /* End of Form (join.html) */
 /* __________________________________________________________________________________________________________________________________________ */

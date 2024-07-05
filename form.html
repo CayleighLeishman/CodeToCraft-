@@ -1,0 +1,112 @@
+<!-- CHAMBER Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocatello, Idaho Chamber of Commerce</title>
+
+    <meta name="description" content = "WDD 230 -BYUI idaho-spring 1024 .">
+    <meta name="author" content="Cayleigh Leishman">
+
+                            <!-- meta property tags -->
+    <meta property = "og:title" content = "Pocatello Idaho USA Chamber of Commerce" >
+    <meta property = "og:type"  content = "Website" >
+    <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/chamber/index.html"> 
+    <meta property = "og:image" content = "images/poky-logo.webp" >
+
+                                    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" >  <!-- Runs first -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css"><!-- Runs Last -->
+
+                                 <!-- Java Script -->
+    <!-- <script src="scripts/hamburger.js" defer> </script> -->
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/header-footer.js" defer></script>
+                                    
+                                    <!-- favicon -->
+    <link rel="icon" href="images/favicon_io/favicon-16x16.png">
+    
+</head>
+
+<body>
+    
+    <header>
+        <button title="dark mode" id="dark-mode"></button>
+        <div class="logo">
+            <img src="images/poky-logo.webp" alt="logo image">
+            <h1>Pocatello Idaho Chamber of Commerce</h1>
+        </div>
+
+    </header>
+
+    <button title="navigation" id="menu-button"></button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html"> Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <form method="get" action="record.html">
+            <label>Username<sup class="redstar">*</sup>
+                <input type="text" id="username" name="username" required></label>
+            <label>Password<sup class="redstar">*</sup> (at least 8 chars, alphanumeric only)
+                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}">
+            </label>
+            <label>Repeat Password<sup class="redstar">*</sup> <span id="message"></span>
+                <input type="password" id="repeat" name="repeat" name="repeat" required>
+            </label>
+            <label>Email 
+                <input type="text" id="email" name="email" pattern="[0-9a-zA-Z_.\-]+@byui\.edu" title="a valid BYU-I e-mail address">
+            </label> 
+            <label>Page Rating - <span id="rangevalue">1</span>                    
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" list="rangevalues" value="1">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+            <button type="submit">Give Us Your Feedback!</button>
+        </form>
+    </main>
+        
+    <footer>
+        <div class="logo_img" >
+        <img src="images/poky-logo.webp" alt="logo image">
+        </div>
+        <p>Pocatello Idaho Chamber of Commerce</p>
+        <p>123 main street</p>
+        <p>info@dontactuallyemail.com</p>
+        <hr>
+        <p>&copy; <span id='currentYear'></span>│Cayleigh Leishman │ Idaho, USA" │  </p> <!-- &copy is suposed to be the code that will give you the ©  symbol -->    
+        <p id='lastModified'></p>
+
+        <ul>
+            <li><a href="/index.html">Cayleigh's Home Page </a></li>
+            <li><a href="/lesson03/chamber-site-plan.html">Site-Plan</a> </li>
+        </ul>
+       
+    </footer>
+
+</body>
+
+</html>
