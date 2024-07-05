@@ -39,5 +39,10 @@
         width: 600px;
     }
    
+    /*___________________________________________________form page______________________ */
+    .join_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
 } 
 

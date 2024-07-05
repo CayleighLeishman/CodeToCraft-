@@ -127,7 +127,7 @@ h1{
 
 }
     /*__________ Card Stuff___________  */
-.home_main section {
+.home_main section, .join_main section {
     font-size: 25px;
     border-style: solid;
     border-width: 3.8px; 
