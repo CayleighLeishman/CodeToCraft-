@@ -31,7 +31,7 @@ const url = "./data/members.json";
 ///
 
 const site = "./data/members.json";
-const members_cards = document.querySelector('#members_cards');
+// const members_cards = document.querySelector('#members_cards');
 
 const displaymembers = (members) => {
     members.forEach((members) => {
@@ -41,7 +41,7 @@ const displaymembers = (members) => {
             <img src="${members.imageURL}" alt="${members.name} image" loading="lazy" height="300">
             <p>${members.address}, ${members.phone_number}</p>
             <p>${members.websiteURL}</p>`;
-        members_cards.appendChild(newsection);
+        members_data.appendChild(newsection);
     });
 };
 
