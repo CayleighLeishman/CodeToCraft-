@@ -48,5 +48,4 @@ darkbutton.addEventListener("click", () =>{
 function openJoinPage(){
     window.open("join.html")
 }
-
 document.querySelector(".hero_pocatello button").addEventListener("click", openJoinPage)
