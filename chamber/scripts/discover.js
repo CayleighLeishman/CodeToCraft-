@@ -25,5 +25,5 @@ function getMessage(){
 }
 
 let message = getMessage()
-document.getElementById("discover-message").innerText = message
+document.getElementById("visit-message").innerText = message
 localStorage.setItem(LAST_VISIT_KEY, `${today.getTime()}`)
