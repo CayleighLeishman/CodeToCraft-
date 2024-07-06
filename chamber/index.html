@@ -25,7 +25,7 @@
                                  <!-- Java Script -->
     <!-- <script src="scripts/hamburger.js" defer> </script> -->
     <script src="scripts/windchill.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+     <script src="scripts/weather.js" defer></script>
     <script src="scripts/header-footer.js" defer></script>
                                     
                                     <!-- favicon -->
@@ -63,18 +63,21 @@
         <section class="weather">
             <h2>Weather</h2>
             <div class="weather_main">
-              <p>The current temperature in Pocatello, Idaho is <span id="current-temp"></span></p>
+              <!-- <p>The current temperature in Pocatello, Idaho is <span id="temperature"></span></p> -->
+              <p>current condition: <span id="current-conditions"></span></p> 
+              <p>Current Temperature: <span id="temperature"></span>&deg;</p>
+              <p> current wind: <span id="windspeed"></span> MPH </p>
+              <p>windchill:<span id="windchill"></span></p>
+              <hr>
               <figure>
                 <img id="weather-icon" src="" alt="weather-conditions">
                 <figcaption></figcaption>
               </figure>
+              <hr> 
               <p> Courtousy of OpenWeatherMap.org API Test </p>
-            </div>
-            <!-- From another week -->
-            <p>current condition: <span id="current-conditions"></span></p>
-            <p>current temp: <span id="temperature">20</span>&deg;</p> 
-            <p> cuurent wind: <span id="windspeed">10</span>MPH </p>
-            <p>windchill:<span id="windchill"></span></p>
+              
+        </div>
+            
         </section>
 
         <section class="current_events">
