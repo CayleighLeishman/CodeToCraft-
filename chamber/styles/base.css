@@ -38,9 +38,10 @@ header{
 
 .home_main { 
     display: grid;
-    grid-template-columns: 1fr 1fr;    
-    background-color: var(--primary-color);
+    /* grid-template-columns: 1fr 1fr;     */
+    background-color: var(--primary-color); 
     max-width: 800px; 
+    padding:35px; 
     margin: 75px auto;
 } 
 
@@ -122,7 +123,10 @@ h1{
     left: 2rem;
 
 }
+
+
     /*__________ Card Stuff___________  */
+             /* index page, form page,*/
 .home_main section, .join_main section {
     font-size: 25px;
     border-style: solid;
@@ -331,9 +335,13 @@ footer img{                   /*This is supposed to work with the logo and any o
  .discover_thanks p{
     text-align: center ;
 }
+
 /* ___________________________________________________________________________________________________________________________________________ */
 
                                                 /* Business page (directory.html) */
+
+/* Sets the size of Main in the directory.html page */
+
         /* stuff for after Grid */
 #members_main{
     display:grid;
@@ -342,20 +350,6 @@ footer img{                   /*This is supposed to work with the logo and any o
     padding:2rem;
     text-align: center; 
 }
-
-/* #members_data section{
-    border: 3px var(--text-color) solid;
-} */
-
-#members_main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 1rem auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-
 
 #members_data section {
     text-align: center;
@@ -366,7 +360,12 @@ footer img{                   /*This is supposed to work with the logo and any o
     margin: .5rem;
     box-shadow: .5rem .5rem .5rem var(--almost-teal);
 }
-
+.members_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 8rem; /* Add gap to avoid overlap */
+    justify-items: center;
+}
 .members_cards button {
     padding: 2rem;
     font-weight: 300;
@@ -378,14 +377,7 @@ footer img{                   /*This is supposed to work with the logo and any o
     background-color: var(--sea-green);
     color: var(--grey-blue);
 }
-/* [When Grid is selected] */
 
-.members_cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 8rem; /* Add gap to avoid overlap */
-    justify-items: center;
-}
 /*[When List is clicked in the directory page] */
 .members_list h2 {
     font-size: 1rem;
@@ -400,25 +392,18 @@ footer img{                   /*This is supposed to work with the logo and any o
     display: none;
 }
 .members_list section:nth-child(even) {
-    background-color: var(--grey-blue);
+    background-color: var(--almost-teal);
 }
 .members_list section:nth-child(odd) {
     background-color: var(--sea-green);
+}  
+
+/* This didn't go in IMage section of base because there is no image to display */
+.members_list section img{
+    display: none;
 }
 
-
-
-
-#members_data section {
-    text-align: center;
-    border: 1px solid var(--text-color);
-    border-width: 3px;
-    border-radius: 5rem;
-    padding: 1rem; 
-    margin: .5rem;
-    box-shadow: .5rem .5rem .5rem var(--almost-teal);
-}
-
+/* ______________________________________________ */
 .members_cards button{
     padding: 2rem;
     font-weight: 300;
@@ -430,29 +415,7 @@ footer img{                   /*This is supposed to work with the logo and any o
     background-color: var(--sea-green);
     color: var(--grey-blue);
 }
-    /* List section in directory  */
-.members_list h2{
- font-size: 1rem;
-}
-
-.members_list section{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 1rem ;
-    padding-right: 1rem;
-    /* text-align: center; */
-} 
-/* This didn't go in IMage section of base because there is no image to display */
-.members_list section img{
-    display: none;
-}
-
-.members_list section:nth-child(even){
-    background-color: var(--grey-blue);
-}
-.members_list section:nth-child(odd){
-    background-color: var(--sea-green);
-}
+ 
                                                   /* END FOR BUSINESS PAGE (directory.html) */
 /* _________________________________________________________________________________________________________________________________________ */
                                          

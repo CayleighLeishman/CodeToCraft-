@@ -1,12 +1,12 @@
 {
     "members" : [
        {"name" : "Idaho State University",
-        "address" : "1111 Martin Luther King Jr Way ",
+        "address" : "1111 Martin Luther King Jr Way",
         "label" : "School",
         "phone_number" : "208-232-8034",
         "websiteURL" : "https://www.isu.edu/",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/isu-campus.webp",
-        "membership_level" : "JUST AS COMMENT: gold, silver or bronze or none"
+        "membershipLevel" : "Gold"
         },
 
         { "name" : "Ross Park Aquatic Complex",
@@ -14,7 +14,8 @@
         "label" : "Attraction",
         "phone_number" : "208-234-0472",
         "websiteURL" : "https://pocatello.gov/331/Ross-Park-Aquatic-Complex",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/ross-park-swim.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/ross-park-swim.webp",
+        "membershipLevel" : "Silver"
         },
         
         { "name" : "Bannock County Courthouse",
@@ -22,7 +23,8 @@
         "label" : "Courthouse",
         "phone_number" : "208-236-7000",
         "websiteURL" : "https://www.bannockcounty.us/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/bannok-courthouse.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/bannok-courthouse.webp",
+        "membershipLevel" : "None"
         },
 
         { "name" : "Pocatello Idaho Temple",
@@ -30,7 +32,8 @@
         "label" : "Church",
         "phone_number" : "208-646-7730",
         "websiteURL" : "https://www.churchofjesuschrist.org/temples/details/pocatello-idaho-temple?lang=eng",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pocatello_idaho_temple.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pocatello_idaho_temple.webp",
+        "membershipLevel" : "None"
         },
 
         { "name" : "Idaho zoo",
@@ -38,7 +41,8 @@
         "label" : "Attraction",
         "phone_number" : "208-234-6264",
         "websiteURL" : "https://zooidaho.org/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/zoo-idaho-pocatello.webp" 
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/zoo-idaho-pocatello.webp",
+        "membershipLevel" : "Silver" 
         }, 
 
         { "name" : "Outer Limit Fun Zone",
@@ -46,7 +50,8 @@
         "label": "Archade",
         "phone_number" : "208-232-7529",
         "websiteURL" : "https://outerlimitsfunzone.com/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/Outer-Limits-Logo_200_glow.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/Outer-Limits-Logo_200_glow.webp",
+        "membershipLevel" : "None"
         },
 
         { "name" : "Museum of Clean",
@@ -54,7 +59,8 @@
         "label" : "Museum",
         "phone_number" : "208-236-6906",
         "websiteURL" : "https://museumofclean.com/visit/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/clean-museum.webp" 
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/clean-museum.webp",
+        "membershipLevel" : "Bronze"
         },
 
         { "name" : "Idaho Haunted House",
@@ -62,7 +68,8 @@
         "label" : "Attraction",
         "phone_number" : "208-705-8978",
         "websiteURL" : "https://www.idahohauntedhouses.com/halloween-attractions/pocatello.html",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/halloween.gif" 
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/halloween.gif",
+        "membershipLevel" : "Bronze"
         },
 
         { "name" : "El Caporal Mexican Restaurant",
@@ -70,7 +77,8 @@
         "label" : "food",
         "phone_number" : "208-233-9933",
         "websiteURL" : "https://elcaporalpocatello.com/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/el-corporal.webp" 
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/el-corporal.webp",
+        "membershipLevel" : "None"
         },
     
         { "name" : "Delta skating and Family Fun Center",
@@ -78,7 +86,8 @@
         "label" : "Attraction",
         "phone_number" : "208-55-7000",
         "websiteURL" : "https://www.deletapocatello.com/",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/delta_skating_rink.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/delta_skating_rink.webp",
+        "membershipLevel" : "Gold"
         },
 
         { "name" : "Pine Ridge Mall",
@@ -86,7 +95,8 @@
         "label": "Shop",
         "phone_number" : "208-237-7160",
         "websiteURL" : "https://g.co/kgs/J1iNWHP",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pine-ridge-mall.webp"
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/chamber/images/pine-ridge-mall.webp",
+        "membershipLevel" : "None"
         }
     ]
         

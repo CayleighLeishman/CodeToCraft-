@@ -3,12 +3,11 @@
 <html lang="en">
 
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocatello, Idaho Chamber of Commerce</title>
 
-    <meta name="description" content = "WDD 230 -BYUI idaho-spring 1024 .">
+    <meta name="description" content = "WDD 230 -BYUI idaho-spring 2024 .">
     <meta name="author" content="Cayleigh Leishman">
 
                             <!-- meta property tags -->
@@ -18,7 +17,7 @@
     <meta property = "og:image" content = "images/poky-logo.webp" >
 
                                     <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalize.css" >  <!--Runs first -->
+    <link rel="stylesheet" href="styles/normalize.css">  <!--Runs first -->
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
@@ -31,11 +30,9 @@
                                     
                                     <!-- favicon -->
     <link rel="icon" href="images/favicon_io/favicon-16x16.png">
-    
 </head>
 
 <body>
-    
     <header>
         <button title="dark mode" id="dark-mode"></button>
         <div class="logo">
@@ -56,12 +53,29 @@
 
     </nav>
      
-    <main class="home_main">
+    <main  class="home_main">
 
         <div class="hero_pocatello">
             <img src="images/smaller-pocatello.webp" alt="Pocatello Idaho" class="pocatello_img">
             <button>Join the Chamber</button><!-- See header-footer.js for how to use this button to open the join page. -->
         </div>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather_main">
+              <p>The current temperature in Pocatello, Idaho is <span id="current-temp"></span></p>
+              <figure>
+                <img id="weather-icon" src="" alt="weather-conditions">
+                <figcaption></figcaption>
+              </figure>
+              <p> Courtousy of OpenWeatherMap.org API Test </p>
+            </div>
+            <!-- From another week -->
+            <p>current condition: <span id="current-conditions"></span></p>
+            <p>current temp: <span id="temperature">20</span>&deg;</p> 
+            <p> cuurent wind: <span id="windspeed">10</span>MPH </p>
+            <p>windchill:<span id="windchill"></span></p>
+        </section>
 
         <section class="current_events">
             <h2>Current Events</h2>
@@ -73,9 +87,6 @@
             </p>
             <h3>July 25, 2024 - Upcoming Maintenance</h3>
             <p>Our website will undergo scheduled maintenance on July 10, 2024, from 2:00 AM to 5:00 AM MST. During this time, the site will be temporarily unavailable. We apologize for any inconvenience.
-            </p>
-            <h3>June 15, 2024 - Summer Sale Starts Today!</h3>
-            <p>Our annual summer sale is live! Enjoy up to 50% off on selected items until July 15, 2024. Don’t miss out on these great deals!
             </p>
         </section>
 
@@ -90,35 +101,17 @@
             <h3>Honey Never Spoils</h3>
             <p>Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.</p>
 
-            
         </section>
+
         <section class="events">
-            <h2>Events!</h2>
-        </section>
+            <h2>Past Events</h2>
+            <h3>June 15, 2024 - Summer Sale Starts Today!</h3>
+            <p>Our annual summer sale is live! Enjoy up to 50% off on selected items 
+                until July 15, 2024. Don’t miss out on these great deals!
+            </p>
 
-        <section class="weather">
-            <h2>Weather</h2>
-    
-            <div class="weather_main">
-              <p>The current temperature in Pocatello, Idaho is <span id="current-temp"></span></p>
-              
-              <figure>
-                <!-- TO DO/to do:  ASK why this gives me two errors on validitation
-                <img id="weather-icon" src alt>-->
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-              </figure>
-
-              <p> Courtousy of OpenWeatherMap.org API Test </p>
-            </div>
-
-            <!-- From another week -->
-            <h2>Weather</h2>
-            <p>current condition: <span id="current-conditions">partly cloudy></span></p>
-            <p>current temp: <span id="temperature">20</span>&deg</p> 
-            <p> cuurent wind: <span id="windspeed">10</span>MPH </p>
-            <p>windchill:<span id="windchill"></span></p>
-
+            <h3>June 2</h3>
+            <p>Vintage Car Parade and Show, Classic car enthusiasts come by to showcase your meticulously restored vintage vehicles! The event included a parade along the coast, live jazz music, and awards for best in show and people's choice! Please contact us for the lin!</p>
         </section>
 
     </main>

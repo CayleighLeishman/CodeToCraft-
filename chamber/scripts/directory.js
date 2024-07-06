@@ -1,5 +1,4 @@
-//  Help From TA and professors 
-// add button code here loook at professors for assistance 
+// this makes the button to swtich between Grid mode and List mode work
 
 var gridSelector = document.querySelector('#members_grid');
 var listSelector = document.querySelector('#members_list');
@@ -28,9 +27,6 @@ listSelector.addEventListener('click', ()=>{
 const url = "./data/members.json";
 
 
-///
-
-const site = "./data/members.json";
 // const members_cards = document.querySelector('#members_cards');
 
 const displaymembers = (members) => {
@@ -39,15 +35,17 @@ const displaymembers = (members) => {
         newsection.innerHTML = `
             <h2>${members.name} ${members.label}</h2>
             <img src="${members.imageURL}" alt="${members.name} image" loading="lazy" height="300">
-            <p>${members.address}, ${members.phone_number}</p>
-            <p>${members.websiteURL}</p>`;
+            <p>${members.address}</p>
+            <p> ${members.phone_number}</p>
+            <p>${members.websiteURL}</p>
+            <p>${members.membershipLevel}</p>`;
         members_data.appendChild(newsection);
     });
 };
 
 async function getmembersData(){
     try {
-        const response = await fetch(site);
+        const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
             displaymembers(data.members); 
