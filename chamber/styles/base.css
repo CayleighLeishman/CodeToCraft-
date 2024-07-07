@@ -95,7 +95,7 @@ nav li{
 
              /*[Stuff within body] */
 body {
-    /* font-size:20px; */
+  
     color:var(--text-color);
     background-color: var(--primary-color);
 }
@@ -269,10 +269,6 @@ footer img{
 .discover-main a{
     color:var(--text-color);
     
-}
-.discover-main a:hover{
-    background-color:var(--background-color);
-    color:var(--primary-color)
 }
 
 .discover-main section {    
