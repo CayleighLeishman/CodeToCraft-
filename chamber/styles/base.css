@@ -36,14 +36,6 @@ header{
     text-align:center;
 }
 
-.home_main { 
-    display: grid;
-    /* grid-template-columns: 1fr 1fr;     */
-    background-color: var(--primary-color); 
-    max-width: 800px; 
-    padding:35px; 
-    margin: 75px auto;
-} 
 
 .grid-item {
     padding: 20px;
@@ -68,7 +60,7 @@ nav ul{
     background-color: var(--background-color);
     padding-inline-start: 0px; /*what does this do?*/
     display:none; 
-    font-size:20px;
+    /* font-size:20px; */
 }
 
 nav ul.open{
@@ -105,7 +97,7 @@ nav li{
 
              /*[Stuff within body] */
 body {
-    font-size:20px;
+    /* font-size:20px; */
     color:var(--text-color);
     background-color: var(--primary-color);
 }
@@ -128,7 +120,7 @@ h1{
     /*__________ Card Stuff___________  */
              /* index page, form page,*/
 .home_main section, .join_main section {
-    font-size: 25px;
+    /* font-size: 25px; */
     border-style: solid;
     border-width: 3.8px; 
     border-radius: .4rem; 
@@ -166,7 +158,6 @@ h1{
 /* _______ Google Maps_________  */
  .google-maps{
     position:relative;  
-    /* padding-bottom: 50px; */
     padding:1rem;
     width: 100%;
 }
@@ -176,7 +167,7 @@ h1{
 footer{
     background-color:var(--background-color);
     padding: 45px;
-    font-size:15px;
+    /* font-size:15px; */
     color: var(--white-text);
     text-align: center;   
 }
@@ -195,7 +186,7 @@ footer a:hover{
         /*navigation button */
 #menu-button{
     background-color:var(--sea-green);
-    font-size: 2rem;
+    /* font-size: 2rem; */
     padding:.5rem;
 }
 
@@ -277,7 +268,7 @@ footer img{                   /*This is supposed to work with the logo and any o
 /*____________________________________DISCOVER Page (discover.html)______________________________*/
 .discover-main {
     text-align: right;
-    font-size:2rem;
+    /* font-size:2rem; */
 }
 
 .discover-main a{
@@ -446,7 +437,7 @@ footer img{                   /*This is supposed to work with the logo and any o
     font-size: 1.2rem;
     padding: .5rem;
     width: 20rem;
-    max-width: 20rem;
+    max-width: 100%;
   }
   
   label.myradio{

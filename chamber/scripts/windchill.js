@@ -7,13 +7,10 @@ function showWindChill(temp, wind){
         chillspan.innerText='N/a'
         return
     }
-
-    // 
     
-    chillfactor = wind** 0.16  //Why do we use ** not *? 
-    chill= 35.74 + (0.6215 * temp) - (35.75* chillfactor) + (0.4275 * temp * chillfactor)
-    chillspan.innerHTML = `${chill.toFixed(0)}&deg;F`  
-
+    let chillfactor = number = wind** 0.16 
+    let chill = 35.74 + (0.6215 * temp) - (35.75* chillfactor) + (0.4275 * temp * chillfactor)
+    chillspan.innerHTML = `${chill.toFixed(0)}&deg;F`            
 }
 
 

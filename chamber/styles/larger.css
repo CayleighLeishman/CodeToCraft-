@@ -34,6 +34,16 @@
     #hero_label::after{
         content: "large";
     }
+    .home_main { 
+        display: grid;
+        /* grid-template-columns: 1fr 1fr;     */
+        background-color: var(--primary-color); 
+        max-width: 800px; 
+        padding:35px; 
+        margin: 75px auto;
+    } 
+    
+
     /* _______________________________________________________Discover page___________________________________ */
     .discover-main img{
         width: 600px;

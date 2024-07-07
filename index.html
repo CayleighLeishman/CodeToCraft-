@@ -16,13 +16,13 @@ for hamburger menu use " ☰ "  -->
 
     <!-- Lesson 2 Activity- Social Media Meta Tags -->
     <meta property = "og:title" content = "Cayleigh Leishman" >
-    <meta property = "og:tytpe" content = "Website" >
+    <meta property = "og:type" content = "Website" >
     <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/">
     <meta property = "og:image" content = "https://cayleighleishman.github.io/wdd230/images/cayleigh-small.webp" >
 
     <title>Cayleigh - WDD 230 - Web Frontend Development</title> <!-- this would show on google links that people tend to click on -->
    
-    <!--Lesson 2 Activity *mostly done in CSS* -->
+    <!-- CSS -->
     <!-- connects to .css files in Styles folder -->  
     <link rel="stylesheet" href="styles/normalize.css" >  <!-- Runs first -->
     <link rel="stylesheet" href="styles/reset.css" >
@@ -30,9 +30,11 @@ for hamburger menu use " ☰ "  -->
     <link rel="stylesheet" href="styles/larger.css">
 
 
-    <!-- connects to.js files in Scripts folder. 'defer' tells html do this last -->
+    <!--Javascript -> 'defer' tells html do this last -->
     <script src="scripts/getdates.js" defer> </script>
     <script src="scripts/hamburger.js" defer> </script>
+    <script src="./chamber/scripts/weather.js" defer></script>
+    <script src="scripts/visits.js" defer></script>
 
     <!-- use this for your favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -126,17 +128,32 @@ for hamburger menu use " ☰ "  -->
 
             <section class="card">
                 <h3>Information</h3>
+                <hr>
                 <p>Weather Information: Placeholder</p>
-                <p></p>
-                <p>Number of visits: <span id="visits"> </span></p>
+                <p>OpenWeatherMap.org API Test</p>
+                <hr>
+                <h2>Weather</h2>
 
-                <div>
-                    <p id="discover-message"></p>
-                </div> 
-
+                <div class="weather_main">
+                  <p>Current Temperature: <span id="temperature"></span>&deg;</p>
+                  <p>Current Condition: <span id="current-condition"></span></p>
+                  <p>Current wind: <span id="windspeed"></span> MPH </p>
+                  <p>windchill:<span id="windchill"></span></p>
+                  <hr>
+                  <figure>
+                    <img id="weather-icon" src="" alt="weather-conditions">
+                    <figcaption></figcaption>
+                  </figure>
+                  <hr> 
+                  <p> Courtousy of OpenWeatherMap.org API Test </p>
+                  <p></p>
+                  <hr>
+                  <p>Number of visits: <span id="visits"> </span></p>
+                  <p id="discover-message"></p>
+                </div>
             </section>
-        </div>
 
+        </div>
         <iframe class="google-maps" 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
         width= "200"
