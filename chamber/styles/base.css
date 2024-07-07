@@ -35,8 +35,6 @@ header{
     grid-column:2/4 ;
     text-align:center;
 }
-
-
 .grid-item {
     padding: 20px;
 }
@@ -46,7 +44,7 @@ main ul{
 }
 
                                 /*  [ALL Navigation] */
-nav{
+nav {
     background-color: var(--background-color);
     color: var(--text-color);
     grid-column:span;
@@ -92,7 +90,7 @@ nav ul li a:hover{
 }
 
 nav li{    
-    list-style-type: none; /*this makes the dots besides the link disapear  */
+    list-style-type: none;
 }
 
              /*[Stuff within body] */
@@ -116,15 +114,13 @@ h1{
 
 }
 
-
     /*__________ Card Stuff___________  */
-             /* index page, form page,*/
+/* index page, form page,*/
 .home_main section, .join_main section {
     /* font-size: 25px; */
     border-style: solid;
     border-width: 3.8px; 
     border-radius: .4rem; 
-    /* width: 98%; --> this made the cards stack besides each other */
     padding: 35px;
     margin: 1rem;  
 }
@@ -186,12 +182,11 @@ footer a:hover{
         /*navigation button */
 #menu-button{
     background-color:var(--sea-green);
-    /* font-size: 2rem; */
     padding:.5rem;
 }
 
 #menu-button::before{ 
-    content: "☰";   /* supposed to use "&equiv;" in html to get the proper hamburger sign, but can't figure out how to utilize it */
+    content: "☰";   
 
 }
     /*[nav when it's closed] */
@@ -238,9 +233,9 @@ footer a:hover{
 header img{               
    /* display:grid;
     grid-column: 1/4; */
-    border-radius:100px;  /* this changes the shape of the image*/
-    padding: 20px;       /*  gives spacing but shortens image */
-    width:175px;        /*changes width of image             */
+    border-radius:100px;  
+    padding: 20px;     
+    width:175px;      
     justify-content: left;
 }
 
@@ -249,17 +244,17 @@ header img{
 }
 
 .logo_img{
-    padding: 15px;         /*gives spacing but shortens image */
-    width:30px;          /*changes width of image   */      
+    padding: 15px;         
+    width:30px;          
 }
 
-footer img{                   /*This is supposed to work with the logo and any other images in the footer ONLY*/
+footer img{                 
     float:left;               
     border-radius:100px;      
-    /* padding: 15px;     gives spacing but shortens image  */
+   
     width:150px;           
 }
- /* an image in the discover.html page */
+
 .discover-images img{     
     border: 5px solid var(--almost-teal);
     transition: opacity 2s;
@@ -330,10 +325,6 @@ footer img{                   /*This is supposed to work with the logo and any o
 /* ___________________________________________________________________________________________________________________________________________ */
 
                                                 /* Business page (directory.html) */
-
-/* Sets the size of Main in the directory.html page */
-
-        /* stuff for after Grid */
 #members_main{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
@@ -354,7 +345,7 @@ footer img{                   /*This is supposed to work with the logo and any o
 .members_cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 8rem; /* Add gap to avoid overlap */
+    gap: 8rem; 
     justify-items: center;
 }
 .members_cards button {
@@ -369,7 +360,7 @@ footer img{                   /*This is supposed to work with the logo and any o
     color: var(--grey-blue);
 }
 
-/*[When List is clicked in the directory page] */
+/*  [When List is clicked in the directory page] */
 .members_list h2 {
     font-size: 1rem;
 }
@@ -389,7 +380,6 @@ footer img{                   /*This is supposed to work with the logo and any o
     background-color: var(--sea-green);
 }  
 
-/* This didn't go in IMage section of base because there is no image to display */
 .members_list section img{
     display: none;
 }
@@ -399,20 +389,16 @@ footer img{                   /*This is supposed to work with the logo and any o
     padding: 2rem;
     font-weight: 300;
     background-color: var(--background-color);
-    color: var(--almost-teal) /*was previously set to "#478d73"*/
+    color: var(--almost-teal) 
 }
 
 .members_cards button:hover{
     background-color: var(--sea-green);
     color: var(--grey-blue);
 }
- 
-                                                  /* END FOR BUSINESS PAGE (directory.html) */
 /* _________________________________________________________________________________________________________________________________________ */
                                          
                                                                  /* /*  FORM CSS    */
-
-
 .join{
     display: grid;    
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -484,6 +470,3 @@ footer img{                   /*This is supposed to work with the logo and any o
     padding: 1rem 0;
   }
 
-
-                                                       /* End of Form (join.html) */
-/* __________________________________________________________________________________________________________________________________________ */

@@ -1,29 +1,27 @@
-<!-- CHAMBER Page -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocatello, Idaho Chamber of Commerce</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pocatello, Idaho - Chamber of Commerce</title>
 
-    <meta name="description" content = "WDD 230 -BYUI idaho-spring 2024 .">
+    <meta name="description" content = "Pocatello Idaho Chamber Of Commerce Home Page">
     <meta name="author" content="Cayleigh Leishman">
 
                             <!-- meta property tags -->
-    <meta property = "og:title" content = "Pocatello Idaho USA Chamber of Commerce" >
+    <meta property = "og:title" content = "Home Page for Pocatello Idaho USA - Chamber of Commerce" >
     <meta property = "og:type"  content = "Website" >
     <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/chamber/index.html"> 
     <meta property = "og:image" content = "images/poky-logo.webp" >
 
                                     <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalize.css">  <!--Runs first -->
+    <link rel="stylesheet" href="styles/normalize.css">  
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">      <!-- Runs Last -->
+    <link rel="stylesheet" href="styles/larger.css">     
 
                                  <!-- Java Script -->
-    <!-- <script src="scripts/hamburger.js" defer> </script> -->
     <script src="scripts/windchill.js" defer></script>
      <script src="scripts/weather.js" defer></script>
     <script src="scripts/header-footer.js" defer></script>
@@ -37,7 +35,7 @@
         <button title="dark mode" id="dark-mode"></button>
         <div class="logo">
             <img src="images/poky-logo.webp" alt="logo image">
-            <h1>Pocatello Idaho Chamber of Commerce</h1>
+            <h1>Pocatello Idaho - Chamber of Commerce</h1>
         </div>
 
     </header>
@@ -56,14 +54,13 @@
     <main  class="home_main">
 
         <div class="hero_pocatello">
-            <img src="images/smaller-pocatello.webp" alt="Pocatello Idaho" class="pocatello_img">
-            <button>Join the Chamber</button><!-- See header-footer.js for how to use this button to open the join page. -->
+            <img src="images/smaller-pocatello.webp" alt="Pocatello, Idaho" class="pocatello_img">
+            <button>Join the Chamber</button>
         </div>
 
         <section class="weather">
             <h2>Weather</h2>
             <div class="weather_main">
-              <!-- <p>The current temperature in Pocatello, Idaho is <span id="temperature"></span></p> -->
               <p>Current Temperature: <span id="temperature"></span>&deg;</p>
               <p> current wind: <span id="windspeed"></span> MPH </p>
               <p>windchill:<span id="windchill"></span></p>
@@ -115,21 +112,17 @@
             <h3>June 2</h3>
             <p>Vintage Car Parade and Show, Classic car enthusiasts come by to showcase your meticulously restored vintage vehicles! The event included a parade along the coast, live jazz music, and awards for best in show and people's choice! Please contact us for the lin!</p>
         </section>
-      <!-- pocatello maps -->
-        <!-- TO DO/to do: 
-            IF YOU WANT IN MAIN fIGure out how to tell larger.css to move this to bottom of pageand span the whole median (ikely grid-columns: 1/4; or something like that.) -->
-      
     </main>
 
-  <iframe class="google-maps" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
-            width= 600  
-            height="500"  
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+    <iframe class="google-maps" 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d187148.47001161976!2d-112.66082094260919!3d42.868731459204504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53554f20d5d09b0d%3A0x70c6a2484ce39b0!2sPocatello%2C%20ID!5e0!3m2!1sen!2sus!4v1715315861795!5m2!1sen!2sus"
+        width= 600  
+        height="500"  
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
         
         <footer>
         
@@ -145,13 +138,11 @@
                 <p>208-234-6163</p>
                 <p> Feel free to contact whenever you'd like</p>
             </div>
-
             <hr>
-            <p>&copy; <span id='currentYear'></span>│ Cayleigh Leishman │ Idaho, USA" │  </p> <!-- &copy is suposed to be the code that will give you the ©  symbol -->    
+            <p>&copy; <span id='currentYear'></span>│ Cayleigh Leishman │ Idaho, USA" │  </p>   
             <p id='lastModified'></p>
-    
+            
         </footer>
-
 </body>
 
 </html>

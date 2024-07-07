@@ -1,6 +1,4 @@
 @media screen and (min-width: 800px){
-    
-    /* all */
     nav{
         padding: 8px 5px .3px 5px;
         grid-column:span;
@@ -25,31 +23,27 @@
         grid-template-columns: 2fr 1fr;
         padding:4px;
     }
-     /* TO DO/to do: fix this */
     #menu-button{
         display: none;
     }
 
-    /* _______________________________________________Indext page only___________________________________________ */
+    /* _______________________________________________Index page___________________________________________ */
     #hero_label::after{
         content: "large";
     }
     .home_main { 
         display: grid;
-        /* grid-template-columns: 1fr 1fr;     */
         background-color: var(--primary-color); 
         max-width: 800px; 
         padding:35px; 
         margin: 75px auto;
     } 
     
-
-    /* _______________________________________________________Discover page___________________________________ */
+    /* ________________________________________________Discover page___________________________________ */
     .discover-main img{
         width: 600px;
     }
-    
-    /*___________________________________________________form page______________________ */
+    /*_________________________________________________form page__________________________________ */
     .join_main{
         display: grid;
         grid-template-columns: 1fr 1fr ;
