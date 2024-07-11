@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+/* Got above from: https://fonts.google.com/selection/embed */
+
+/* above is the font checker to see if font actually is correct below is what I think id like but it looks subtle */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+
+/* PUtting Notes here
+Consider making the footer and header the same color as the background/body and seperate itusing lines/border
+*make page hover effects more obvious to make better usability. (when hoving over images have something happen, when hovering over the nav make it do soemthing
+*have nav set to be sticky, always at the top  LIKE: https://pinkproducts.com/
+*
+*/
+:root{
+    --elsa: #EEFFDB;
+    --cinderella: #B8D4E3;
+    --aurora: #F194B4;
+    --moana: #AD343E;
+    --mulan:#421820;
+    --who-knows:#283044;
+}
+
+
+body{
+    background-color: var(--aurora);
+    font-family: "playwrite" ;
+    margin:0;
+    padding:0;
+
+}
+
+
+                        /* header stuff */
+header{
+    background-color: var(--aurora);
+    padding: .4rem;
+}
+
+#logo h1{
+    width: 600px;
+    margin: 50px 0px 0px 0px;
+}
+
+#logo img, footer img{
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+            /* Navigation stuff */
+nav {
+    background-color: var(--elsa);
+    text-align: center; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0; 
+}
+nav ul {
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 2rem;
+;
+}
+nav ul li a {
+    text-decoration: none;
+    padding:2rem;
+}
+
+                                                            /* BUTTONS All pages*/
+        /*Hamburger/Mobile Navigation button */
+#menu-button{
+    background-color:var(--cinderella);
+    padding:.5rem;
+}
+
+#menu-button::before{ 
+    content: "☰";   
+
+}
+    /*[nav when it's closed] */
+#menu-button.open::before{
+    content: 'x';
+}
+
+
+    /* [dark mode button] */
+#dark-mode{
+    height: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#dark-mode::before{
+    content: "🌘";
+    background-color:var(--elsa);
+    color:var(--mulan)
+}
+
+#dark-mode.dark::before{
+    content: "☀️"; 
+}
+
+                                                /* Index Page */
+.home-main{
+    background-color: var(--elsa);
+    border: 10px var(--aurora);
+    margin: 20px;
+    padding:20px;
+}
+        /* HERO IMAGE: */
+.hero{
+    margin: 20px;
+    /* text-align: center; */
+    position: relative;
+}
+
+.hero img{
+    width:100%;
+}
+
+.hero-label{
+    position:absolute;
+    top: 35px;
+    left: 35px;
+    background-color:var(--aurora);
+    padding:1rem;
+    box-shadow: 0 0 1rem ;
+    opacity: .75;
+
+}
+
+.hero-label{
+    position:absolute;
+    top: 1rem;
+    left: 2rem; 
+
+}
+
+ /* Slideshow Stuff on Index page */
+ * {
+     box-sizing: border-box
+ }
+ /* body {
+     font-family: Verdana, sans-serif; margin:0
+ } */
+ .mySlides {
+     display: none
+ }
+ .slideshow-container img {
+     vertical-align: middle;
+ }
+ 
+ .slideshow-container {
+   max-width: 1000px;
+   position: relative;
+   margin: auto;
+ }
+ 
+ /* Next & previous buttons on Slideshow*/
+ .prev, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 0;
+   margin-top: .2rem;
+   /* margin-top: -22px; */
+   
+   color: var(--mulan);
+   font-weight: bold;
+   font-size: 8rem;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+ 
+ /* Position the "next button" to the right on slideshow */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ /* On hover, add a Who-knows background color with a little bit see-through */
+ .prev:hover, .next:hover {
+   background-color:var(--who-knows)(0,0,0,0.8);
+ }
+ 
+ /* Caption text */
+ .text {
+   color: var(--mulan);
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+ 
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: var(--elsa);
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+ 
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: var(--cinderella);
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+ 
+ .active, .dot:hover {
+   background-color: var(--mulan);
+ }
+ 
+ /* Fading animation */
+ .fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+ }
+ 
+ @keyframes fade {
+   from {opacity: .4} 
+   to {opacity: 1}
+ }
+
+/* footer{ NOTE --> why don't you break the footer to two sections, logo to left, contacts in the middle? 
+Or breakit to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */
+footer{
+    background-color: var(--aurora);
+    text-align: center;
+}
