@@ -1,8 +1,23 @@
 Check if you actually need the median.css, you might be able to get away with just the "larger"
 
 INSTRUCTIONS FOUND HERE:
-
 https://byui.instructure.com/courses/294700/pages/w12-final-project-a-basic-storefront?module_item_id=35968606
+
+A header with readily available navigation which is consistent across all pages. The navigation uses a "hamburger menu" in smaller resolutions.
+An inviting hero image which makes the purpose of the site clear above the fold.
+An call to action that floats over the hero image, inviting customers to view your product selection. Clicking the call to action takes the user to the product listing page.
+Featured products section which showcase three of your bestselling products prominently on the home page. Clicking on any of these products will take you to the product listing page. Use the data from your product list below to determine which featured products to show.
+Weather card(s) which summarize the current weather conditions for Salt Lake City, Utah.
+Use the Current Weather API at OpenWeather and include
+Current temperature
+Condition description
+Current conditions icon
+Current humidity
+Display a forecast for Salt Lake City that displays the weather condition description and related icon at 9:00 AM for the next three days (not including today). Use the 5-Day/3-Hour forecast from OpenWeatherLinks to an external site.
+Include an information card about the total number of orders current user has completed from the Order page form. This information should just be stored locally, with the user's agent (browser). 
+
+
+
 
 PLAN:
 
@@ -11,6 +26,7 @@ Friday:
 
 #Saturday: 
  ☐Finish Index page [especially Hero image] 
+ ☐Add bottom-border- shadow to NAV
  ☐Check out for API https://byui.instructure.com/courses/294700/pages/w12-working-with-the-url-api?module_item_id=35202996
  ☐ copy header and footer to the rest of the pages.
  ☐Start order pages (Look at Form Pages on Week 12(?) for more info: )
@@ -27,17 +43,26 @@ No work applicable unless for fun
  ☐Complte one new page
  ☐ Meet with professor after class
 
-
-
+____________________________________________________________________________________________________________________________________________
 
 NEED ASSISTANCE ON
      Header:
      -figure out why the font is not changing in nav
-     -figure out how to move "Enchanged BAckpacksto the middle besides the image" in 
+     -figure out how to move "Enchanged BAckpacksto the middle besides the image" in the middle (Looks like dark-mode is large?)
+
+     HERO IMAGE: 
+     For some reason when the mobile is set to 400 the image does not display until 600 ()
+
+
+     DARK MODE: 
+     When I first click on it when it loads it does nothing [it works when I click it twice though and then it works fine.]
+
+     CSS:
+     Can I use medium.css or do I need to only have a larger view? 
      
     *Weater:
      How do I find salt Lake Citys API?
-           
+____________________________________________________________________________________________________________________________________________      
     TO DO: 
    
      In Index: make sure your hero images have a link to view it in products page
@@ -60,7 +85,7 @@ NEED ASSISTANCE ON
      zip code<span class=req" ....}
      -->
      
-__________________________-
+____________________________________________________________________________________________________________________________________________
 Slideshow stuff- originally on Hero index page before i leraned it needed to be one image
 
                     <!-- slideshow stuff -->
@@ -107,7 +132,11 @@ Slideshow stuff- originally on Hero index page before i leraned it needed to be 
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
                 </div>
-________________
+____________________________________________________________________________________________________________________________________________
+
+
+
+__________________________________[corelated with code above ust in different folder]
 Slideshow CSS:
 
  /* Slideshow Stuff on Index page */
@@ -206,3 +235,5 @@ Slideshow CSS:
       from {opacity: .4} 
       to {opacity: 1}
     }
+
+____________________________________________________________________________________________________________________________________________

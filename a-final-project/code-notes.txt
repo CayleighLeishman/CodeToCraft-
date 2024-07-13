@@ -1,0 +1,66 @@
+What I did:
+____________________________________________________________________________________________________________________________________________
+July 13'24:
+
+13:49 added hover effect for Call-to-actin buttin in herof-label
+13:53 Gave up on hover effect for hero-label and deleted the new codes so I don't have redundant code sitting around
+14:10 Still working on <picture> tag for hero image. Trying to figure out what size to use.
+14:19 Used Chat-gpt to figure out why image was still larger on website than the image size showed. 
+14:22 Noticed in larger.css I had two home-main tags and deleted one of them
+
+14:27 noticed home-main had no spacing between top and div .hero so I'm wondering why there's so much space at the top
+14:30 i tried to commentout the medium.css to see what happened and learned most my hero-label code is in medium.css 
+
+14:31 moved the navigation stuff to medium.css. Not really sure but a part of methought "Medium.css should be for the not as small stuff" but 
+honeslty it probably dosen't make too much of a difference.
+
+14:36 I sent my css to chatgbt to see if there were issues and it consolidated my code so I deleted stuff in all my css
+ to use chatgbt consolidated stuff (It looks like it just reordered stuff) but when i did that it didn't change what I was 
+ hoping so I deleted that and went back to my origanl css files.
+
+
+15:00 I messed around with the hero responsive image design. It's responsive but while I was changing the sizes I noticed when I got really small 600x518
+my image didnt work (I JUST REALIZED THE IMAGE IS SET TO BE 600X600 SO OF COURSE IT WONT WORK IN 600X518 BECAUSE MY IMAGE IS 600X600)
+
+15:11 I figured out how to fix the hero image! I just didn't name the file right lol thats why the above issue didn't work
+
+15:30 I pushed my changes to github! Not finished but I need a break
+
+18:13 Added the shadow-box shading to the navigation and considering doing that to the home-main
+ class as well
+
+18:16 added the shading to the home-main as well. I'll get a second oopinion on weither i should stick with it or not later
+
+18:54 added the products and a section for number of orders
+
+18:05 added home-products as the cards
+
+18:15- created json products to get it ready for products page
+
+19:36 tried to create order.js 
+
+19:44 I created order.js, I don't know if it works since I didn't work on the orders page 
+but I have it sort of set up for later
+
+20:28 Tried to figure out how to make the state and street and zipcode requirements
+ but I don't think i did it right. They won't turn red if nothing is inputed
+ Also I have no idea how to put the Product Identifier - in a hidden field not visible to the user  
+ while not shwoing the user. Was I suposed to do this in products?
+
+ 20:38 I created an aboutus page and added css for it. I'm not sure how I'll feel about it tomorrow, 
+I probably shouldn't have started another page, but I knew I was going to keep obsessing about it
+if I didn't at least start and create the other pages to get the nav working.
+
+20:45 I also added a products.html page because I knew the nav issue would drive me crazy and I ddin't want to risk forgetting to change order.html to products.html
+But I realized earlier that I didn't need my hero image to have source images. Just in the about page.
+So I'm debating using a new hero image for the index page. Because reguardless I'm going to be using the nemo images for my 
+about us page because I REFUSE to redo the work unless the professor asks. I really need to make sureI
+I'm understanding the instructions because I think I'm doing things out of order. (Sigh) I dont
+know what to tell you Cayleigh, I think we're geting to excited about this project
+for now I'm going to go to bed because as you can see I've been doing this almost all day. Otherwise I'm going to get 
+caught up in details that I don't need to. 
+
+20:52 I realized the footer image didn't have alt tags so I added those and I'm validating the html for index
+about-us, and products to check it.
+
+

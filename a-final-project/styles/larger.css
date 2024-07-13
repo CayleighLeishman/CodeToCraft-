@@ -1,4 +1,4 @@
-@media screen and (min-width:800px){
+@media screen and (min-width:600px){
     :root{
         --elsa: #EEFFDB;
         --cinderella: #B8D4E3;
@@ -8,45 +8,20 @@
         --who-knows:#283044;
     }
 
-    /* _____________________________________________________________________NAVIGATION ______________________________________________________*/
-    nav{
-        padding: 8px 5px .3px 5px;
-        grid-column:span;
-    }
-   
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    #hamburger-button{
-        display: none
-    }
-
-    /* ________________________________________________________________INDEX PAGE___________________________________________________ */
-    .home-main{
+    /* ________________________________________________________________MAIN ON DIFFERENT PAGES___________________________________________________ */
+    .home-main, .order-main, .about-main, .products-main{
         display: grid;
         grid-template-columns: 1fr 2fr ;
         background-color: var(--elsa);
         border: 10px var(--moana);
         margin: 5rem;
-        padding:20px;
+        padding:5rem;
     }
-    
-    .home-main{
-
-        background-color: var(--elsa);
-        border: 10px var(--moana);
-        margin: 5rem;
-        padding:20px;
+    /* __________google Maps____________ */
+    iframe{
+        align-items: center;
+        grid-column:1/5;
     }
-
-    .hero img{
-        width:100%;
-    
-    }
-
-    
     /* __________________________________________________________________________Footer Stuff _________________________________________________*/
     /* footer{ NOTE --> why don't you break the footer to two sections, logo to left, contacts in the middle? 
     Or breakit to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */
