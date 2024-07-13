@@ -1,0 +1,21 @@
+@media screen and (min-width:500px){
+    
+   
+    /* home main */
+    .home-main{
+        background-color: var(--elsa);
+        border: 10px var(--moana);
+        margin: 2rem;
+        padding:2rem;
+    }
+    /* Hero label button " */   
+    #hero-label{
+        position:relative;
+        top: 5rem;
+        left: 1rem;
+        background-color:var(--aurora);
+        padding:1rem;
+        box-shadow: 0 0 1rem ;
+        opacity: .75;
+    }
+}

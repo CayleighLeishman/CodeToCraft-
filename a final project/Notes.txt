@@ -1,0 +1,188 @@
+Check if you actually need the median.css, you might be able to get away with just the "larger"
+
+
+
+PLAN:
+
+Friday: Get Navigation Figured out
+Saturday: Finish Index page [especially Hero image] and copy header and footer to the rest of the pages. Start order pages
+Sunday: No work applicable unless for fun
+Monday: Compltet Order pages and add 12 images for cards
+
+
+NEED ASSISTANCE ON
+     Header:
+     -figure out why the font is not changing in nav
+     -figure out how to move "Enchanged BAckpacksto the middle besides the image" in 
+     
+    *Weater:
+     How do I find salt Lake Citys API?
+           
+    TO DO: 
+   
+     In Index: make sure your hero images have a link to view it in products page
+        put weather near the botoom, maybe footer--PUT EVERYTHING IN ORDER OF IMPORTANCE
+        seperate by colors 
+        Mention weather API in the footer     
+     Build your header and footer
+     Put Weather card to left of page (below Hero)
+     dont worry about what it looks like worry abou twhat stuff you need on website first 
+     THEN worry about how it looks. 
+     THEN worry about dynamic stuff in there 
+     ALSO :
+     BUILD HEADER AND FOOTER FIRST
+     IF PROJECT KEEPS YOU STUCK FOR HOURS THEN STOP AND GET PROFESSORS HELP
+
+     FOR order page make link to order page from image
+
+
+     {label> 
+     zip code<span class=req" ....}
+     -->
+     
+__________________________-
+Slideshow stuff- originally on Hero index page before i leraned it needed to be one image
+
+                    <!-- slideshow stuff -->
+
+                    <!-- products href="order.html?pid-1" 
+                     Or href =order.html?pid-2"
+                     Etc
+                      -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <picture>                
+                        <source media="(max-width: 800px)" srcset="images/chip-n-dale-wallet.webp">
+                        <img src="images/chip-n-dale-wallet.webp" alt="chip and dale wallet with ice cream" style="width:100%">
+                    </picture>  
+                      <div class="text">We’re going nuts over our next adventure!</div>
+                    </div>
+            
+                    <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                        <picture>                
+                            <source media="(max-width: 800px)" srcset="images/chip-n-dale-wallet.webp">
+                            <img src="images/mousercise.webp" alt="mini backpack with Mickey, Minnie and Donald in excersize gear"style="width:100%">
+                        </picture>   
+                      <div class="text">Mousercise time!</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <picture>                
+                        <source media="(max-width: 800px)" alt="Monsters INC University backpack" srcset="images/pixar-monsters-unviversity.webp">
+                        <img src="images/pixar-monsters-unviversity.webp" style="width:100%">                   
+                     </picture>  
+                      <div class="text">Major in Scare-onomics!</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                </div>
+                <br>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+________________
+Slideshow CSS:
+
+ /* Slideshow Stuff on Index page */
+ * {
+     box-sizing: border-box
+ }
+ 
+    .mySlides {
+       display: none
+    }
+    .slideshow-container img {
+        vertical-align: middle;
+    }
+
+    .slideshow-container {
+        /* GRID STUFF, dont delete until you're happy with the grid layout of home-main and know you dont need it to span 1/3 */
+       /* grid-column: 1/3; */
+       max-width: 25rem;
+       position: relative;
+       margin: auto;
+
+       z-index:2;
+    }
+
+    /* Next & previous buttons on Slideshow*/
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;  /* this makes the left arrow go way out of view of page */
+      padding: 0;
+      margin-top: .2rem;
+      /* margin-top: -22px; */
+      color: var(--mulan);
+      font-weight: bold;
+      font-size: 8rem;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right on slideshow */
+    .next {
+      right: 0;
+         border-radius: 3px 0 0 3px;
+       }
+
+       /* On hover, add a Who-knows background color with a little bit see-through */
+       .prev:hover, .next:hover {
+         background-color:var(--who-knows)(0,0,0,0.8);
+       }
+
+    /* Caption text */
+    .text {
+      color: var(--mulan);
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: var(--elsa);
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: var(--cinderella);
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: var(--mulan);
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }

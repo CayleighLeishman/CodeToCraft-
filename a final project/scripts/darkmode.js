@@ -1,4 +1,3 @@
-
 // darkMode 
 let darkbutton = document.getElementById("dark-mode")
 darkbutton.addEventListener("click", () =>{    
@@ -22,9 +21,3 @@ darkbutton.addEventListener("click", () =>{
         document.documentElement.style.setProperty('--who-knows','#7d8fbe');              
     } 
 })
-
-// Join button 
-function openJoinPage(){
-    window.open("join.html")
-}
-document.querySelector(".hero_pocatello button").addEventListener("click", openJoinPage)

@@ -7,10 +7,11 @@
 
 /* PUtting Notes here
 Consider making the footer and header the same color as the background/body and seperate itusing lines/border
-*make page hover effects more obvious to make better usability. (when hoving over images have something happen, when hovering over the nav make it do soemthing
-*have nav set to be sticky, always at the top  LIKE: https://pinkproducts.com/
+*make page hover effects more obvious to make better usability. (when hoving over images have something happen, when hovering over the navigation make it do soemthing
+*have navigation set to be sticky, always at the top  LIKE: https://pinkproducts.com/
 *
 */
+
 :root{
     --elsa: #EEFFDB;
     --cinderella: #B8D4E3;
@@ -20,73 +21,95 @@ Consider making the footer and header the same color as the background/body and 
     --who-knows:#283044;
 }
 
-
 body{
     background-color: var(--aurora);
     font-family: "playwrite" ;
     margin:0;
     padding:0;
-
 }
 
-
-                        /* header stuff */
+/* _____________[header stuff]______________________ */
 header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--aurora);
-    padding: .4rem;
+    padding: .4rem 1rem;
+    text-align: center;
+
 }
 
-#logo h1{
-    width: 600px;
-    margin: 50px 0px 0px 0px;
-}
+        /* Logo Stuff */
 
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 #logo img, footer img{
     border-radius: 10px;
-    margin: 1rem;
+    margin: 2.4rem;
 }
 
-            /* Navigation stuff */
-nav {
+#logo{
+    margin:0;
+    font-size:1rem;
+}
+/* ____________[Navigation stuff]________________ */
+nav{
     background-color: var(--elsa);
-    text-align: center; 
-    padding: 10px 0;
-    position: sticky;
-    top: 0; 
+    color:var(--moana);
+    grid-column: span; 
+    text-align: center;
 }
-nav ul {
-    list-style: none;
-    margin: 1rem;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 2rem;
-;
-}
-nav ul li a {
-    text-decoration: none;
-    padding:2rem;
+nav ul{
+    display:none;
 }
 
-                                                            /* BUTTONS All pages*/
-        /*Hamburger/Mobile Navigation button */
-#menu-button{
+/* ____[NAV NOTE{ this gets rid of dots in the navigation bar}]____ */
+nav ul li{
+    list-style: none;  
+    
+}
+nav ul li a{
+    display:block;
+    color:var(--moana);
+    padding: 1rem;
+    
+}
+nav ul li a:hover{
+    color:var(--moana);
+    background-color: var(--cinderella);
+    font-weight: bold;  
+}
+
+/*_______________________Hamburger/Mobile Navigation button__________________ */
+#hamburger-button{
     background-color:var(--cinderella);
     padding:.5rem;
 }
-
-#menu-button::before{ 
+#hamburger-button::before{ 
     content: "☰";   
 
 }
-    /*[nav when it's closed] */
-#menu-button.open::before{
+/*______________________[nav when it's closed]____________________ */
+#hamburger-button.open::before{
     content: 'x';
 }
 
+/* ____________________[nav when its opens]_______________________*/
+nav ul.open{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
 
-    /* [dark mode button] */
+}
+nav ul.open li{
+    /* border-style:double; */
+    border: double .1rem var(--mulan);
+}
+
+ /*_____________________Dark Mode Button_______________________ */
 #dark-mode{
     height: 2rem;
     position: absolute;
@@ -103,142 +126,64 @@ nav ul li a {
 #dark-mode.dark::before{
     content: "☀️"; 
 }
-
-                                                /* Index Page */
+/*_______________________________________________________ Index Page_________________________________________________________ */
 .home-main{
+
     background-color: var(--elsa);
-    border: 10px var(--aurora);
-    margin: 20px;
-    padding:20px;
+    /* margin: 3rem;
+    padding:20px; */
 }
-        /* HERO IMAGE: */
+/* __________________[HERO IMAGE:]________________ */
 .hero{
+    grid-column: 1/4;
     margin: 20px;
     /* text-align: center; */
     position: relative;
+    z-index: 1 ;
 }
-
 .hero img{
+    /* height:25%; */
     width:100%;
+    padding:.3rem;
 }
-
 .hero-label{
-    position:absolute;
-    top: 35px;
-    left: 35px;
+    position:relative;
+    top: 2rem;
+    left: 1rem;
     background-color:var(--aurora);
     padding:1rem;
     box-shadow: 0 0 1rem ;
     opacity: .75;
-
 }
-
-.hero-label{
-    position:absolute;
-    top: 1rem;
-    left: 2rem; 
-
+/* TO DO: Make weather so that it stays in the left columsn [[only remove this after ALL the cards in index page are taken care of   */
+.weater{
+    grid-column: 1/2;
 }
-
- /* Slideshow Stuff on Index page */
- * {
-     box-sizing: border-box
- }
- /* body {
-     font-family: Verdana, sans-serif; margin:0
- } */
- .mySlides {
-     display: none
- }
- .slideshow-container img {
-     vertical-align: middle;
- }
- 
- .slideshow-container {
-   max-width: 1000px;
-   position: relative;
-   margin: auto;
- }
- 
- /* Next & previous buttons on Slideshow*/
- .prev, .next {
-   cursor: pointer;
-   position: absolute;
-   top: 50%;
-   width: auto;
-   padding: 0;
-   margin-top: .2rem;
-   /* margin-top: -22px; */
-   
-   color: var(--mulan);
-   font-weight: bold;
-   font-size: 8rem;
-   transition: 0.6s ease;
-   border-radius: 0 3px 3px 0;
-   user-select: none;
- }
- 
- /* Position the "next button" to the right on slideshow */
- .next {
-   right: 0;
-   border-radius: 3px 0 0 3px;
- }
- 
- /* On hover, add a Who-knows background color with a little bit see-through */
- .prev:hover, .next:hover {
-   background-color:var(--who-knows)(0,0,0,0.8);
- }
- 
- /* Caption text */
- .text {
-   color: var(--mulan);
-   font-size: 15px;
-   padding: 8px 12px;
-   position: absolute;
-   bottom: 8px;
-   width: 100%;
-   text-align: center;
- }
- 
- /* Number text (1/3 etc) */
- .numbertext {
-   color: var(--elsa);
-   font-size: 12px;
-   padding: 8px 12px;
-   position: absolute;
-   top: 0;
- }
- 
- /* The dots/bullets/indicators */
- .dot {
-   cursor: pointer;
-   height: 15px;
-   width: 15px;
-   margin: 0 2px;
-   background-color: var(--cinderella);
-   border-radius: 50%;
-   display: inline-block;
-   transition: background-color 0.6s ease;
- }
- 
- .active, .dot:hover {
-   background-color: var(--mulan);
- }
- 
- /* Fading animation */
- .fade {
-   animation-name: fade;
-   animation-duration: 1.5s;
- }
- 
- @keyframes fade {
-   from {opacity: .4} 
-   to {opacity: 1}
- }
-
-/* footer{ NOTE --> why don't you break the footer to two sections, logo to left, contacts in the middle? 
-Or breakit to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */
+    /* footer Note: { Maybe make footer similar to his pagehttps://www.slc.gov/ **IF YOU GOT TIME */
 footer{
     background-color: var(--aurora);
+    border-style:double;
+    border-color: var(--mulan);
     text-align: center;
+    /* For border stuff see:
+    https://www.w3schools.com/css/css_border.asp#:~:text=The%20CSS%20border%20properties%20allow,have%20a%20red%20bottom%20border.
+     */  
+}
+footer a{
+    color:var(--who-knows)
+}
+/*_______[when you hover over the link text [email]]____________ */
+footer a:hover{
+    color:var(--elsa);
+    background-color:var(--who-knows);
+}
+/* ________[The copy right symbol at the very bottom of the page, not in footer] */
+.copyright{
+    text-align: center;
+    color:var(--mulan)
+}
+.copyright a:hover{
+    color: var(--who-knows);
+    background-color: var(--cinderella);
+
 }
