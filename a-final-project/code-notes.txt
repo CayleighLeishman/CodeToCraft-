@@ -1,0 +1,31 @@
+What I did:
+____________________________________________________________________________________________________________________________________________
+July 13'24:
+
+13:49 added hover effect for Call-to-actin buttin in herof-label
+13:53 Gave up on hover effect for hero-label and deleted the new codes so I don't have redundant code sitting around
+14:10 Still working on <picture> tag for hero image. Trying to figure out what size to use.
+14:19 Used Chat-gpt to figure out why image was still larger on website than the image size showed. 
+14:22 Noticed in larger.css I had two home-main tags and deleted one of them
+
+14:27 noticed home-main had no spacing between top and div .hero so I'm wondering why there's so much space at the top
+14:30 i tried to commentout the medium.css to see what happened and learned most my hero-label code is in medium.css 
+
+14:31 moved the navigation stuff to medium.css. Not really sure but a part of methought "Medium.css should be for the not as small stuff" but 
+honeslty it probably dosen't make too much of a difference.
+
+14:36 I sent my css to chatgbt to see if there were issues and it consolidated my code so I deleted stuff in all my css
+ to use chatgbt consolidated stuff (It looks like it just reordered stuff) but when i did that it didn't change what I was 
+ hoping so I deleted that and went back to my origanl css files.
+
+
+15:00 I messed around with the hero responsive image design. It's responsive but while I was changing the sizes I noticed when I got really small 600x518
+my image didnt work (I JUST REALIZED THE IMAGE IS SET TO BE 600X600 SO OF COURSE IT WONT WORK IN 600X518 BECAUSE MY IMAGE IS 600X600)
+
+15:11 I figured out how to fix the hero image! I just didn't name the file right lol thats why the above issue didn't work
+
+
+
+
+
+

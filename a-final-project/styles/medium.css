@@ -1,7 +1,23 @@
-@media screen and (min-width:500px){
+@media screen and (min-width:400px){
     
+    
+    /* _____________________________________________________________________NAVIGATION ______________________________________________________*/
+    nav{
+        padding: 8px 5px .3px 5px;
+        grid-column:span;
+    }
    
-    /* home main */
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #hamburger-button{
+        display: none
+    }
+
+
+    /*____________________________________________________________ INDEX home-main_________________________________________________ */
     .home-main{
         background-color: var(--elsa);
         border: 10px var(--moana);
@@ -11,11 +27,16 @@
     /* Hero label button " */   
     #hero-label{
         position:relative;
-        top: 5rem;
+        top: 1.5rem;
         left: 1rem;
         background-color:var(--aurora);
         padding:1rem;
         box-shadow: 0 0 1rem ;
         opacity: .75;
+    }
+
+    /* TO DO: Make weather so that it stays in the left columsn [[only remove this after ALL the cards in index page are taken care of   */
+    .weater{
+        grid-column: 1/2;
     }
 }

@@ -11,8 +11,8 @@
 
                     <!-- Social Media Meta Tags -->
     <meta property = "og:type" content = "Website" >
-    <meta property = "og:url"   content = "Insert Github link for page here">
-    <meta property = "og:image" content = "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a%20final%20project/images/enchanted-logo.webp" >
+    <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/a-final-project/index.html">
+    <meta property = "og:image" content = "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/enchanted-logo.webp" >
 
                         <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css" >  
@@ -60,9 +60,12 @@
                 <a href="site-plan.html">Shop New Arrivals</a> 
             </button> 
             
-            <picture>                
-                <source media="(max-width: 800px)" srcset="images/hero-nemo-img.webp">
-                <img src="images/hero-nemo-img.webp" alt="three people happy with their loungefly Nemo bags">
+            <picture>        
+                <!-- <source media="(min-width:800px)" srcset="images/hero-nemo-larger.webp">         -->
+                <source media="(min-width:600px)" srcset="images/hero-nemo-500x500.webp">
+                <source media="(min-width:400px)" srcset="images/hero-nemo-200x200.webp">
+                <source media="(min-width:80px)" srcset="images/hero-nemo-100x100.webp">
+                <img src="images/hero-nemo-300x300.webp" alt="three people happy with their loungefly Nemo bags">
             </picture>  
  
         </div> <!-- div class="hero" -->
@@ -109,13 +112,12 @@
         <p>Salt Lake City, UT, 84102</p>  
     </div>
 
-    
-    <!-- TO DO insert the email stuff that allowed a popup to come out -->
+    <div class="copyright">
+     <p>&copy; <span id='currentYear'></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA" │  </p>
+        <a href="site-plan.html">Site-Plan</a>
+    </div>
 </footer>
-<div class="copyright">
- <p>&copy; <span id='currentYear'></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA" │  </p>
-    <a href="site-plan.html">Site-Plan</a>
-</div>
+
 
 </body>
 </html>
