@@ -1,13 +1,33 @@
 Check if you actually need the median.css, you might be able to get away with just the "larger"
 
+INSTRUCTIONS FOUND HERE:
 
+https://byui.instructure.com/courses/294700/pages/w12-final-project-a-basic-storefront?module_item_id=35968606
 
 PLAN:
 
-Friday: Get Navigation Figured out
-Saturday: Finish Index page [especially Hero image] and copy header and footer to the rest of the pages. Start order pages
-Sunday: No work applicable unless for fun
-Monday: Compltet Order pages and add 12 images for cards
+Friday: 
+ ☐Get Navigation Figured out
+
+#Saturday: 
+ ☐Finish Index page [especially Hero image] 
+ ☐Check out for API https://byui.instructure.com/courses/294700/pages/w12-working-with-the-url-api?module_item_id=35202996
+ ☐ copy header and footer to the rest of the pages.
+ ☐Start order pages (Look at Form Pages on Week 12(?) for more info: )
+
+
+
+#Sunday: 
+No work applicable unless for fun
+
+#Monday:
+  ☐Compltet Order pages and add 12 images for cards, Ideally complete this page 
+
+#Tuesday:
+ ☐Complte one new page
+ ☐ Meet with professor after class
+
+
 
 
 NEED ASSISTANCE ON
