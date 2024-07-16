@@ -8,8 +8,23 @@
         --who-knows:#283044;
     }
 
-    /* ________________________________________________________________MAIN ON DIFFERENT PAGES___________________________________________________ */
-    .home-main, .order-main, .about-main, .products-main{
+    /* _____________________________________________________________________NAVIGATION ______________________________________________________*/
+    nav{
+        padding: 8px 5px .3px 5px;
+        grid-column:span;
+    }
+   
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #hamburger-button{
+        display: none
+    }
+
+    /* ________________________________________________________________INDEX PAGE___________________________________________________ */
+    .home-main{
         display: grid;
         grid-template-columns: 1fr 2fr ;
         background-color: var(--elsa);
@@ -17,11 +32,21 @@
         margin: 5rem;
         padding:5rem;
     }
-    /* __________google Maps____________ */
-    iframe{
-        align-items: center;
-        grid-column:1/5;
+    
+    .home-main{
+
+        background-color: var(--elsa);
+        border: 10px var(--moana);
+        margin: 5rem;
+        padding:20px;
     }
+
+    .hero img{
+        width:100%;
+    
+    }
+
+    
     /* __________________________________________________________________________Footer Stuff _________________________________________________*/
     /* footer{ NOTE --> why don't you break the footer to two sections, logo to left, contacts in the middle? 
     Or breakit to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */
