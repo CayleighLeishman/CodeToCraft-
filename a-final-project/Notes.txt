@@ -31,37 +31,49 @@ Friday:
  ☐ copy header and footer to the rest of the pages.
  ☐Start order pages (Look at Form Pages on Week 12(?) for more info: )
 
-
-
 #Sunday: 
 No work applicable unless for fun
 
 #Monday:
   ☐Compltet Order pages and add 12 images for cards, Ideally complete this page 
+  ☐ Review index page 
+  ☐  Fix empty form turning red. Make border red and the inside a different color.
+
 
 #Tuesday:
- ☐Complte one new page
+ ☐ Start one one new page
  ☐ Meet with professor after class
 
 ____________________________________________________________________________________________________________________________________________
 
-NEED ASSISTANCE ON
-     Header:
-     -figure out why the font is not changing in nav
-     -figure out how to move "Enchanged BAckpacksto the middle besides the image" in the middle (Looks like dark-mode is large?)
+NEED ASSISTANCE ON [top to low priority]:
+    *Weater:
+     How do I find Salt Lake Citys API?
 
-     HERO IMAGE: 
-     For some reason when the mobile is set to 400 the image does not display until 600 ()
+    HERO IMAGE: 
+    won't center, I think the button is hindering it a little, but I'm not sure
+    
+    [.HOME-PRODUCTS:]
+     - it isn't centering well when I try to use responsibve mobiles (phone layout, tablet or laptop)
+      - how am I supposed to link stuff in the call to action hero button? Either way I can remmeber to link it wont work
+    
+    Header:
+    -figure out why the font is not changing
+    -figure out how to move "Enchanged BAckpacksto the middle 
+     of the header insead of to the left  (Looks like dark-mode section
+     is large and taking up space? Unsure.)
+    
+    ORDER PAGE:
+    What is a hidden product identifier? Is it just what product customer wants?
 
-
-     DARK MODE: 
+    DARK MODE: 
      When I first click on it when it loads it does nothing [it works when I click it twice though and then it works fine.]
 
-     CSS:
+    CSS:
      Can I use medium.css or do I need to only have a larger view? 
+     for some reason the validator has a hard time with my import tags at the top of base.css. Why?
      
-    *Weater:
-     How do I find salt Lake Citys API?
+
 ____________________________________________________________________________________________________________________________________________      
     TO DO: 
    

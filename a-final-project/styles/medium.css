@@ -1,10 +1,13 @@
 @media screen and (min-width:400px){
     
-    
     /* _____________________________________________________________________NAVIGATION ______________________________________________________*/
     nav{
         padding: 8px 5px .3px 5px;
         grid-column:span;
+        box-shadow:  0 5px 8px 5px var(--moana);
+        top:0;
+        position: sticky;
+        z-index: 1000;
     }
    
     nav ul{
@@ -12,13 +15,14 @@
         flex-direction: row;
         justify-content: space-around;
     }
+
+
     #hamburger-button{
         display: none
     }
 
-
     /*____________________________________________________________ INDEX home-main_________________________________________________ */
-    .home-main{
+    .home-main, .order-main{
         background-color: var(--elsa);
         border: 10px var(--moana);
         margin: 2rem;
@@ -35,8 +39,23 @@
         opacity: .75;
     }
 
-    /* TO DO: Make weather so that it stays in the left columsn [[only remove this after ALL the cards in index page are taken care of   */
+    /* TO DO: Make weather so that it stays in the left columsn [[only remove this comment after ALL the cards in index page are taken care of   */
     .weater{
-        grid-column: 1/2;
+        display:grid;
+        grid-column: 1/4;
+    }
+
+    /* [index card parts] */
+    /* .home-product section{
+        max-width: fit-content;
+        border-style: var(--mulan) solid; 
+        border-width: 3.8px; 
+        border-radius: 5rem; 
+    } */
+
+    .home-product{
+        display: grid;
+       
+        /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
     }
 }

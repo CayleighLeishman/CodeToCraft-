@@ -2,7 +2,6 @@
 <html lang="en-US">
 <head>
     
- 
     <meta charset="utf-8">
     <meta name="viewport"    content = "width=device-width, initial-scale=1">
     <meta name="description" content = "Discounted Loungefly Backpacks and Walletes found here!">
@@ -16,7 +15,7 @@
 
                         <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css" >  
-    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/base.css" >   
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
@@ -53,18 +52,24 @@
     </nav>  
    
     <main class="home-main">
-                    <!-- hero image -->
+                <!-- hero image -->
         <div class="hero">
-            <button title="call-to-action" id="hero-label">
-                <a href="order.html">Shop New Arrivals</a> 
-            </button> 
+            <!-- TO DO : figure out why Link is not accepted in validator -->
+            <a href="order.html"><button title="call-to-action" id="hero-label">
+                Shop New Arrivals
+            </button></a>
             
             <picture>                
-                <source media="(max-width: 800px)" srcset="images/hero-nemo-img.webp">
-                <img src="images/hero-nemo-img.webp" alt="three people happy with their loungefly Nemo bags">
+                <source media="(min-width: 699px)" srcset="images/hero-nemo-500x500.webp">
+                <source media="(min-width:300px)" srcset="images/hero-nemo-300x300.webp">
+                <source media="(max-width:299px)" srcset="images/hero-nemo-100x100.webp">
+
+                <img src="images/hero-nemo-300x300.webp" alt="three people happy with their loungefly Nemo bags">
             </picture>  
  
         </div> <!-- div class="hero" -->
+        
+      
 
         <section class="weather">
             <h2>Weather</h2>             
@@ -82,36 +87,40 @@
                     </section>
               <hr> 
               <p> Courtousy of OpenWeatherMap.org API Test </p>    
-            </section>
-
-            <section class="home-product"> 
-                <h2>Order Information:</h2>
-                <p>link this to the js file</p>
-            </section>
-            
+        </section>
+        
+        <div class="order-product"> 
+            <h2>Order Information:</h2>
+            <p>link this to the js file</p>
+        </div>
+            <!-- TO DO: CHANGE  A href="" TOLINK TO CORRECT ORDER PAGE -->
             <section class="home-product">
-                <img src="images/chip-n-dale-wallet.webp" alt="chip and dale wallet with ice cream" style="width:100%">
+                
+                <a href="order.html">
+                <img src="images/chip-n-dale-wallet.webp" alt="chip and dale wallet with ice cream">
+                </a>
                 <h3>We’re going to go nuts over our next adventure!</h3>   
-            </section><!-- section - products -->
+            </section>  <!-- "home-product" -->
 
             <section class="home-product">
-                <img src="images/mousercise.webp" alt="mini backpack with Mickey, Minnie and Donald in excersize gear" style="width:100%"> 
+                <a href="order.html">
+                <img src="images/mousercise.webp" alt="mini backpack with Mickey, Minnie and Donald in excersize gear"> 
+                </a>
                 <h3>Its time to Mousercise!</h3>
-            </section> <!-- section - products2 -->
+            </section> <!-- section "home-product" 2 -->
             
             <section class="home-product">
-                <img src="images/pixar-monsters-unviversity.webp" style="width:100%" alt="Mini backpack with Pixar Monsters Inc Univeristy Characters">                    
+                <a href="order.html">
+                <img src="images/pixar-monsters-unviversity.webp" alt="Mini backpack with Pixar Monsters Inc Univeristy Characters">                    
+                </a>
                 <h3>Major in Scare-onomics!</h3>                
-            </section><!-- section - product 3 -->
-
-            
-
+            </section><!-- "home-product" 3 -->
     <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatem. Quod corrupti debitis atque ab assumenda velit. Architecto, quis quas voluptatibus, ab nesciunt id earum rerum vero iure doloribus illum omnis! Ex odio autem consequuntur reiciendis. Harum minima et nostrum eius voluptatum incidunt perferendis nisi ut similique totam provident quod tempora nemo, repellendus quas magnam illum deleniti placeat. Eos fugit eligendi at consequuntur numquam tempore voluptatem excepturi necessitatibus impedit nostrum. Reprehenderit assumenda eum totam deleniti odit fuga recusandae dolore dolor rerum fugit nostrum quasi odio incidunt accusamus, nesciunt voluptate eos. Natus facere labore voluptatibus ex explicabo! Delectus dolorem voluptas, soluta perferendis inventore libero iusto reprehenderit eaque quibusdam dignissimos, eveniet tenetur molestiae impedit eius quidem deleniti ratione assumenda harum adipisci totam asperiores officia quisquam? Fuga facilis ratione enim. Repellat, quaerat at maiores necessitatibus consectetur corporis cumque velit iure sequi ipsa nam? Molestias sequi quas, tempore quam culpa totam dolor, debitis veniam neque qui incidunt molestiae non aspernatur esse iusto libero odio! Nesciunt ullam accusantium sed facilis dolorum delectus nam dolore harum debitis, dolor error magni, rerum voluptatum? Quae debitis, tenetur velit minima corporis distinctio, facere, magni fugiat consequuntur impedit tempore a reprehenderit culpa aperiam? Distinctio tempora provident dicta dolore non nobis ad aliquid velit consectetur ratione sint est soluta, fugit saepe expedita? Praesentium dolorum architecto nulla, repellendus ad nobis incidunt ducimus recusandae ex vero fugiat fuga eaque ab eveniet mollitia, nesciunt corporis alias pariatur molestiae reiciendis dolor cupiditate eius. Alias, nobis corporis! Voluptatem est ut ducimus vel quaerat excepturi praesentium reiciendis dolor cupiditate. Dignissimos, culpa? Quas, minus nobis. Veritatis quibusdam odio omnis reprehenderit error sed expedita architecto rerum maxime, cumque repellendus et, in, dolore iure est temporibus iste possimus. Amet architecto eaque odio impedit magni vero facilis labore ducimus doloremque, doloribus minima cumque consectetur a quisquam veniam, minus consequatur illum hic? Quia sunt repudiandae modi veritatis sapiente dolorum. Eum quam iusto quo quisquam error voluptatum quod possimus maiores itaque. Aliquid similique quo asperiores debitis ab velit cumque fuga doloremque, rem amet quidem ratione quia quam. Error incidunt ea repudiandae, corrupti, nihil accusantium cum consectetur amet nisi perspiciatis repellendus dicta fugiat consequuntur quam omnis, iusto tenetur. Recusandae at molestiae laboriosam labore distinctio unde fugiat, quibusdam architecto eum ratione. Est optio neque voluptates quod aperiam totam expedita, porro sunt tempora quasi quam corporis laborum nam velit culpa quas nisi corrupti reprehenderit hic. Numquam magnam aliquid officiis perspiciatis distinctio eligendi similique, nam excepturi dolorum quia repellat. Voluptas reiciendis deleniti deserunt obcaecati numquam dolor voluptatibus officiis officia expedita quidem placeat quod suscipit, unde cupiditate earum tenetur laudantium odit mollitia aut ullam accusamus adipisci accusantium? Illo doloremque voluptates voluptatum excepturi, assumenda eos impedit quis dolore, veritatis in sequi alias id fuga laudantium tempore. Architecto praesentium quod tempore officiis molestiae ratione veniam. Pariatur harum in voluptatum, veritatis quas nulla a? Nisi corrupti inventore quis, optio pariatur sequi vel tempora dolorum autem labore excepturi, vitae nostrum culpa, aspernatur mollitia ducimus unde eos temporibus veritatis ipsam tempore iure at in! Dolores explicabo omnis ducimus provident alias! Eveniet tempora voluptas minus praesentium delectus perspiciatis maxime dolor, eligendi doloribus earum error incidunt ducimus optio. Placeat similique temporibus autem voluptatem iste, quas reiciendis dolores mollitia necessitatibus qui pariatur architecto vitae rerum nam molestiae ipsa, itaque neque dignissimos. Beatae, adipisci minus accusamus quas quia alias numquam nam facere labore mollitia non cum. Ratione quidem totam distinctio numquam ut voluptatem cumque aut non nisi!</p> -->
     </main>
 
 <footer>
     <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo">
- <!-- 
+ <!-- f
  Or break it to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */ --> 
     <div class="contact-info">
         <p>Need Assistance? </p>
@@ -120,7 +129,6 @@
     </div>
 
     <div class="location">
-        
         <p>911 N 7th Avenue</p>
         <p>Salt Lake City, UT, 84102</p>  
     </div>

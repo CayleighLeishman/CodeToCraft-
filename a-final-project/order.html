@@ -22,8 +22,8 @@
 
                     <!-- JavaScript -->
     <script src="scripts/slideshow.js" defer></script>
-    <script src="scripts/hamburger.js"defer></script>
-    <script src="scripts/darkmode.js"defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
 
                     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -36,7 +36,7 @@
         <button title="dark mode" id="dark-mode"></button>
         <div id="logo">
             <a href="index.html">
-                <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo">
+                <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100">
             </a>
             <h1> Enchanted Backpacks</h1>  
         </div>
@@ -53,28 +53,23 @@
     </nav>  
 
     <main class="order-main">
-       
-<!-- HOW DO I ADD THIS BELOW?
-Product Identifier - in a hidden field not visible to the user -->
-
-        <form method="GET" action="INPUTLATER">
+        <!-- HOW DO I ADD  Product Identifier - in a hidden field not visible to the user BELOW? Javascript I assume.-->
+        <form method="GET" action="index.html">
             <label class="myinput">First Name*<input id="fname" type="text" name="fname" required placeholder="First Name"></label>
-            <label class="myinput">Last Name*<input type="lname" name="lname" id="lname" required placeholder="Last Name"></label>
-            <label class="myinput">Street Name<input type="text"name="street" id="street" required placeholder="Street Address"></label>
-            <label class="myinput">City Name<input type="text"name="city" id="city" required placeholder="Street Address"></label>
-            <label class="myinput">State*<input type="text" name="Zip" id="zip" pattern="[A-Z]{1,}"></label>
-            <label class="myinput">Zip Code<input type="text" name="title" id="title" pattern="[A-Za-z\s\-]{7,}"></label>
-            <label class="myinput">Email*<input type="email" name="email" required placeholder="example@mymail.com"></label>
+            <label class="myinput">Last Name*<input type="text" name="lname" id="lname" required placeholder="Last Name"></label>
+            <label class="myinput">Street Name<input type="text" name="street" id="street" required placeholder="Street Address"></label>
+            <label class="myinput">City Name<input type="text" name="city" id="city" required placeholder="Street Address"></label>
+            <label class="myinput">State*<input type="text" name="Zip" id="zip" required pattern="[A-Z]{1,}"></label>
+            <label class="myinput">Zip Code<input type="text" name="title" id="title" required pattern="[0-9Z\-]{5}"></label>
+            <label class="myinput">Email*<input type="email" name="email" required placeholder="example@yourmail.com"></label>
             <label class="myinput">Cell Phone*<input type="tel" name="cellphone" required placeholder="111-111-111"></label>
-            <label class="myinput">Gift Message<input type="gift" name="bizname" required placeholder="Want to share a message? Feel free to share it here!"></label>         
+            <label class="myinput">Gift Message<input type="text" name="bizname" placeholder="Want To Share A Message?"></label>         
             <button class="mysubmit"> Secure Your Order!</button>
         </form>
     </main>
 
 <footer>
     <img src="images/enchanted-logo.webp" width="100" height="100" alt="Enchanted Backpacks Logo">
- <!-- 
- Or break it to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */ --> 
     <div class="contact-info">
         <p>Need Assistance? </p>
         <p><a href="mailto:EnchantedBackpacks@customerservice.com" target="_blank">EnchantedBackpacks@customerservice.com</a></p>
@@ -82,7 +77,6 @@ Product Identifier - in a hidden field not visible to the user -->
     </div>
 
     <div class="location">
-        
         <p>911 N 7th Avenue</p>
         <p>Salt Lake City, UT, 84102</p>  
     </div>

@@ -23,7 +23,7 @@ honeslty it probably dosen't make too much of a difference.
 my image didnt work (I JUST REALIZED THE IMAGE IS SET TO BE 600X600 SO OF COURSE IT WONT WORK IN 600X518 BECAUSE MY IMAGE IS 600X600)
 
 15:11 I figured out how to fix the hero image! I just didn't name the file right lol thats why the above issue didn't work
-
+_______
 15:30 I pushed my changes to github! Not finished but I need a break
 
 18:13 Added the shadow-box shading to the navigation and considering doing that to the home-main
@@ -63,4 +63,52 @@ caught up in details that I don't need to.
 20:52 I realized the footer image didn't have alt tags so I added those and I'm validating the html for index
 about-us, and products to check it.
 
+
+July 15:
+12:51- Im looking over what I need to do and reviewing code-notes.txt and updateing my goals for the site
+14:57 figuring out what to do
+15:29 -- getting frusterated because now all my images are moveing out of view when in mobile. I thought this was fine yesterday
+but I had a merging error so I'm not sure if thats the reason or what I messed up. Using chatgpt
+which says that it could be the margin/padding conflicting so I'm commenting out the padding 
+unless its in home-main or hero-label.
+15:32 I commented out the nav in the larger since I had same code in medium,
+Around this time it dawned on me everything I did the other day got deleted and cried a lot
+
+21:13 I tried to do box shadow and it kindof workedd. 
+then i realized the sticky element no longer worked, couldn't figure out why everything after putting in the code.
+21:20 sticky element now works, I forgot to add the top:0;
+
+21:32 I tried to figure out how to get the image to its own size. So I got rid of width:100% 
+but now it aligns to left. I'm trying to figure out how to align things to the center
+21:34 I figured out the reason some of the stuff kept going out of place. I had larger set to 600px not 800px. 
+22:00 I changed css sizes and tried to figure out the hero image sizes
+
+
+22:40 i figuredc out hero sizes best I could but now I have an error where the label button seems to be 
+besides the hero image and stuck there no matter what mobile size it's in. 
+Also  deleted "margin:0;" and   "padding:0;" from the body in the base.css  
+22:46 FIGURED OUT THE ButTON ERROR  I kEPT GETTING!
+ I had to put the button tag INSIDE the <a href> tag!
+ Nevermind that was not the case.
+
+ 23:11 order.html page I tried to add order-main to css border.
+
+ 23:28 I've een workin on the order page. I don' tknow if I like this, but
+ I made it so the shadow is red if it's invalid. Not sure i like it.
+ Tried to add border-bottom-color: but it dosen't look like its working.
+
+ I think i got the order page working 
+
+ 23:50 (11:50 pm) Okay I think I finally got order.html somewhere. I fifgured out how to 
+ make something "requrired" I was supposed to type required in those sections (facepalm)
+ It's all good, at least I eventually figure dit out, I'm getting tired though so I'm 
+ going to copy a-fina-project to my backup folder because I'm terrified of the same issue happening again
+ Fingers crossed i wont lose everything I just did. 
+
+JULY 16 2024
+ 12:02AM I tried to add a pattern to phone but you know what I'm done with the form pagae 
+ until i figure out the other stuf. I'm going to look over things once more with validation 
+ and then go to bed.I got a busy day tomorrow/today.
+ 12:23 okay that took forever to validate, but I'm done now. I'm going to copy this to backupa
+ And then hopefully push to github. 
 

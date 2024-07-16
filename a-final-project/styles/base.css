@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap'); */
 /* Got above from: https://fonts.google.com/selection/embed */
 
 /* above is the font checker to see if font actually is correct below is what I think id like but it looks subtle */
 /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
 
 
-/* PUtting Notes here
-Consider making the footer and header the same color as the background/body and seperate itusing lines/border
-*make page hover effects more obvious to make better usability. (when hoving over images have something happen, when hovering over the navigation make it do soemthing
-*have navigation set to be sticky, always at the top  LIKE: https://pinkproducts.com/
-*
+/* Putting some tO DO Notes here
+* make page hover effects more obvious to make better usability. (when hoving over images have something happen, when hovering over the navigation make it do soemthing
+*Make weather so that it stays in the left columsn [[only remove this after ALL the cards in index page are taken care of 
 */
 
 :root{
@@ -29,8 +27,6 @@ Consider making the footer and header the same color as the background/body and 
 body{
     background-color: var(--aurora);
     font-family: "playwrite" ;
-    margin:0;
-    padding:0;
 }
 
 /* _____________[header stuff]______________________ */
@@ -132,38 +128,134 @@ nav ul.open li{
     content: "☀️"; 
 }
 /*_______________________________________________________ Index Page_________________________________________________________ */
-.home-main{
-
+.home-main, .order-main{
     background-color: var(--elsa);
     /* margin: 3rem;
     padding:20px; */
 }
-/* __________________[HERO IMAGE:]________________ */
+/* ________[HERO IMAGE:]________ */
 .hero{
+    display:flex;
+    justify-content:center;
+    align-items: center;
     grid-column: 1/4;
-    margin: 20px;
+    /* margin: 20px; */
     /* text-align: center; */
     position: relative;
     z-index: 1 ;
 }
 .hero img{
-    /* height:25%; */
-    width:100%;
+    justify-content: center;
     padding:.3rem;
 }
 .hero-label{
     position:relative;
+    justify-content: left;
     top: 2rem;
     left: 1rem;
     background-color:var(--aurora);
     padding:1rem;
-    box-shadow: 0 0 1rem ;
+    box-shadow: 0 0 1rem var(--cinderella);
     opacity: .75;
 }
+/*_____________ [index card parts]____________ */
+.home-product section{
+    /* TO DO: Does border-color actually work? I'm pretty sure mulan is being used in a different class */
+    max-width: fit-content;
+    border-color: var(--mulan);
+    border-style: solid; 
+    border-width: 3.8px; 
+    border-radius: 5rem; 
+}
+
+.home-product{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    color: var(--mulan);
+}
+
+.home-product img{
+    border-radius: 8rem; 
+    box-shadow:  0 5px 8px 5px var(--moana);
+    /* Change to 8rem if you want images to be circles*/
+}
+
 /* TO DO: Make weather so that it stays in the left columsn [[only remove this after ALL the cards in index page are taken care of   */
 .weater{
     grid-column: 1/2;
 }
+
+
+/* _________________________________________________ORDER.HTML____________________________________ */
+    .order-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .order{
+        display: grid;    
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+    
+    .join > div{
+      margin: 1rem;
+      padding: 1rem;
+      border: 1px black solid;
+      border-radius: 5px;  
+      width: 90%;
+      min-width: 400px;
+    }
+
+    label.myinput{
+      display:block;
+      padding-top: 1rem;
+    }
+
+    label.myinput input, label.myinput textarea{
+      display:block;
+      font-size: 1.2rem;
+      padding: .5rem;
+      width: 20rem;
+      max-width: 100%;
+    }
+
+    label.myradio{
+      display: block;
+      margin-right: .2rem;
+      font-size: 1.3rem;  
+      padding-top: .5rem;
+    }
+
+    label.myradio input{
+      margin-right: 1rem;
+    }
+
+    .mysubmit{
+      background-color: var(--cinderella);
+      color: var(--who-knows);
+      margin: 1rem 0 0 0;
+      padding: .5rem;
+      font-size: 1.5rem;
+    }
+
+    label.myinput input:required{
+      border-color: var(--moana);
+    }
+
+    input:valid{
+      background-color: var(--elsa);
+      border-bottom-color: var(--cinderella);
+      box-shadow: 10px 10px 10px var(--cinderella) ;
+    }
+    input:invalid{
+        border-bottom-color:var(--moana);
+      box-shadow: 10px 10px 10px var(--moana) ;
+    }
+    .order-confirm{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
+    }
+
     /* footer Note: { Maybe make footer similar to his pagehttps://www.slc.gov/ **IF YOU GOT TIME */
 footer{
     background-color: var(--aurora);
@@ -182,7 +274,7 @@ footer a:hover{
     color:var(--elsa);
     background-color:var(--who-knows);
 }
-/* ________[The copy right symbol at the very bottom of the page, not in footer] */
+/* ________[The copy right symbol at the very bottom of the page]*/
 .copyright{
     text-align: center;
     color:var(--mulan)
