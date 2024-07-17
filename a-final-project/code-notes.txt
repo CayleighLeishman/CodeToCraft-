@@ -112,3 +112,39 @@ JULY 16 2024
  12:23 okay that took forever to validate, but I'm done now. I'm going to copy this to backupa
  And then hopefully push to github. 
 
+21:38 after getting help from professor and my teammate on API and Forcast (around 15:30)
+I was left to figureout the placement. I added Justify content to forecast in base.css and 
+I think I did something else beforehand as well, but I can't recall what i did. 
+
+I'm trying to figre out the home-products spacing. Because the images are almost 
+on top of each other and then spanningof the page when it's in mobile mode
+
+ I found out the grid-template-column code isn't running because of the @media tag, 
+ so I'm moving it to another css file
+
+20:53 home-main seems like it's bigger than the body? (the div is bigger than the white space in the body)
+
+
+
+21:00 commented some code out in the base.css
+
+I noticed that order-main was similar to the code in home-main, so I just changed "order-main" to "home-main"
+Never mind i was somehow not calling order-main correctly. I just fixed something ( dont rememeber What) and now works. 
+
+21:20I was working with the products because I noticed the "city" was showng as street address.
+Then i noticed that the "logo" was showing two times in the base while I used the web dev
+So I merged the two logo Id's into one
+
+
+21:26 I'm getting tired so I'm going to validate the code, see what I can fix, 
+and call it a night for this. 
+
+
+
+
+
+
+
+
+
+

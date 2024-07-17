@@ -1,5 +1,5 @@
 Check if you actually need the median.css, you might be able to get away with just the "larger"
-
+TO DO: LOOK AT CONTAINER FOR HERO
 INSTRUCTIONS FOUND HERE:
 https://byui.instructure.com/courses/294700/pages/w12-final-project-a-basic-storefront?module_item_id=35968606
 
@@ -72,8 +72,121 @@ NEED ASSISTANCE ON [top to low priority]:
     CSS:
      Can I use medium.css or do I need to only have a larger view? 
      for some reason the validator has a hard time with my import tags at the top of base.css. Why?
-     
+     ____________________________________________________________________________________________________________________________________________
 
+CLASS NOTES: 
+
+Final is just combind of all the quizes you've taken. 
+Prof will submit powerpoint fo ryou to study if you'd like 
+Open internet and Notes, just do the work yoursef -> show you know how to find answers
+
+Test is on HTML or CSS, very few JSON or Javascript
+
+Learn what a semantic tag is 
+ex: <main> <section> <nav> <header> <footer>
+NOT <div> That is NOT a semantic tag
+
+LEARN WHAT INLINE VS block
+Inline (spans like words on a screen )
+BLOCK has padding and stuff that gives space 
+
+SAVE THE BLOCK AND INLINE IN A FOLDER 
+
+MAKE SURE YOU UNDERSTAND ./ and ../ REVIEW CAREFULLY
+
+class attribte can have seperate classes. You seperate it by adding a space
+class"fuzzy brown" 
+.fuzzy{
+  valid
+}
+
+AND 
+.brown{
+  valid
+}
+
+NOT 
+.fuzzy brown{
+  This is not valid
+}
+NOT THE CASE FOR ID's
+
+....
+
+LOOK AT HTML FORM powerpoint to learn about name attributes
+For input 
+It needs a minimum of two but unlimited num of characters use {2,}
+
+
+[<input type="radio"> ] will only work if you just need to select one thing (four or less selectors use this)
+
+[select button] (five or more use this) 
+
+
+LOOK at the table examplesf from class
+
+Write CSS RULE COMPONENT in your notebook and use your color pens to change colors
+
+LEARN DECLORATION: 
+PROPERTY 
+Value 
+
+LEARN CSS UNITS
+em and rem represent font sizes
+% it applies to the CONTAINEr that it's in NOT the size of the page. 
+
+External stylesheet -> theres a css file
+
+embeded style/internal/headers style -> It's put inside your css
+
+Inline style-> CSS code that's put inside the tags itself not the file 
+
+ABSOLUTE AND RELATIVE LEARN 
+
+
+...
+
+CSS BOX Model 
+
+...
+
+border: 1px solid #ffff ; put three things in (no particular order)
+
+
+Margin/padding:
+
+one value is specified it applies to all slidesho
+two values -> first apples to top and bottom second to the left and right
+three ->  top, right and left, the botom 
+four-> set clocwise from the top to the bottom 
+
+
+Margin: 0 auto -> sets the margins to sero at the top and bottom and the left and right follow the rules of auto
+..
+
+
+CSS specificity MEMORIZe the Order: 
+
+
+...
+CSS COLORS: 
+If you use a # for a hex color its a shosrt hand to say the rest is the smae characters
+Ex: #fff = #ffffff
+
+Hue saturation Light alternate to RGB 
+
+...
+
+LEARN CSS ODDS AND ENDS
+...
+
+ALIGN-items-> vertical
+Justify-content-> HORIZONTAL 
+CHECK OUT FLEBOX SITE AGAIN
+...
+
+JSNON format learn to reference 
+remmeber that json is 0 based (starts with 0 not 1)
 ____________________________________________________________________________________________________________________________________________      
     TO DO: 
    

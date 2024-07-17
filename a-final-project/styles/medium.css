@@ -25,8 +25,8 @@
     .home-main, .order-main{
         background-color: var(--elsa);
         border: 10px var(--moana);
-        margin: 2rem;
-        padding:2rem;
+        margin: 4rem;
+        padding:4rem;
     }
     /* Hero label button " */   
     #hero-label{
@@ -40,9 +40,9 @@
     }
 
     /* TO DO: Make weather so that it stays in the left columsn [[only remove this comment after ALL the cards in index page are taken care of   */
-    .weater{
+    .weather{
         display:grid;
-        grid-column: 1/4;
+        grid-column: 1/2;
     }
 
     /* [index card parts] */
@@ -55,7 +55,6 @@
 
     .home-product{
         display: grid;
-       
         /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
     }
 }
