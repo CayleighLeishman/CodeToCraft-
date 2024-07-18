@@ -124,8 +124,6 @@ on top of each other and then spanningof the page when it's in mobile mode
 
 20:53 home-main seems like it's bigger than the body? (the div is bigger than the white space in the body)
 
-
-
 21:00 commented some code out in the base.css
 
 I noticed that order-main was similar to the code in home-main, so I just changed "order-main" to "home-main"
@@ -135,9 +133,89 @@ Never mind i was somehow not calling order-main correctly. I just fixed somethin
 Then i noticed that the "logo" was showing two times in the base while I used the web dev
 So I merged the two logo Id's into one
 
-
 21:26 I'm getting tired so I'm going to validate the code, see what I can fix, 
 and call it a night for this. 
+
+
+jULY 17
+
+ 11:32  made list of what I'd need to do today
+ [work in products]
+ looked over chamber directory.js and compared to professors 
+
+ I changed the name of some of the titles "Product-identifier" to "sku" for example because I wanted to shorthand it.
+ It started because it lookd like Product-name was not accepted by the js code. (the "name part" in product-name was crossed out.) I changed it do "productName"
+ I ended up changing productName to title
+
+ 17:21 reviewin what i need to do:
+  fix darkmode contrast, 
+  fix button error
+  fix products error where images are not showing, 
+
+  17:40 I messaged professor and now I'm going to get started with the about-us page because I can do that
+  with minimal help from the professor. 
+
+  I tried to make the about-us.html main be connected to the hero tag, but then it learned that it has a grid layout 1/4 so the 
+  paragraphs [<p></p> tags] were all besides each other instead of on top of each other. So I decided I had to create more code insetad for about-me. 
+  I think I'll make it "about-text" because I don't know what else to name that section for the main image of the page.
+  
+  I used chatgpt and it gave me the idea to use "about-content" and "about-header" So that is the name for the text now.
+  
+  18:20 I figured i might ned to make the body of index.html 1fr 2fr instead but im not sure how 
+  that will work
+  
+  18:28 I DID IT!!! I FINALLY GOT THE GOOGL EMAPS CENTERED IN the MIDDLE OF THE PAGE!! FINALLY AFTER A FULL SEMESTER
+  (I put it in a div, properly named it and added display: flex to the #google-maps section and then justify contented it to center.)
+  
+  21:37 
+
+  22:-- fixed copyright error that was making it go to a fourth column instead of the bottom. I also fizd the font size not changing. 
+  
+  22:33 I fixed the  error  of the about-main stacking paragraphs side by side by inputting 
+  .about-main {
+    display: flex;
+    flex-direction: column;}
+
+23:12 I added social media tags, fixed the grid issue and also fixed footer logo width and height
+
+July 18 2024
+12:18I changed dark mode so that it looks more smoother I just need to fix dark mode 
+contrast errors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
