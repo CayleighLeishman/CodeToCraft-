@@ -55,7 +55,7 @@
         text-align: center;
         background-color: var(--aurora);
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        display:grid;
+        /* display:grid; */
     }
     footer img{
         float: left;
