@@ -9,8 +9,9 @@ const displayProducts = (products) => {
         newsection.innerHTML = `
             <h2>${products.title}</h2>
             <img src="${products.imageURL}" alt="${products.description} image" loading="lazy" height="300">
-            <p>${products.price}</p>
-            <p> is this a featred product? ${products.featuredProduct}</p>`;
+            <p> $ ${products.price}</p>
+            <p><p>
+             <button  onclick="window.location.href='order.html'" class="buy-button">Buy Now</button>`;
             productContainer.appendChild(newsection);
     });
 };

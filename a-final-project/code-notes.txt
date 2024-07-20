@@ -259,6 +259,29 @@ the webdev, but it wasn't showing me more than one grid-template-columns
 
 (10:20): i updated some links into JSOn file
 
+I learned that some of my links were amng the few to get reverted/deleted along with some images.
+ So i found and resized/changed to webp a backpack that I've wanted from avatar the last airbender loungefly section
+
+(10:38)  I'm trying to figure out why the image hasn't downloaded to github yet so in the meantime
+I'm going to just focus on getting the borders to work on products.html page.
+
+
+(11:18) I updated the image, I played aorund with the base.css to try to get the porducts
+ working properly. The set up seems to be somewhatfunctional. 
+
+(11:46) used chatgbt for the "fetch-button.js" and then added the javascript link to products.html
+
+JULY 20 2024
+12:08 Well never mind, turns out all i needed to do was add " <button class="buy-button">Buy Now</button>" to display-products. 
+I also added a windows lick that my teammate showed me how to do.
+
+12:12 Just learned orders.html didn't have State as a requirement so I'm working on that too
+that should be fixed
+
+12:15 Now I'm going to have to figure out what errors I'll need  to fix, but i got a button 
+added. I just need to figure out how I'm going to do the math calculations and stuff like that.
+
+
 
 
 

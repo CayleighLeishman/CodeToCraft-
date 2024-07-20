@@ -3,29 +3,29 @@
        {"sku" : "ENB-001-AVTR-BS0",
         "title" : "Avatar The Last Airbender",
         "description" : "Avatar the Last Avatar, early season gang flying on appa",
-        "imageURL" : "",
-        "price" : "$35",
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/avatar-last-airbender.webp",
+        "price" : 15,
         "featuredProduct":true
         },
         {"sku" : "ENB-001-NEMO-COL",
         "title" : "Bubled Nemo Backpack",
         "description" : "Nemo-bubbles",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/nemo-collection.webp",
-        "price" : "$25",
+        "price" : 25,
         "featuredProduct":true
         },
         {"sku" : "ENB-SKT-MRV",
-        "title" : "Skottie Young Chibi Marvel Mini Backpack",
+        "title" : "Chibi Marvel Mini Backpack",
         "description" : "Skottie Chibi style of Marvel Characters on a Mini backpack",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/Marvel-Skottie-Young-Chibi-Group-Mini-Backpack.webp",
-        "price" : "$15",
+        "price" : 15,
         "featuredProduct":false
         },
         {"sku" : "ENB-MNA-BPK ",
         "title" : "Moana-Backpack",
         "description" : "Moana's face on a Mini-backpack",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/moana-face.webp",
-        "price" : "$15 ",
+        "price" : 15,
         "featuredProduct":false
         },
         {"sku" : "ENB-MNA-WLT ",
@@ -39,14 +39,14 @@
         "title" : "Jack-in-the-Box Backpack",
         "description" : "Backpack for Jack-in-the-box fans!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/jack-in-the-box.webp",
-        "price" : " $15",
+        "price" : 15,
         "featuredProduct":false
         },
         {"sku" : "ENB-JCK-WLT",
         "title" : "Jack-in-the-Box Wallet",
         "description" : "Feast your eyes on a wallet in the shape of Curly Fries from Jack in the Box!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/curly-fry-jack-in-the-box.webp",
-        "price" : "$5",
+        "price" : 5,
         "featuredProduct":false
         },
         
@@ -54,23 +54,23 @@
         "title" : "Monsters University ",
         "description" : "monsters INC university on a mini-backpack",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/pixar-monsters-unviversity.webp",
-        "price" : "$15 ",
+        "price" : 15,
         "featuredProduct":true
         },
 
         {"sku" : "MNS-UNI-WLT",
-        "title" : " $7",
-        "description" : "Have a monsterous time collecting your cash into this wallet!",
+        "title" : "Monstorous Wallet",
+        "description" : "Monsters INC University gang on a blue wallet",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/monsters-uni-wallet.webp",
-        "price" : "  ",
+        "price" : 7,
         "featuredProduct":false
         },
 
         {"sku" : "END-RBN-H0D ",
-        "title" : "Robin Hood and Mary Jane Mini backpack",
+        "title" : "Robin Hood and Marybackpack",
         "description" : "Get this bag at a steal. You won't even have to give this bag to the poor",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/robbin-hood.webp",
-        "price" : " $15",
+        "price" : 15,
         "featuredProduct":false
         },
 
@@ -78,21 +78,21 @@
         "title" : "Scooby Doo as a Mummy!",
         "description" : "Scooby doo is all Wrapped in a Mystery of how this bag is so pawfect!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/scooby-doo-mummy-cosplay.webp",
-        "price" : " $15",
+        "price" : 15,
         "featuredProduct":false
         },
         {"sku" : "ENB -VEN-0MN ",
         "title" : "Venom mini-backpack",
         "description" : "Look symbiote-iful With this Venom Cosplay Backpack!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/venom.webp",
-        "price" : " $17",
+        "price" : 17,
         "featuredProduct":false
         },
         {"sku" : "ENB-WNI-P00 ",
         "title" : "Sweet Tooth Winnie",
         "description" : "This is a bear necesity for all you Winnie-the-pooh Lovers ",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/winnie-the-pooh-sweets.webp",
-        "price" : "$14 ",
+        "price" : 14 ,
         "featuredProduct":false
         }
 ]}

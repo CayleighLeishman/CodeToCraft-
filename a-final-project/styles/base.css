@@ -215,7 +215,7 @@ TO DO: MAKE WEATHER AT BOTTOM
 
 #products-main{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
     margin: 1rem auto;
     padding:2rem;
     text-align: center; 
@@ -227,7 +227,37 @@ TO DO: MAKE WEATHER AT BOTTOM
     justify-items: center;
 }
 
+.products-main section{
+    max-width: fit-content;
+    padding:1rem;
+    border-color: var(--mulan);
+    border-style: solid; 
+    border-width: 3.8px; 
+    border-radius: 5rem; 
 
+}
+.products-main img{
+    justify-self: center;
+    border-radius: 8rem; 
+    box-shadow:  0 5px 8px 5px var(--moana);
+}
+
+/* help from chatgbt */
+
+.buy-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--moana);
+    color: var(--elsa);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: var(--aurora);
+}
 /* _________________________________________________ORDER.HTML____________________________________ */
     .order-main{
         display: grid;
@@ -290,7 +320,7 @@ TO DO: MAKE WEATHER AT BOTTOM
     }
     input:invalid{
         border-bottom-color:var(--moana);
-      box-shadow: 10px 10px 10px var(--moana) ;
+        box-shadow: 10px 10px 10px var(--moana) ;
     }
     .order-confirm{
       display: grid;
