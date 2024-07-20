@@ -295,6 +295,12 @@ find ways to make it work tomorrow.
 
 So now I'm hapily going to bed so i can debug tomorrow. Good night world. 
 
+Never mind I was worried I forget this so I'm at least adding this note for future me:
+
+Cayleigh look at the chamber/join.html and make layout almost exactly the same, except for members, make the members section the Cart section. 
+ALSO DOUBLE CHECK RUBRIC. Cart may need to be someplace else instead. I know it MUST be in the index.html
+So beware. Dont code and sleep. 
+
 
 
 
