@@ -281,7 +281,19 @@ that should be fixed
 12:15 Now I'm going to have to figure out what errors I'll need  to fix, but i got a button 
 added. I just need to figure out how I'm going to do the math calculations and stuff like that.
 
+12:20 Now I'm updating some stuff. I asked chatgbt how to add a "cart" function and going through somethings. 
 
+I'm at least adding "data-sku="${product.sku}">Add to Cart</button>" to the button section in display-products.js
+
+In display-products I have a button function that tells products to do something. I'm gettingti
+tired so Its best I probbaly just finish seeing if I can create a cart in order.thml and then 
+find ways to make it work tomorrow. 
+
+12:35 well somehow I made it worse. The footer, order div and form stuff are all stacked besides each other
+
+12:36 Never mind I figured out it was because I accidentally set another main beneath the form. It's fized now. 
+
+So now I'm hapily going to bed so i can debug tomorrow. Good night world. 
 
 
 
