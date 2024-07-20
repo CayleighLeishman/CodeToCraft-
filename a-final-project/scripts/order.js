@@ -1,4 +1,3 @@
-
 // Load JSON data and do stuff
 const url = "./data/products.json";
 

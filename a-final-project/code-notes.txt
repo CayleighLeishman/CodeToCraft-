@@ -182,7 +182,82 @@ July 18 2024
 12:18I changed dark mode so that it looks more smoother I just need to fix dark mode 
 contrast errors
 
+[[10:30ish  I worked with professor on javascript for index and  about-me.
+ I still need to work on:
 
+ about-us:
+ media query is being funny-I think its because I set it to max width
+
+ borders on the images being the same on Index and products. 
+ connect javascript orders.js to index. Figure out code for it
+ 
+ Multi pages: media query
+ Check anywhere with a TO DO comment and work on that
+ 
+ Dark mode: delete dark mode. I apparently misread the instructions and never needed it in 
+ the first place. I was very embrassed when I found out becaus I thought I saw it on the "rubric"
+  but I'm just losing it. Professor was very nice about it though. 
+
+
+]]
+
+July 19 2024
+I'm very aggitated so hopefuly I can get some focus done,,
+
+right now: I'm going to look through the pages and figure out what comments i have in TO DO
+
+As of right now on page [.html] I have "TO DO " comment of:
+Index.html:
+ TO DO: CHANGE  A href="" TOLINK TO CORRECT ORDER PAGE--> **I THINK this means conenct to products to products.html not order.html)
+<!-- TO DO : figure out why Link is not accepted in validator --> ** SHOULD BE FINISHED BUT WILL Check
+
+INDEX.html
+ensure images have broders similar to other pages 
+delete images not connected to json
+
+
+Products.html:
+[No to do noted but I do need to do do the following]
+Fix grid for products stuff
+find a way to say "on click lead to this page"
+ensure order.js is connected 
+Orders.html is connected somehow
+order-confirmation is connected 
+
+ORDER.html:
+This is more of a note but a TO DO i had was:
+ THIS PAGE ONLY SHOWS IF YOU ADD STUFF TO CART, PRODUCT NEEDS HREF"ORDER.HTML" BUT THATS IT 
+meaning this page should only pop up if a customer clicks on a product and it sucessfully
+ gets appended to a list on localStorage 
+
+ORDER-CONFIRMATION.html
+No to do list but 
+-ensure it only shows up AFTEr products is clicked on
+
+
+BASE.CSS
+Not a TO DO but a TO add: 
+FIGURE OUt FOOTER ERROR 
+FIGURE OUT GRID FOR PRODUCT
+
+IN TO DO: (HIGH PROORITY TO LESS)
+Does border-color actually work? I'm pretty sure mulan is being used in a different class
+MAKE WEATHER AT BOTTOM ORDER TO WHERE BOTTOM WAS
+
+
+14:47 I took the copyright out of the footer to the bottom of page. I don't care anymore. 
+I also tried to fix something else but i cant reacall
+For some reasn the footer is set to four columns so I'm trying to figr eout why from 
+the webdev, but it wasn't showing me more than one grid-template-columns
+ so I'm trying to figur eout why the heck the footer has five grids
+
+ i'm going to try to fix products so that everythig is side by side.  but first I need chips I'm soo hungry
+ name 
+
+
+(4:25): I got the grid stuff working in products.html!! Now I'm going to fix the issues of the images not showing.
+
+(10:20): i updated some links into JSOn file
 
 
 

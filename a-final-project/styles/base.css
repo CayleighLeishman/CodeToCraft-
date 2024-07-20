@@ -1,8 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap'); */
-/* Got above from: https://fonts.google.com/selection/embed */
-
-/* above is the font checker to see if font actually is correct below is what I think id like but it looks subtle */
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 /* Putting some tO DO Notes here
@@ -40,8 +36,8 @@
 
 body{
     background-color: var(--aurora);
-    font-family: "playwrite" ;
     color:var(--text-color);
+    font-family: "Lato", sans-serif;
   
 }
 
@@ -205,8 +201,8 @@ nav ul.open li{
 }
 
 /* ________________________[weather index.html]________________________
-TO DO: Make weather so that it stays in the left columsn
- [[only remove comments after ALL the cards in index page are taken care of   */
+TO DO: MAKE WEATHER AT BOTTOM
+ [[only remove comments after ALL the cards in index page are taken care of]] */
 .weather{
     text-align: center;
     grid-column: 1/2;
@@ -215,6 +211,22 @@ TO DO: Make weather so that it stays in the left columsn
     display: flex;
     justify-content: space-around;
 }
+/* ______________________________________________PRODUCTS.HTML__________________________________________ */
+
+#products-main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    margin: 1rem auto;
+    padding:2rem;
+    text-align: center; 
+}
+.products-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 8rem; 
+    justify-items: center;
+}
+
 
 /* _________________________________________________ORDER.HTML____________________________________ */
     .order-main{
@@ -355,12 +367,7 @@ footer a:hover{
 
 /* ________[The copy right symbol at the very bottom of the page]*/
 .copyright{
-    grid-column: 1/5;
+    grid-column: 1/4;
     text-align: center;
     color:var(--mulan)
-}
-.copyright a:hover{
-    color: var(--who-knows);
-    background-color: var(--cinderella);
-
 }

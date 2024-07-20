@@ -25,6 +25,8 @@
     <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/featured.js" defer></script>
+    
 
                     <!-- favicon -->
     <link rel="icon" href="images/favicon.ico">
@@ -64,15 +66,20 @@
             <picture>                
                 <source media="(min-width: 699px)" srcset="images/hero-nemo-500x500.webp">
                 <source media="(min-width:300px)" srcset="images/hero-nemo-300x300.webp">
-                <source media="(max-width:299px)" srcset="images/hero-nemo-100x100.webp">
+                <source media="(min-width:299px)" srcset="images/hero-nemo-100x100.webp">
 
                 <img src="images/hero-nemo-300x300.webp" alt="three people happy with their loungefly Nemo bags" loading="lazy">
             </picture>  
  
         </div> <!-- div class="hero" -->
         
-      
+        <div id="products-data" class="products-cards"></div>
 
+        <div class="order-product"> 
+            <h2>Order Information:</h2>
+            <p>link this to the js file</p>
+        </div>
+    
         <section class="weather">
             <h2>Weather</h2>             
               <p>Current Temperature: <span id="temperature"></span>&deg;</p>
@@ -92,34 +99,7 @@
               <p> Courtousy of OpenWeatherMap.org API Test </p>    
         </section>
         
-        <div class="order-product"> 
-            <h2>Order Information:</h2>
-            <p>link this to the js file</p>
-        </div>
-            <!-- TO DO: CHANGE  A href="" TOLINK TO CORRECT ORDER PAGE -->
-            <section class="home-product">
-                
-                <a href="order.html">
-                <img src="images/chip-n-dale-wallet.webp" alt="chip and dale wallet with ice cream" loading="lazy">
-                </a>
-                <h3>We’re going to go nuts over our next adventure!</h3>   
-            </section>  <!-- "home-product" -->
-
-            <section class="home-product">
-                <a href="order.html">
-                    <img src="images/mousercise.webp" alt="mini backpack with Mickey, Minnie and Donald in excersize gear" loading="lazy"> 
-                </a>
-                <h3>Its time to Mousercise!</h3>
-            </section> <!-- section "home-product" 2 -->
-            
-            <section class="home-product">
-                <a href="order.html">
-                <img src="images/pixar-monsters-unviversity.webp" alt="Mini backpack with Pixar Monsters Inc Univeristy Characters" loading="lazy">                    
-                </a>
-                <h3>Major in Scare-onomics!</h3>                
-            </section><!-- "home-product" 3 -->
-    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptatem. Quod corrupti debitis atque ab assumenda velit. Architecto, quis quas voluptatibus, ab nesciunt id earum rerum vero iure doloribus illum omnis! Ex odio autem consequuntur reiciendis. Harum minima et nostrum eius voluptatum incidunt perferendis nisi ut similique totam provident quod tempora nemo, repellendus quas magnam illum deleniti placeat. Eos fugit eligendi at consequuntur numquam tempore voluptatem excepturi necessitatibus impedit nostrum. Reprehenderit assumenda eum totam deleniti odit fuga recusandae dolore dolor rerum fugit nostrum quasi odio incidunt accusamus, nesciunt voluptate eos. Natus facere labore voluptatibus ex explicabo! Delectus dolorem voluptas, soluta perferendis inventore libero iusto reprehenderit eaque quibusdam dignissimos, eveniet tenetur molestiae impedit eius quidem deleniti ratione assumenda harum adipisci totam asperiores officia quisquam? Fuga facilis ratione enim. Repellat, quaerat at maiores necessitatibus consectetur corporis cumque velit iure sequi ipsa nam? Molestias sequi quas, tempore quam culpa totam dolor, debitis veniam neque qui incidunt molestiae non aspernatur esse iusto libero odio! Nesciunt ullam accusantium sed facilis dolorum delectus nam dolore harum debitis, dolor error magni, rerum voluptatum? Quae debitis, tenetur velit minima corporis distinctio, facere, magni fugiat consequuntur impedit tempore a reprehenderit culpa aperiam? Distinctio tempora provident dicta dolore non nobis ad aliquid velit consectetur ratione sint est soluta, fugit saepe expedita? Praesentium dolorum architecto nulla, repellendus ad nobis incidunt ducimus recusandae ex vero fugiat fuga eaque ab eveniet mollitia, nesciunt corporis alias pariatur molestiae reiciendis dolor cupiditate eius. Alias, nobis corporis! Voluptatem est ut ducimus vel quaerat excepturi praesentium reiciendis dolor cupiditate. Dignissimos, culpa? Quas, minus nobis. Veritatis quibusdam odio omnis reprehenderit error sed expedita architecto rerum maxime, cumque repellendus et, in, dolore iure est temporibus iste possimus. Amet architecto eaque odio impedit magni vero facilis labore ducimus doloremque, doloribus minima cumque consectetur a quisquam veniam, minus consequatur illum hic? Quia sunt repudiandae modi veritatis sapiente dolorum. Eum quam iusto quo quisquam error voluptatum quod possimus maiores itaque. Aliquid similique quo asperiores debitis ab velit cumque fuga doloremque, rem amet quidem ratione quia quam. Error incidunt ea repudiandae, corrupti, nihil accusantium cum consectetur amet nisi perspiciatis repellendus dicta fugiat consequuntur quam omnis, iusto tenetur. Recusandae at molestiae laboriosam labore distinctio unde fugiat, quibusdam architecto eum ratione. Est optio neque voluptates quod aperiam totam expedita, porro sunt tempora quasi quam corporis laborum nam velit culpa quas nisi corrupti reprehenderit hic. Numquam magnam aliquid officiis perspiciatis distinctio eligendi similique, nam excepturi dolorum quia repellat. Voluptas reiciendis deleniti deserunt obcaecati numquam dolor voluptatibus officiis officia expedita quidem placeat quod suscipit, unde cupiditate earum tenetur laudantium odit mollitia aut ullam accusamus adipisci accusantium? Illo doloremque voluptates voluptatum excepturi, assumenda eos impedit quis dolore, veritatis in sequi alias id fuga laudantium tempore. Architecto praesentium quod tempore officiis molestiae ratione veniam. Pariatur harum in voluptatum, veritatis quas nulla a? Nisi corrupti inventore quis, optio pariatur sequi vel tempora dolorum autem labore excepturi, vitae nostrum culpa, aspernatur mollitia ducimus unde eos temporibus veritatis ipsam tempore iure at in! Dolores explicabo omnis ducimus provident alias! Eveniet tempora voluptas minus praesentium delectus perspiciatis maxime dolor, eligendi doloribus earum error incidunt ducimus optio. Placeat similique temporibus autem voluptatem iste, quas reiciendis dolores mollitia necessitatibus qui pariatur architecto vitae rerum nam molestiae ipsa, itaque neque dignissimos. Beatae, adipisci minus accusamus quas quia alias numquam nam facere labore mollitia non cum. Ratione quidem totam distinctio numquam ut voluptatem cumque aut non nisi!</p> -->
-    </main>
+        </main>
 
 <footer>
     <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100" loading="lazy"> <!-- f
@@ -150,12 +130,12 @@
         </a>
     </div>
 
-    <div class="copyright">
-     <p>&copy; <span id='currentYear'></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA" │  </p>
-        <a href="site-plan.html">Site-Plan</a>
-    </div>
+   
 </footer>
-
+<div class="copyright">
+     <p>&copy; <span id='currentYear'></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA" │  </p>
+        <!-- <a href="site-plan.html">Site-Plan</a> -->
+</div>
 
 </body>
 </html>
