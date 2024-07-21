@@ -208,7 +208,7 @@ right now: I'm going to look through the pages and figure out what comments i ha
 
 As of right now on page [.html] I have "TO DO " comment of:
 Index.html:
- TO DO: CHANGE  A href="" TOLINK TO CORRECT ORDER PAGE--> **I THINK this means conenct to products to products.html not order.html)
+ TO DO: CHANGE  A href="" TOLINK TO CORRECT ORDER PAGE--> **I THINK this means conenct to products to n   not order.html)
 <!-- TO DO : figure out why Link is not accepted in validator --> ** SHOULD BE FINISHED BUT WILL Check
 
 INDEX.html
@@ -251,9 +251,8 @@ For some reasn the footer is set to four columns so I'm trying to figr eout why 
 the webdev, but it wasn't showing me more than one grid-template-columns
  so I'm trying to figur eout why the heck the footer has five grids
 
- i'm going to try to fix products so that everythig is side by side.  but first I need chips I'm soo hungry
+i'm going to try to fix products so that everythig is side by side.  but first I need chips I'm soo hungry
  name 
-
 
 (4:25): I got the grid stuff working in products.html!! Now I'm going to fix the issues of the images not showing.
 
@@ -264,7 +263,6 @@ I learned that some of my links were amng the few to get reverted/deleted along 
 
 (10:38)  I'm trying to figure out why the image hasn't downloaded to github yet so in the meantime
 I'm going to just focus on getting the borders to work on products.html page.
-
 
 (11:18) I updated the image, I played aorund with the base.css to try to get the porducts
  working properly. The set up seems to be somewhatfunctional. 
@@ -301,13 +299,43 @@ Cayleigh look at the chamber/join.html and make layout almost exactly the same, 
 ALSO DOUBLE CHECK RUBRIC. Cart may need to be someplace else instead. I know it MUST be in the index.html
 So beware. Dont code and sleep. 
 
+16:14 I figured out why the footer was having issues. I accidentally commented out
+ "display:grid" 
+ which is essential to maing the grid line work. (in larger.css)
+ Now I just need to figure out how to get everything in line in mobile mode.
+
+ I just learned that stuff in products.html is not longer worng. What the heck??
+
+17:07 I changed produts.html footer width and height
+now im going to see if I can find out why index.html products are showing but not products.html
+
+Okay i put everything through chatgbt and figured out it was mainly javascript error. 
+I have no memory of changing the stuff chatgbt told me to change, 
+but now something is displaying. For some reason the imageURLs are not working so the images
+are not appearing on the page. but progress!
+
+I also noticed the button in Javascript no longer has a connection to order.html. So there's something.
+
+it almost looks line line 9-14 on display-products.js is not fully connected. ALL the image 
+descriptions have "an undefined image" but when I click on IMAGEURL all the images are conencted to github.
+Maybe it's because I changed the size? But the links should be unchanged. Im going to copy the'
+ links to some of the images in "products.json" and see if that changes anything/
+
+Nope that didn't do anything. But I must have did something. 
+
+This is why you don't code while sleepy. don't snooze and script
+
+17:32 I'm going to try to work on the about-me page, but  I at least got the section borders working on both
+the index.html and products.html so it SHOULD look somewhat similar to each other. 
 
 
+18:00 I'm now working on media query
 
+18:34 okay I thin I got the media query workng decently well. I added a media query that would
+change the background to all white if the px screen 
 
-
-
-
+but now I need to figure out how to get the header "Enchanted backpacks" TO GO TO THE BOTTOM
+WHEN SCREEN IS SMALL
 
 
 

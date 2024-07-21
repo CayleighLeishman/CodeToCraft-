@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 Check if you actually need the median.css, you might be able to get away with just the "larger"
 TO DO: LOOK AT CONTAINER FOR HERO
 INSTRUCTIONS FOUND HERE:

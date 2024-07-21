@@ -23,7 +23,6 @@ async function getProductsData(){
             const fileterList= data.products.filter(x=> x.featuredProduct)
             // console.table(fileterList)
             displayProducts(fileterList);
-
         } else {
             console.log("Oops! Something went wrong");
         }

@@ -21,8 +21,8 @@
 
                     <!-- JavaScript -->
     <script src="scripts/hamburger.js" defer></script>
-    <script src="scripts/darkmode.js"  defer></script>
     <script src="scripts/display-products.js" defer></script>
+    <scirpt src="scripts/featured.js" defer></scirpt>
 
 
                     <!-- favicon -->
@@ -33,7 +33,6 @@
 <body>
 
     <header>
-        <button title="dark mode" id="dark-mode"></button>
         <div id="logo">
             <a href="index.html">
                 <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100">
@@ -53,18 +52,19 @@
     </nav>  
   
     <main class="products-main">
-        <h1 class="title">Enchanted Backpacks</h1>   
-        <div id="products-data" class="products-cards"></div>
-               
-    </main> 
-    
-    <div id="cart-info">
-       <p> <span id="cart-count">0</span> items - <span id="cart-total">$0.00</span></p>
-    </div>
+        <h1 class="title">Enchanted Backpacks</h1>  
 
+        <div id="products-data" class="products-cards"></div>   
+    
+        <div id="cart-info">
+           <p> <span id="cart-count">0</span> items - <span id="cart-total"></span></p>
+        </div>
+
+    </main> 
+   
 
 <footer>
-    <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo">
+    <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100">
  <!-- 
  Or break it to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */ --> 
     <div class="contact-info">

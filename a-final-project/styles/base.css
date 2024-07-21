@@ -43,14 +43,13 @@ body{
 
 /* _____________[header stuff]______________________ */
 header{
-    /* display:flex;
+    display:flex;
+    justify-content: space-around;
     align-items: center;
-    text-align: center; */
+    text-align: center; 
     /* justify-content: space-around; */
     background-color: var(--aurora);
     /* padding: .4rem 1rem; */
-  
-
 }
 
         /* Logo Stuff */
@@ -65,6 +64,7 @@ header{
 #logo img, footer img{
     border-radius: 10px;
     margin: 2.4rem;
+    justify-content: center;
 }
 
 /* ____________[Navigation stuff]________________ */
@@ -121,24 +121,6 @@ nav ul.open li{
     border: double .1rem var(--mulan);
 }
 
- /*_____________________Dark Mode Button_______________________ */
-#dark-mode{
-    height: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-#dark-mode::before{
-    content: "🌘";
-    background-color:var(--elsa);
-    color:var(--mulan)
-}
-
-#dark-mode.dark::before{
-    content: "☀️"; 
-}
-
 /* ______________________Multi Page code________________________________ */
 .home-main, .order-main, .products-main, .about-main, .confirm-main{
     background-color: var(--elsa);    
@@ -161,6 +143,7 @@ nav ul.open li{
     z-index: 1 ;
 }
 .hero img{
+    max-width:fit-content;
     justify-content: center;
     padding:.3rem;
 }
@@ -195,7 +178,7 @@ nav ul.open li{
     color: var(--mulan);
 }
 
-.home-product img{
+.home-product img, .produdcts-main img{
     border-radius: 8rem; 
     box-shadow:  0 5px 8px 5px var(--moana);
 }
@@ -203,6 +186,12 @@ nav ul.open li{
 /* ________________________[weather index.html]________________________
 TO DO: MAKE WEATHER AT BOTTOM
  [[only remove comments after ALL the cards in index page are taken care of]] */
+
+.order-product{
+    grid-column: 1/4;
+    justify-content: center;
+
+}
 .weather{
     text-align: center;
     grid-column: 1/2;
@@ -210,6 +199,8 @@ TO DO: MAKE WEATHER AT BOTTOM
 #forecast{
     display: flex;
     justify-content: space-around;
+    background-color: var(--aurora);
+    border-radius: 2rem;
 }
 /* ______________________________________________PRODUCTS.HTML__________________________________________ */
 
@@ -220,10 +211,11 @@ TO DO: MAKE WEATHER AT BOTTOM
     padding:2rem;
     text-align: center; 
 }
+
 .products-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 8rem; 
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    gap: 2rem; 
     justify-items: center;
 }
 
@@ -352,20 +344,35 @@ TO DO: MAKE WEATHER AT BOTTOM
     justify-content: center;
 }
 
+.contain-map{
+    /* chatgbt help */
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%; /* Ensures the iframe doesn't exceed the container width */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    
+}
 
-    /* footer Note: { Maybe make footer similar to his pagehttps://www.slc.gov/ **IF YOU GOT TIME */
+/* ____________________________________________FOOTER STUFF __________________________________*/
 footer{
-    display: flex;
+    flex-direction: column;
     background-color: var(--aurora);
     border-style:double;
     border-color: var(--mulan);
     text-align: center;
-    /* For border stuff see:
-    https://www.w3schools.com/css/css_border.asp#:~:text=The%20CSS%20border%20properties%20allow,have%20a%20red%20bottom%20border.
-     */  
+    max-width: 100%;
+    
+
 }
 footer a{
     color:var(--who-knows);
+    /* chatgbt help */
+    word-wrap: break-word; /* Breaks long words onto the next line */
+    overflow-wrap: break-word; /* Ensures long text wraps correctly */
+    margin: 0.5rem 0; /* Adjust margin as needed */
 }
 /*_______[when you hover over the link text [email]]____________ */
 footer a:hover{
@@ -385,8 +392,8 @@ footer a:hover{
 }
 
 .social-media img {
-    width: 40px;
-    height: 40px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
@@ -400,4 +407,15 @@ footer a:hover{
     grid-column: 1/4;
     text-align: center;
     color:var(--mulan)
+}
+
+@media screen and (max-width:350px){
+
+    body{
+        background-color:var(--elsa);
+    }
+
+    #google-maps{
+        background-color: var(--aurora);
+    }
 }

@@ -52,10 +52,11 @@
     like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME  */
     /* __________________________________________________________________________Footer Stuff _________________________________________________*/
     footer{
+        display:grid;
         text-align: center;
         background-color: var(--aurora);
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        /* display:grid; */
+        
     }
     footer img{
         float: left;
