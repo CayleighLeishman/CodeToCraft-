@@ -76,14 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const products = await getProducts();
         let totalItems = 0;
         let totalPrice = 0;
-
+        let salesTaxRate = 0.047;  // CAYLEIGH ADDED : Tried to add this but no idea if it works
         cartItemsContainer.innerHTML = ""; // Clear previous content
 
         cart.forEach(cartItem => {
             const product = products.find(p => p.sku === cartItem.sku);
             if (product) {
                 totalItems += cartItem.quantity;
-                totalPrice += product.price * cartItem.quantity;
+                totalPrice += product.price * cartItem.quantity * salesTaxRate;
+
 
                 const itemElement = document.createElement("div");
                 itemElement.className = "cart-item";
