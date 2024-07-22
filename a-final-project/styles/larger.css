@@ -44,12 +44,6 @@
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
     
-
-    /* /* Or breakit to four sections, left is logo, 
-    left 1 is contacts 
-    middle is copyright 
-    and far right is social media 
-    like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME  */
     /* __________________________________________________________________________Footer Stuff _________________________________________________*/
     footer{
         display:grid;
@@ -64,3 +58,4 @@
     }
 
 }
+

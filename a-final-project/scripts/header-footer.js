@@ -1,6 +1,9 @@
-/// Date Stuff
-let datespan =document.querySelector('#currentYear')
+///TO DO: FIX
+// Date Stuff
+let datespan=document.querySelector('#currentYear')
 datespan.innertext = new Date().getFullYear()
 
-let lastmodifiedspan = document.querySelector('#lastModified')
-lastmodifiedspan.innerText = document.lastModified
+// sets the last modified date
+let lastModifiedParagraph = document.getElementById('#lastModified')
+lastModifiedParagraph.innerHTML =`Last Modified: ${document.lastModified}`
+

@@ -337,16 +337,64 @@ change the background to all white if the px screen
 but now I need to figure out how to get the header "Enchanted backpacks" TO GO TO THE BOTTOM
 WHEN SCREEN IS SMALL
 
+Jully 21 
+
+(8:22) I chaged the hero image in index.html to the same one as the about us page. Probably not standard but 
+I'm exausted and I don't have wifi to get anothe rimage. 
+
+it seems like all the items are not within the white section. I don't think I wrote the code efficently for the white block.
+
+I forgot to do a references page so I'm just working on my way to get that done.
+ I'm also goingthrough to check darkmode beause i noticed order-confirmation still had a
+  darkmode button, it just wasn't in the right place (i needed to delete it anyway so I 
+  checked pthers and then started looking at javascript instead for some reason.
+)
+
+July 22 2024
+
+10:20 I tried to fix javascript to see if that fixd products not showing but it didn't work and GOT
+rd of everything isntead. 
+
+10:25 I added a link from home page to order page on index. Now working on how to add a gap between .home-product
 
 
 
+I noticed that in the grid layout for home-main in index.html, the second row is really skinny
+and I don't know the cause. I added that to the "Ask-helptxt"
 
 
+Home-products stack on top of each other soI'm trying justify-content space around. 
 
+10:40 I'm debating about taking the border off the cards but I'm not sure. I'm leaving it until i decide later.
 
+10:44
+about-me: 
+contain-map I got rid of the width:100% and just left max-width:100%. because other wise it didn't center. 
 
+I tried to move the footer into medium.css but that just messed with the footer too much. I probably should fix it but it functions 
+well if I leave it as is. If I have time I'll fix that though.
 
+10:59 I fixed the logo being to the far right when it was in mobile mode!!
 
+I'm officially not doing anymore for the about.me unless the professor says otherwise. 
+
+I tried to look at javascript to see if i put it in the right place
+
+11:28 I tried to make the order.html page where the cart will go under the form, but it didn't work.
+I even tried to look at directory.html from my chambers but the similar code is there so I'm nt sure what I'm missing. 
+
+Chat gbt is suggesting I have a max width so that when it's in mobile view it stays in one column,
+but I really don't want to do that because that seems redundant. In the chamber view we didn't neede
+to do that.
+
+11:53 Trid to work on LastModified but it dosen't seem to work:
+
+I'm validating some stuff now because I'm having a harder time seeing
+
+12:? I can't figure out why lastModified dosen't work in my index.html
+12:12
+forgott o add favicon to products page ....
+actually apparently I didn/t It's just not displaying
 
 
 

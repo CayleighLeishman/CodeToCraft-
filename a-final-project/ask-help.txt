@@ -1,0 +1,40 @@
+I need help with:
+
+-do I need exact links for images that I used?
+
+
+products.html:
+NONE OF MY IMGAES INCLUDING FAVICON WORKS IN THIS PAGE. 
+
+Fixing what I assume is a parse error. (json is not showing images in products.html)
+for some reason Favicon won't work (Get javascript cart working first though)
+
+have other errors in validator as well that I can't understan (It says i can't have link above body?)
+
+ALL PAGES:
+Javascript for cart stuff/order page
+
+
+Index.html:
+There seems to be three columns in the grid layout and the second is very skinny,
+ not sure where it's comming from, but it's affecting the layout of page. I'm 
+ not sure whats making the second column so narrow.
+
+in mobile view the section cards stack on top of each other.
+
+order.html{
+how do I make hidden project identifier 
+how do I make it work with cART?
+Why is cart not going under the form when grid is smaller?
+}
+
+order-confrimation.html
+
+
+
+OTHER:
+For order.html chatgbt suggested I  add a @media query for a max width so that it goes to one column. but that's not similar to how chamber is done
+I want to figuer out why chamber works and mine does not. 
+
+
+

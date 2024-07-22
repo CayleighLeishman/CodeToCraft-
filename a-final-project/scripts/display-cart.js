@@ -1,6 +1,5 @@
 // help from chatgbt 
-
-// supposed to add stuff to cart [ChatGbt] -- the following comments are my interpretation to see if i understand the code correctly
+// supposed to add stuff to cart
 document.querySelectorAll(".add-to-cart").forEach(button => {   // calls function
     button.addEventListener("click", (event) => { // This part means "When you click on button" 
         const sku = event.target.dataset.sku;
@@ -46,11 +45,7 @@ const updateCartDisplay = () => {
 // Initial cart display update
 document.addEventListener("DOMContentLoaded", updateCartDisplay);
 
-
-
-
 //
-
 document.addEventListener("DOMContentLoaded", () => {
     const cartItemsContainer = document.getElementById("cart-items");
     const cartTotalItems = document.getElementById("cart-total-items");
