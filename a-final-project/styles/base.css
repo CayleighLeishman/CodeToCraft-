@@ -357,7 +357,7 @@ TO DO: MAKE WEATHER AT BOTTOM
     max-width: 100%; /* Ensures the iframe doesn't exceed the container width */
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
-    /* overflow: hidden;  */
+    overflow: hidden; 
 }
 /* _____________________________________Reference.html stuff_______________________________________ */
 
