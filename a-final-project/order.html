@@ -50,7 +50,16 @@
 
     <main class="order-main">
         <!-- HOW DO I ADD  Product Identifier - in a hidden field not visible to the user BELOW? Javascript I assume.-->
-
+        <section class="order-section">
+            <h2>Your Cart</h2>
+    
+            <div id="products-data" class="products-cards"></div> 
+            <div id="cart-summary">
+                <p>Total Tax: <span id="total-tax">0</span></p>
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            </div>
+        </section>
+        
         <section class="order-section">
             <h2>Contact Information</h2>
             <form method="GET" action="order-confirmation.html">
@@ -68,15 +77,7 @@
             </form>
         </section>
         
-        <section class="order-section">
-            <h2>Your Cart</h2>
-    
-            <div id="products-data" class="products-cards"></div> 
-            <div id="cart-summary">
-                <p>Total Tax: <span id="total-tax">0</span></p>
-                <p>Subtotal: $<span id="subtotal">0.00</span></p>
-            </div>
-        </section>
+
 
 
     </main>
