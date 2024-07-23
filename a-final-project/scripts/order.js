@@ -47,19 +47,13 @@ function showPrice(product){
 
 }
 
-
-// Shipping Date
 const dateContainer = document.getElementById("shipDate");
 
 function displayShipDate() {
     const shipByDate = new Date();
-    shipByDate.setTime(shipByDate.getTime() + (5 * 24 * 60 * 60 * 1000)); // Add 5 days
+    shipByDate.setTime(shipByDate.getTime() + (5 * 24 * 60 * 60 * 1000)); 
 
-    // Format the date to a readable format (e.g., MM/DD/YYYY)
-    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-    const formattedDate = shipByDate.toLocaleDateString(undefined, options);
-
-    dateContainer.textContent = formattedDate; // Display the date in the element
+    dateContainer.textContent = formattedDate; 
 }
 
 displayShipDate();

@@ -1,4 +1,3 @@
-///TO DO: FIX
 // Date Stuff
 let datespan=document.querySelector('#currentYear')
 datespan.innerText = new Date().getFullYear()
