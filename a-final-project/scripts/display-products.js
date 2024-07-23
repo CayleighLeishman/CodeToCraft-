@@ -7,11 +7,11 @@ const displayProducts = (products) => {
     products.forEach((product) => {
         let newsection = document.createElement("section");
         newsection.innerHTML = `
-            <h2>${products.title}</h2>
-            <img src="${products.imageURL}" alt="${products.description} image" loading="lazy" height="300">
-            <p> $ ${products.price}</p>
-            <p><p>
-            <button data-sku="${products.sku}">Add to Cart</button>`;
+            <h2>${product.title}</h2>
+            <img src="${product.imageURL}" alt="${product.description} image" loading="lazy" height="300">
+            <p> $ ${product.price}</p>
+            <p><a href="order.html?sku=${product.sku}">Order</a><p>
+            `;
             productContainer.appendChild(newsection);
     });
 };

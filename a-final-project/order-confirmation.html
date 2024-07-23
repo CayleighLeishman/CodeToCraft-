@@ -2,95 +2,104 @@
 <html lang="en-US">
 <head>
     <!-- THIS PAGE ONLY SHOWS IF YOU ADD STUFF TO CART, PRODUCT NEEDS HREF"ORDER.HTML" BUT THATS IT -->
-    <!-- -->
     <meta charset="utf-8">
-    <meta name="viewport"    content = "width=device-width, initial-scale=1">
-    <meta name="description" content = "Discounted Loungefly Backpacks and Walletes found here!">
-    <meta name="author"      content = "Cayleigh Leishman">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discounted Loungefly Backpacks and Wallets found here!">
+    <meta name="author" content="Cayleigh Leishman">
     <title>Enchanted Backpacks</title>
 
-                    <!-- Social Media Meta Tags -->
-    <meta property = "og:type" content = "Website" >
-    <meta property = "og:url"   content = "https://cayleighleishman.github.io/wdd230/a-final-project/index.html">
-    <meta property = "og:image" content = "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/enchanted-logo.webp" >
+    <!-- Social Media Meta Tags -->
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://cayleighleishman.github.io/wdd230/a-final-project/index.html">
+    <meta property="og:image" content="https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/enchanted-logo.webp">
 
-                        <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalize.css" >  
-    <link rel="stylesheet" href="styles/base.css" >
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-                    <!-- JavaScript -->
-    <script src="scripts/slideshow.js" defer></script>
+    <!-- JavaScript -->
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/order.js" defer></script>
+    <script src="scripts/display-cart.js" defer></script>
 
-                    <!-- favicon -->
-    <link rel="icon" href="images/favicon.ico">
-
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
-
     <header>
         <div id="logo">
             <a href="index.html">
                 <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100">
             </a>
-            <h1> Enchanted Backpacks</h1>  
+            <h1>Enchanted Backpacks</h1>
         </div>
-       
-    </header> 
+    </header>
+
     <button title="navigation" id="hamburger-button"></button>
     <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Product List</a></li>
-                <li><a href="about-us.html">About US</a></li>
-            </ul>
-            
-    </nav>  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Product List</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
 
     <main class="confirm-main">
         <h2>Thank you for your order!</h2>
-        <!-- TO DO : add javascript that shows customer how many orders they have on local storage -->
+        <!-- TO DO: add JavaScript that shows customer how many orders they have in local storage -->
         <!-- <p span="order"></p> -->
 
+        <section class="order-section">
+            <h2>Your Cart</h2>
+            <div id="products-data" class="products-cards"></div>
+            <div id="cart-summary">
+                <p>Total Tax: <span id="total-tax">0</span></p>
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Estimate Ship Date: <span id="shipDate"></span></p>
+            </div>
+        </section>
     </main>
 
-<footer>
-    <img src="images/enchanted-logo.webp" width="100" height="100" alt="Enchanted Backpacks Logo">
-    <div class="contact-info">
-        <p>Need Assistance? </p>
-        <p><a href="mailto:EnchantedBackpacks@customerservice.com" target="_blank">EnchantedBackpacks@customerservice.com</a></p>
-        <p>208-234-6163</p>
-    </div>
-
-    <div class="location">
-        <p>911 N 7th Avenue</p>
-        <p>Salt Lake City, UT, 84102</p>  
-    </div>
+    <footer>
+        <img src="images/enchanted-logo.webp" alt="Enchanted Backpacks Logo" width="100" height="100" loading="lazy"> <!-- f
+     Or break it to four sections, left is logo, left 1 is contacts middle is copyright and far right is social media like footer in this pagehttps://www.slc.gov/ **IF YOU GOT TIME */ --> 
+        <div class="contact-info">
+            <p>Need Assistance? </p>
+            <p><a href="mailto:EnchantedBackpacks@customerservice.com" target="_blank">EnchantedBackpacks@customerservice.com</a></p>
+            <p>208-234-6163</p>
+        </div>
     
-    <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank">
-            <img src="images/facebook-icon.svg" alt="Facebook" loading="lazy">
-        </a>
-        <a href="https://www.twitter.com" target="_blank">
-            <img src="images/twitter-icon.svg" alt="Twitter" loading="lazy">
-        </a>
-        <a href="https://www.instagram.com" target="_blank">
-            <img src="images/instagram-icon.svg" alt="Instagram" loading="lazy">
-        </a>
-        <a href="https://www.tiktok.com" target="_blank">
-            <img src="images/tiktok-icon.svg" alt="TikTok" loading="lazy">
-        </a>
-    </div>
-
-  
-</footer>
-<div class="copyright">
-    <p>&copy; <span id='currentYear'></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA" │  </p>
-    <!-- <a href="site-plan.html">Site-Plan</a> -->
-</div>
-
+        <div class="location">
+            <p>911 N 7th Avenue</p>
+            <p>Salt Lake City, UT, 84102</p>  
+        </div>
+    
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook-icon.svg" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter-icon.svg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram-icon.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank"> 
+                <img src="images/tiktok-icon.svg" alt="TikTok">
+            </a>
+        </div>
+        
+        <div class="copyright">
+             <p>&copy; <span id="currentYear"></span>│ Enchanted Backpacks │ Salt Lake City, UT, USA │  </p>
+                <!-- <a href="site-plan.html">Site-Plan</a> -->
+            <a href="reference.html">References </a>
+            <p id="lastModified"></p>
+        </div>
+       
+    </footer>
+    
 </body>
 </html>

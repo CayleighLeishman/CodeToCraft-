@@ -24,8 +24,8 @@
     }
 
     /* ________________________________________________________________INDEX PAGE___________________________________________________ */
-    .home-main, .order-main, .products-main, .about-main{
-        display: grid;
+    .order-main, .products-main, .about-main{
+        /* display: grid; */
         margin: 5rem;
         padding:5rem;
     }
@@ -46,6 +46,7 @@
     
     /* __________________________________________________________________________Footer Stuff _________________________________________________*/
     footer{
+        flex-direction: column;
         display:grid;
         text-align: center;
         background-color: var(--aurora);
@@ -55,6 +56,11 @@
     footer img{
         float: left;
         justify-content: center;
+    }
+
+    .order-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
     }
 
 }

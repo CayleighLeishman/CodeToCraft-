@@ -10,7 +10,7 @@ const displayProducts = (products) => {
             <h2>${products.title}</h2>
             <img src="${products.imageURL}" alt="${products.description} image" loading="lazy" height="300">
             <p>$ ${products.price}</p>
-            <p><a href="products.html">Click here to see products!</a></p>`;
+            <p><a href="products.html">Order Now!</a></p>`;
             productContainer.appendChild(newsection);
     });
 };

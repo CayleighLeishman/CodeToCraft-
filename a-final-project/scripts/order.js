@@ -1,15 +1,20 @@
 // Load JSON data and do stuff
 const url = "./data/products.json";
+const productContainer = document.getElementById("products-data")
 
-// TO DO : Do we also need to put in the SKU/Product identifier code here?
+const sku=new URL(window.location).searchParams.get("sku")
+document.getElementById('sku').value=sku 
+
 const displayProducts = (products) => {
-    products.forEach((products) => {
+    products.forEach((product) => {
         let newsection = document.createElement("section");
         newsection.innerHTML = `
-            <h2>${products.product-name} ${products.product-description}</h2>
-            <img src="${products.imageURL}" alt="${products.product-description} image" loading="lazy" height="300">
-            <p>${products.product-price}</p>`;
-        products_data.appendChild(newsection);
+            <h2>${product.title}</h2>
+            <img src="${product.imageURL}" alt="${product.description} image" loading="lazy" height="300">
+            <p>${product.description}</p>
+            <p> $ ${product.price}</p>
+            `;
+        productContainer.appendChild(newsection);
     });
 };
 
@@ -18,7 +23,9 @@ async function getProductsData(){
         const response = await fetch(url);
         if (response.ok){
             const data = await response.json();
-            displayproducts(data.products); 
+            const product=data.products.filter(x => x.sku==sku)
+            displayProducts(product); 
+            showPrice(product[0]);
         } else {
             console.log("Oops! Something went wrong");
         }
@@ -29,3 +36,30 @@ async function getProductsData(){
 
 getProductsData();
 
+function showPrice(product){
+    // to do add the math and display product
+    let price=product.price
+    let tax=.05*price
+    let subtotal= tax+price
+
+    document.getElementById('total-tax').innerText= tax;
+    document.getElementById('subtotal').innerText= subtotal;
+
+}
+
+
+// Shipping Date
+const dateContainer = document.getElementById("shipDate");
+
+function displayShipDate() {
+    const shipByDate = new Date();
+    shipByDate.setTime(shipByDate.getTime() + (5 * 24 * 60 * 60 * 1000)); // Add 5 days
+
+    // Format the date to a readable format (e.g., MM/DD/YYYY)
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+    const formattedDate = shipByDate.toLocaleDateString(undefined, options);
+
+    dateContainer.textContent = formattedDate; // Display the date in the element
+}
+
+displayShipDate();

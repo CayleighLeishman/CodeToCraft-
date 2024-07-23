@@ -9,7 +9,7 @@
         },
         {"sku" : "ENB-001-NEMO-COL",
         "title" : "Bubled Nemo Backpack",
-        "description" : "Nemo-bubbles",
+        "description" : "Nemo collection loungeflys!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/nemo-collection.webp",
         "price" : 25,
         "featuredProduct":true
@@ -17,7 +17,7 @@
         {"sku" : "ENB-SKT-MRV",
         "title" : "Chibi Marvel Mini Backpack",
         "description" : "Skottie Chibi style of Marvel Characters on a Mini backpack",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/Marvel-Skottie-Young-Chibi-Group-Mini-Backpack.webp",
+        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/marvel-backpack.webp",
         "price" : 15,
         "featuredProduct":false
         },
@@ -30,7 +30,7 @@
         },
         {"sku" : "ENB-MNA-WLT ",
         "title" : "Moanas wallet",
-        "description" : "Moana as a child facing the Ocean on a wallet",
+        "description" : "Moana Watching the waves on this wallet!",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/moana-wallet.webp",
         "price" : 7,
         "featuredProduct":false
@@ -51,8 +51,8 @@
         },
         
         {"sku" : "MNS-UNI-BCK",
-        "title" : "Monsters University ",
-        "description" : "monsters INC university on a mini-backpack",
+        "title" : "Prepare for Monsters University",
+        "description" : "monsters INC University on a mini-backpack",
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/pixar-monsters-unviversity.webp",
         "price" : 15,
         "featuredProduct":true
@@ -87,12 +87,6 @@
         "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/venom.webp",
         "price" : 17,
         "featuredProduct":false
-        },
-        {"sku" : "ENB-WNI-P00 ",
-        "title" : "Sweet Tooth Winnie",
-        "description" : "This is a bear necesity for all you Winnie-the-pooh Lovers ",
-        "imageURL" : "https://raw.githubusercontent.com/CayleighLeishman/wdd230/main/a-final-project/images/winnie-the-pooh-sweets.webp",
-        "price" : 14 ,
-        "featuredProduct":false
         }
+        
 ]}

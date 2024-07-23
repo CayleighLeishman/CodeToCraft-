@@ -1,6 +1,8 @@
 @media screen and (min-width:550px){
     
     /* _____________________________________________________________________NAVIGATION ______________________________________________________*/
+
+    
     nav{
         padding: 8px 5px .3px 5px;
         grid-column:span;
@@ -8,7 +10,7 @@
         top:0;
         position: sticky;
         z-index: 1000;
-        font-size: 1.3rem; 
+        font-size: 1rem; 
     }
    
     nav ul{
@@ -22,9 +24,13 @@
     }
     
     footer{
-        display: flex;
-        justify-content: center;
+        grid-column:span;
+        max-width:100%
+        /* display: flex;
+        justify-content: center; */
+        /* flex-direction: column; */
     }
+    
 
     /*____________________________________________________________ INDEX home-main_________________________________________________ */
             /* Logo Stuff */
@@ -36,8 +42,8 @@
         font-size:1rem;
     }
     
-    
-    .home-main, .order-main{
+    /* .home-main was here */
+     .order-main{
         flex-direction: column;
         background-color: var(--elsa);
         border: 10px var(--moana);
@@ -61,14 +67,5 @@
         display:grid;
         grid-column: 1/2;
     }
-
-    .home-product{
-        display: grid;
-        /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    }
-/* _________________________________________________order.html_____________________________________________ */
-
-
-
 
 }

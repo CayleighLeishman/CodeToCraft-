@@ -397,12 +397,43 @@ forgott o add favicon to products page ....
 actually apparently I didn/t It's just not displaying
 
 
+[met with prof at 1 and we got products fixed for the most part.]
+
+[5:53] updated github image link in json for Marvel-backpack I'm just tryign to center stuff in product-cards now
+
+IF TIME PERMITS I may add a hover effec. 
+
+I deleted an extra product because I found out I only need 12
+
+I finished the final touches for the JSOn
+had
+hamburger disapeared.
+
+I deleted google-maps background:color  from base
+
+(6:36)'m trying to make it so that the body is white in mobile mode while figureing out hwy hamburger stoped
+I decided just to leave it as long as images worked
+
+Now footer isn't working, some of my images are going out of place in index.html
+
+Its a mess in media view. I'm never working in large view ever again
+So when I have it small the images do not follow the width. I need to set max-width: to 100%
 
 
 
+(9:29)I did a lot but it felt like it was going crazy so I took a break. I'm fixing favicon 
 
+ 
 
+(10:00) I FIGURED OUT THE ERROR, I somehow changed the larger from 900 to 400 so the sizes were clashing together
 
+I started trying to fix css errors and then I realized I didn' tlink everything in reference so I'm adding it in
+
+Reference is compleely done 
+
+now looking to see if i can get the section wth images working properly with media query
+
+I did a bucnh of stuff but I'm finished writing my coding notes. Now I'm validating. porder-confirmation dosen't work but I'm so tired and I don't almost care anymore. 
 
 
 
